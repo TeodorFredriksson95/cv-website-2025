@@ -34,7 +34,7 @@
 </section>
 
 <Section>
-  <div className="container mx-auto px-6  flex sm:flex-col flex-col lg:flex-row items-center justify-center gap-10">
+  <div className="container mx-auto  flex sm:flex-col flex-col lg:flex-row items-center justify-center gap-10">
     
     {/* LEFT COLUMN (image + caption) */}
 <div className="flex flex-col items-center w-full max-w-sm lg:max-w-[450px]">
@@ -80,7 +80,7 @@
       {/* Paragraphs */}
       <p className=" font-semibold font-mono mb-4">
         I still remember being 6 years old, sitting on the edge of my seat, watching my brother play Diablo II.
-        I was scared <span className="font-bold text-accent italic text-xl">!@#$&</span>-less.  But I couldn't walk away.
+        I was scared <span className="font-bold text-accent italic text-xl">!@#$&</span><span className="italic">-less.</span>  But I couldn't walk away.
       </p>
       <p className="text-md text-muted-foreground mb-4">
       I still remember begging my mother to enter the Cobra Car cheat codes in Age of Empires for me —
@@ -118,13 +118,13 @@
 </Section>
 
 <Section className="bg-primary">
-  <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-10">
+  <div className="container mx-auto sm:px-6 md:px-0 flex flex-col lg:flex-row items-center justify-center gap-10">
     
-    <div className="p-[3px] w-full max-w-sm lg:max-w-[450px] rounded-xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 shadow-xl">
+    <div className=" p-[3px] w-full max-w-sm lg:max-w-[450px] rounded-xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 shadow-xl">
       <div className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 rounded-xl overflow-hidden">
         <iframe
           src="https://giphy.com/embed/jsSPIrsUTiRUdAJ4ua/video"
-          className="rounded-xl w-[480px] h-[271px] border-none"
+          className="rounded-xl w-full md:w-[480px] md:h-[271px] border-none"
           allowFullScreen
         ></iframe>
       </div>
@@ -134,13 +134,53 @@
       <h2 className="text-3xl sm:text-5xl font-extrabold font-sans text-background leading-tight">
         Unreal Engine 5
       </h2>
+           <h3 className="text-2xl sm:text-4xl font-extrabold font-mono text-background mb-3 leading-tight">
+          Eoxania
+        </h3>
       <p className="text-md text-sky-50 mb-4">
-        Now, together with a wonderfully talented group of people going under the working name we've set out on a quest of our own to:
+        I guess you could say it wasn't until I tried Unreal Engine 5 that game development felt like something I was actually supposed to do. Able to do.
       </p>
     </div>
     
   </div>
 </Section>
+
+
+<Section className="bg-background">
+  <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-10">
+
+    {/* LEFT SIDE — Textual Narrative */}
+    <div className="max-w-md text-left">
+      <h2 className="text-3xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-4">
+        From Imagination to Engine
+      </h2>
+      <p className="text-md text-muted-foreground mb-4">
+        It all started with a D&D campaign. A few maps, scribbled lore, and a handful of NPC sketches. I wanted to bring it to life. Not just in words — but in code, animation, and logic gates.
+      </p>
+      <p className="text-md text-muted-foreground mb-4">
+        That’s when Unreal Engine 5 clicked for me. Game development isn’t just programming — it’s <span className="italic font-semibold">the definition</span> of creative problem solving. 
+        It’s math in service of magic. 
+      </p>
+      <p className="text-md text-muted-foreground mb-4">
+        Want a sword to swing with weight and grace? That’s calculus. Want particles to shimmer just right? That’s shaders and trigonometry. But you do it anyway — because you want the game to feel <span className="italic">so damn good</span>.
+      </p>
+    </div>
+
+    {/* RIGHT SIDE — Visuals (Carousel or Grid?) */}
+    <div className="w-full max-w-xl">
+      <div className="grid grid-cols-2 gap-4">
+        <img src="/concepts/naptha.jpg" alt="D&D map" className="rounded-xl shadow-md" />
+        <img src="/concepts/wolves.jpeg" alt="Character concept" className="rounded-xl shadow-md" />
+        <img src="/concepts/mailman.jpg" alt="UI mockup" className="rounded-xl shadow-md" />
+        <img src="/concepts/rune_golem.jpg" alt="Combat idea sketch" className="rounded-xl shadow-md" />
+      </div>
+      <p className="text-sm text-muted-foreground italic text-center mt-4">
+        Original campaign concept art that sparked the game idea
+      </p>
+    </div>
+  </div>
+</Section>
+
 
 
         </main>
