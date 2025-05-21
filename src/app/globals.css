@@ -8,6 +8,7 @@
   --color-muted: #1f2937;
   --color-border: #334155;
   --color-highlight: #2dd4bf;
+  --color-white: "fff";
 
   --font-sans: var(--font-sora);
   --font-mono: var(--font-fira-code);
@@ -18,8 +19,9 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --color-lighter-primary: #0a4e5a;
+    --color-lighter-primary: #05b2d2;
     --color-lighter-accent: #a12e2c;
+    --green: #13c213;
   }
 }
 
