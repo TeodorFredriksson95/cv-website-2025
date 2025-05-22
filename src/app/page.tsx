@@ -8,7 +8,7 @@
   export default function Home() {
     return (
 <div className="grid grid-rows-[20px_1fr_20px]  justify-items-center min-h-screen gap-16">
-<main className="flex flex-col gap-[32px] row-start-2 w-full">
+<main className="flex flex-col  row-start-2 w-full">
         
 <section className="w-full px-8 py-20 sm:px-16 text-center sm:text-left">
   <h1 className="mb-10 text-shadow-md text-5xl font-sans text-center font-extrabold leading-none tracking-tight text-accent sm:text-6xl md:text-8xl lg:text-8xl dark:text-white">
@@ -33,10 +33,22 @@
   </div>
 </section>
 
+<Section className="w-full text-center max-w-3xl mx-auto">
+  <p className="text-md sm:text-lg text-muted-foreground font-mono font-semibold mb-4">
+        I still remember being 6 years old, sitting on the edge of my seat, watching my brother play Diablo II.
+        I was scared <span className="font-bold text-accent italic text-xl">!@#$&</span><span className="italic">-less.</span>  But I couldn't walk away.  </p>
+  <p className="text-md sm:text-lg text-muted-foreground font-mono  mb-4">
+      I still remember begging my mother to enter the Cobra Car cheat codes in Age of Empires for me —
+        I had to ask her, because the instructions were in English, and I could barely tie my own shoes. And I remember when a classroom full of teenagers got swept away by Pokémon Red emulators.  </p>
+  <p className="text-md sm:text-lg text-muted-foreground font-mono font-semibold">
+        Games have always been the proverbial campfire around which I have huddled up close to, joined by friends and family.
+        Maybe that’s why I fell in love with making them. To spread the joy that's been given to me.  </p>
+</Section>
+
+
 <Section>
-  <div className="container mx-auto  flex sm:flex-col flex-col lg:flex-row items-center justify-center gap-10">
+  <div className="container mx-auto px-6 flex sm:flex-col flex-col lg:flex-row items-center justify-center gap-10">
     
-    {/* LEFT COLUMN (image + caption) */}
 <div className="flex flex-col items-center w-full max-w-sm lg:max-w-[450px]">
       <div className="relative aspect-[4.5/5] sm:aspect-[4/5] border-8 border-primary w-full overflow-visible">
         <img
@@ -51,50 +63,39 @@
     </div>
 
     {/* RIGHT COLUMN (text content) */}
-    <div className="max-w-md text-left">
+    <div className=" text-left">
       <div>
 
       <div className="flex flex-row items-center md:justify-end gap-4">
         <h2 className="text-3xl sm:text-5xl font-extrabold font-sans text-accent leading-tight">
-          Game Development
+         Breaking Into the Industry
         </h2>
           <img
     src="/assets/attackleft.webp"
     alt="Animated character"
     className="w-[60px] h-[60px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] self-end"
   />
-        {/* <Image
-          className="w-[60px] h-[60px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] self-end"
-          src="/icons/gamepad2.svg"
-          alt="Game Pad Icon"
-          width={75}
-          height={75}
-        /> */}
       </div>
         <h3 className="text-2xl sm:text-4xl font-extrabold font-mono text-black mb-3 leading-tight">
-          Broken Seal Studio
+          Broken Seal Studio 
         </h3>
       </div>
 
 
       {/* Paragraphs */}
       <p className=" font-semibold font-mono mb-4">
-        I still remember being 6 years old, sitting on the edge of my seat, watching my brother play Diablo II.
-        I was scared <span className="font-bold text-accent italic text-xl">!@#$&</span><span className="italic">-less.</span>  But I couldn't walk away.
-      </p>
+  Broken Seal Studio is a team of artists, programmers, producers, and designers — many from game development programs — all united by the same idea:
+  junior talent doesn’t mean junior capability.
+  </p>
       <p className="text-md text-muted-foreground mb-4">
-      I still remember begging my mother to enter the Cobra Car cheat codes in Age of Empires for me —
-        I had to ask her, because the instructions were in English, and I could barely tie my own shoes. And I remember when a classroom full of teenagers got swept away by Pokémon Red emulators.
-      </p>
-      <p className="text-md text-muted-foreground mb-4">
-        Games have always been the proverbial campfire around which I have huddled up close to, joined by friends and family.
-        Maybe that’s why I fell in love with making them. To spread the joy that's been given to me.
-      </p>
-      <p className="text-md text-muted-foreground mb-4">
-        Now, together with a wonderfully talented group of people going under the working name <span className="text-3xl text-primary font-extrabold">Polymorphic Games,</span> we've set out on a quest of our own to:
+  I work on the programming side — developing systems for quests, inventories, dialogue, and making sure it's all editor-friendly and scalable. But in this team, we all wear a few hats. Whether it's supporting designers with scripting or collaborating on UX decisions, everyone contributes to more than just their "role."
+
       </p>
 
-      {/* Quest List */}
+      <p className="text-md text-muted-foreground mb-4">
+  Together, under the working name <span className="text-3xl text-primary font-extrabold">Polymorphic Games</span>, we’ve set out on a quest of our own to:
+      </p>
+
       <ul className="space-y-2">
         <li className="flex items-center gap-2">
           <Heart stroke="#a12e2c" fill="#e02422" className="w-12 h-12" />
@@ -117,70 +118,204 @@
   </div>
 </Section>
 
-<Section className="bg-primary">
-  <div className="container mx-auto sm:px-6 md:px-0 flex flex-col lg:flex-row items-center justify-center gap-10">
+<Section className="bg-primary ">
+  <div className="container mx-auto px-6 flex sm:flex-col flex-col lg:flex-row items-center justify-center gap-10">
     
-    <div className=" p-[3px] w-full max-w-sm lg:max-w-[450px] rounded-xl bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 shadow-xl">
-      <div className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 rounded-xl overflow-hidden">
-        <iframe
-          src="https://giphy.com/embed/jsSPIrsUTiRUdAJ4ua/video"
-          className="rounded-xl w-full md:w-[480px] md:h-[271px] border-none"
-          allowFullScreen
-        ></iframe>
+    {/* LEFT: GIF / Video / Image */}
+    <div className="w-full flex sm:flex-col flex-col gap-10  ">
+      <div className=" border-4 border-background shadow-xl">
+        <video autoPlay loop muted className="w-full h-auto object-cover">
+          <source src="/videos/eoxania_preview.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p className="text-sm text-background text-center italic py-2 px-4 bg-background/20">
+          Whiteboxed gameplay & animation logic (UE5)
+        </p>
+      </div>
+      {/* <div className=" border-4 border-background shadow-xl">
+        <video autoPlay loop muted className="w-full h-auto object-cover">
+          <source src="/videos/eoxania_preview.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p className="text-sm text-background text-center italic py-2 px-4 bg-background/20">
+          Whiteboxed gameplay & animation logic (UE5)
+        </p>
+      </div> */}
+         <div className="border-l-4  border-indigo-900 bg-background/10 p-4  shadow-2xl">
+      <h4 className=" text-background text-xl sm:text-4xl font-extrabold font-monomb-3 leading-tight"> The goal</h4>
+        <p className="text-md text-background font-semibold">
+         A world filled with mystical wonder, dry humor, and storytelling worth remembering — and a project that teaches me something new every time I open the editor.
+        </p>
       </div>
     </div>
 
-    <div className="max-w-md text-left">
-      <h2 className="text-3xl sm:text-5xl font-extrabold font-sans text-background leading-tight">
-        Unreal Engine 5
-      </h2>
-           <h3 className="text-2xl sm:text-4xl font-extrabold font-mono text-background mb-3 leading-tight">
+    {/* RIGHT: TEXT */}
+    <div className=" text-left space-y-6">
+      <div>
+        <h2 className="text-4xl sm:text-5xl font-extrabold font-sans text-background leading-tight mb-2">
           Eoxania
+        </h2>
+        <h3 className="text-2xl sm:text-3xl font-extrabold font-mono text-black leading-tight">
+          My Dream Game
         </h3>
-      <p className="text-md text-sky-50 mb-4">
-        I guess you could say it wasn't until I tried Unreal Engine 5 that game development felt like something I was actually supposed to do. Able to do.
+      </div>
+
+      <p className="text-md text-background font-mono font-bold">
+        Eoxania is my dream game — a narrative RPG that started as a D&D campaign and grew into a full-fledged worldbuilding project.
       </p>
+
+      <p className="text-md text-slate-100 font-semibold">
+        I’m building it solo in Unreal Engine 5 using Blueprints — developing whiteboxed movement inspired by Assassin’s Creed, custom dialogue systems, and interactive animations.
+      </p>
+
+      <p className="text-md text-slate-100 font-semibold">
+        I’ve researched animation blending, customized base UE5 assets, and designed interactions through both visual scripting and code.
+      </p>
+
+
     </div>
-    
   </div>
 </Section>
 
 
+
+
+
+{/* CONCEPT ART SECTION */}
 <Section className="bg-background">
   <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-10">
-
-    {/* LEFT SIDE — Textual Narrative */}
-    <div className="max-w-md text-left">
-      <h2 className="text-3xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-4">
-        From Imagination to Engine
-      </h2>
-      <p className="text-md text-muted-foreground mb-4">
-        It all started with a D&D campaign. A few maps, scribbled lore, and a handful of NPC sketches. I wanted to bring it to life. Not just in words — but in code, animation, and logic gates.
+    
+    {/* LEFT: Description */}
+    <div className=" text-left">
+      <h3 className="text-2xl sm:text-4xl font-extrabold font-mono text-black mb-3 leading-tight">
+        Inspiration
+      </h3>
+      <p className="text-md text-muted-foreground font-mono font-semibold mb-4">
+        It started with sketches and lore scribbled on paper. A concept art collection that helped shape the tone, characters, and history of the world.
       </p>
       <p className="text-md text-muted-foreground mb-4">
-        That’s when Unreal Engine 5 clicked for me. Game development isn’t just programming — it’s <span className="italic font-semibold">the definition</span> of creative problem solving. 
-        It’s math in service of magic. 
-      </p>
-      <p className="text-md text-muted-foreground mb-4">
-        Want a sword to swing with weight and grace? That’s calculus. Want particles to shimmer just right? That’s shaders and trigonometry. But you do it anyway — because you want the game to feel <span className="italic">so damn good</span>.
+        These visuals helped guide design decisions long before the first line of Blueprint logic was written.
       </p>
     </div>
 
-    {/* RIGHT SIDE — Visuals (Carousel or Grid?) */}
-    <div className="w-full max-w-xl">
-      <div className="grid grid-cols-2 gap-4">
-        <img src="/concepts/naptha.jpg" alt="D&D map" className="rounded-xl shadow-md" />
-        <img src="/concepts/wolves.jpeg" alt="Character concept" className="rounded-xl shadow-md" />
-        <img src="/concepts/mailman.jpg" alt="UI mockup" className="rounded-xl shadow-md" />
-        <img src="/concepts/rune_golem.jpg" alt="Combat idea sketch" className="rounded-xl shadow-md" />
-      </div>
+    {/* RIGHT: Image Grid */}
+    <div className="w-full max-w-2xl">
+<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 group">
+  {[
+    "naptha.jpg",
+    "wolves.jpeg",
+    "mailman.jpg",
+    "stone_fox.jpg",
+    "globalmap_scaled.jpg",
+    "rune_golem.jpg",
+    "moon_fox.jpg",
+    "steampunk_grassland.jpg",
+    "vedverket.jpg",
+  ].map((img, idx) => (
+    <div
+      key={idx}
+      className="overflow-hidden rounded-xl shadow-md will-change-transform transform transition duration-300 ease-in-out group-hover:scale-95 hover:scale-115 hover:z-10"
+    >
+      <img
+        src={`/concepts/${img}`}
+        alt={`Concept ${idx + 1}`}
+        className="w-full h-auto object-cover will-change-transform transition duration-300 ease-in-out group-hover:brightness-75 hover:brightness-100"
+      />
+    </div>
+  ))}
+</div>
+
+
       <p className="text-sm text-muted-foreground italic text-center mt-4">
-        Original campaign concept art that sparked the game idea
+        Original concept art that shaped the world of Eoxania
       </p>
     </div>
   </div>
 </Section>
 
+
+
+<Section className="relative bg-black py-20 overflow-hidden">
+  {/* Background images */}
+  <div className="absolute inset-0 z-0 flex justify-center items-center">
+    <div className="w-1/2 h-full hidden sm:flex justify-start">
+      <img
+        src="/concepts/treespirits.png"
+        alt="Forest spirits gathered"
+        className="w-full h-full object-cover opacity-50"
+      />
+    </div>
+    <div className="w-full sm:w-1/2 h-full flex justify-end">
+      <img
+        src="/concepts/steampunk_grassland.jpg"
+        alt="Forest spirits gathered"
+        className="w-full h-full object-cover opacity-50"
+      />
+    </div>
+
+
+
+
+{/* Top Edge Blur */}
+<div
+  className="absolute top-0 left-0 w-full h-16 sm:h-24 md:h-20 backdrop-blur-sm sm:backdrop-blur-sm pointer-events-none z-10"
+  style={{
+    WebkitMaskImage: 'linear-gradient(to bottom, black 0%, transparent 100%)',
+    maskImage: 'linear-gradient(to bottom, black 0%, transparent 100%)',
+  }}
+/>
+
+{/* Bottom Edge Blur */}
+<div
+  className="absolute bottom-0 left-0 w-full h-16 sm:h-24 md:h-20 backdrop-blur-sm sm:backdrop-blur-sm pointer-events-none z-10"
+  style={{
+    WebkitMaskImage: 'linear-gradient(to top, black 0%, transparent 100%)',
+    maskImage: 'linear-gradient(to top, black 0%, transparent 100%)',
+  }}
+/>
+
+{/* Left Edge Blur */}
+<div
+  className="absolute left-0 top-0 h-full w-16 sm:w-24 md:w-20 backdrop-blur-sm sm:backdrop-blur-sm pointer-events-none z-10"
+  style={{
+    WebkitMaskImage: 'linear-gradient(to right, black 0%, transparent 50%)',
+    maskImage: 'linear-gradient(to right, black 0%, transparent 50%)',
+  }}
+/>
+
+{/* Right Edge Blur */}
+<div
+  className="absolute right-0 top-0 h-full w-20 sm:w-32 md:w-40 backdrop-blur-sm sm:backdrop-blur-md pointer-events-none z-10"
+  style={{
+    WebkitMaskImage: 'linear-gradient(to left, black 0%, transparent 100%)',
+    maskImage: 'linear-gradient(to left, black 0%, transparent 100%)',
+  }}
+/>
+
+{/* General dark overlay */}
+<div className="absolute inset-0 bg-black/50 z-0" />
+
+  </div>
+
+  {/* Centered text overlay */}
+  <div className="relative z-20 flex flex-col items-center justify-center text-center h-full max-w-3xl mx-auto px-6 text-white">
+    <h2 className="text-4xl sm:text-5xl font-extrabold text-accent mb-6">
+      Want to build games?
+    </h2>
+    <p className="text-md sm:text-lg text-neutral-300 font-mono font-semibold mb-6">
+      Do you have a prototype you want to test? A story arch that keeps playing in the theatre of your mind? A weird mechanic you can’t stop tweaking?
+    </p>
+    <p className="text-md sm:text-lg font-semibold italic text-neutral-300 leading-relaxed">
+      Whether you're chasing an idea, looking for inspiration, or want to build something together — I'm always down to talk.
+    </p>
+    <a
+      href="mailto:teofredev@gmail.com"
+      className="mt-8 inline-block px-6 py-3 border border-primary text-primary font-mono font-semibold rounded hover:bg-primary hover:text-black transition"
+    >
+      Let’s build something
+    </a>
+  </div>
+</Section>
 
 
         </main>

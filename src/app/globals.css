@@ -4,11 +4,13 @@
   --color-primary: #05b2d2;
   --color-accent: #e02422;
   --color-background: #fff;
+  --color-background-black: #000;
   --color-foreground: #f1f5f9;
   --color-muted: #1f2937;
   --color-border: #334155;
   --color-highlight: #2dd4bf;
   --color-white: "fff";
+  --color-on-primary: #f8fafc;
 
   --font-sans: var(--font-sora);
   --font-mono: var(--font-fira-code);
