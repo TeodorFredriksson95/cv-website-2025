@@ -1,8 +1,5 @@
-  import Image from "next/image";
-  import { Swords, Scroll, Heart, Anvil, Gavel, Hammer, BicepsFlexed, BadgeDollarSign } from "lucide-react";
 
   import FeatureIcon from "@/components/FeatureIcon";
-  import Section from "@/components/section";
 
 
   export default function Home() {
@@ -19,7 +16,7 @@
     />
   </div>
 
-  <div className="flex flex-col sm:flex-row justify-center items-center w-full max-w-xl mx-auto gap-10">
+  <div className="flex flex-col sm:flex-row justify-center items-center w-full max-w-xl md:gap-20 mx-auto gap-10">
     <a href="/games">
      <FeatureIcon
       src="/icons/gamepad2.svg"

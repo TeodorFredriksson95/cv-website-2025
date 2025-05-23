@@ -1,53 +1,42 @@
-import Image from "next/image";
+import { Mail, Github, Linkedin } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
-    return (
-      <footer className="m-20 row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    );
+  return (
+    <footer className="w-full bg-background px-6 py-10 border-t border-muted-foreground/10 mt-20">
+      <div className="max-w-screen-xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-muted-foreground font-mono text-sm">
+        
+        <div className="text-center sm:text-left">
+          <p className="mb-1 font-semibold text-accent">Unidevweb Portfolio Site</p>
+          <p>Built with React, TypeScript, Tailwind, and a mildly concerning amount of coffee.</p>
+        </div>
+
+        <div className="flex gap-6 items-center">
+          <Link
+            href="mailto:teofredev@gmail.com"
+            className="hover:text-accent transition-colors flex items-center gap-1"
+          >
+            <Mail className="w-4 h-4" />
+            <span>Email</span>
+          </Link>
+          <Link
+            href="https://github.com/teodorfredriksson95"
+            target="_blank"
+            className="hover:text-accent transition-colors flex items-center gap-1"
+          >
+            <Github className="w-4 h-4" />
+            <span>GitHub</span>
+          </Link>
+          <Link
+            href="https://linkedin.com/in/teodor-fredriksson-919606b9/"
+            target="_blank"
+            className="hover:text-accent transition-colors flex items-center gap-1"
+          >
+            <Linkedin className="w-4 h-4" />
+            <span>LinkedIn</span>
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
 }

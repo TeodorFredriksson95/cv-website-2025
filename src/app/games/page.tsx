@@ -4,134 +4,153 @@
 
   import FeatureIcon from "@/components/FeatureIcon";
   import Section from "@/components/section";
+import { InlineQuote } from "@/components/InlineQuote";
 
 
   export default function GamesPage () {
     return (
-<div className="grid grid-rows-[20px_1fr_20px]  justify-items-center min-h-screen gap-16">
+<div className="grid grid-rows-[20px_1fr]  justify-items-center min-h-screen mt-16">
 <main className="flex flex-col  row-start-2 w-full">
         
-  <Section className="text-center max-w-3xl mb-20 mx-auto">
-    <h1 className="text-3xl sm:text-5xl font-extrabold font-sans text-accent leading-tight">Web Development</h1>
+  <Section className="text-center max-w-3xl mx-auto">
+    <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">Game <br className="block sm:hidden" />Development</h1>
+    <div className="flex justify-center mb-4">
         <FeatureIcon
-          src="/icons/webdev2.svg"
-          alt="Web Icon"
+          src="/icons/gamepad2.svg"
+          alt="game pad icon"
           label=""
-        />
+          />
+          </div>
     <p className="text-lg font-mono text-muted-foreground font-semibold">
-      From backend APIs to frontend polish — my goal is to build systems that solves a problem and feel easy to use.
+              Games have always been the proverbial campfire around which I have huddled up close to, joined by friends and family.
+        Maybe that’s why I fell in love with making them. To spread the joy that's been given to me.
     </p>
   </Section>
 
-<div className="flex flex-row items-center justify-center gap-20">
+<Section className="w-full text-center max-w-3xl mx-auto">
+<div className="flex flex-wrap justify-center items-center mb-4 gap-6 sm:gap-10 md:gap-16">
   <img
     src="/assets/nour_forward_bs.png"
     alt="Character model from the front"
-    className="max-h-[250px] w-auto"
+    className="h-[150px] sm:h-[200px] md:h-[250px] w-auto object-contain"
   />
   <img
     src="/assets/nour_left_bs.png"
     alt="Character model from the left side"
-    className="max-h-[250px] w-auto"
+    className="h-[150px] sm:h-[200px] md:h-[250px] w-auto object-contain"
   />
   <img
     src="/assets/nour_back_bs.png"
     alt="Character model from the back"
-    className="max-h-[250px] w-auto"
+    className="h-[150px] sm:h-[200px] md:h-[250px] w-auto object-contain"
   />
 </div>
 
-
-<Section className="w-full text-center max-w-3xl mx-auto">
   <p className="text-md sm:text-lg text-muted-foreground font-mono font-semibold mb-4">
         I still remember being 6 years old, sitting on the edge of my seat, watching my brother play Diablo II.
         I was scared <span className="font-bold text-accent italic text-xl">!@#$&</span><span className="italic">-less.</span>  But I couldn't walk away.  </p>
   <p className="text-md sm:text-lg text-muted-foreground font-mono  mb-4">
       I still remember begging my mother to enter the Cobra Car cheat codes in Age of Empires for me —
-        I had to ask her, because the instructions were in English, and I could barely tie my own shoes. And I remember when a classroom full of teenagers got swept away by Pokémon Red emulators.  </p>
+        I <span className="font-semibold italic">had </span>to ask her, because the instructions were in English, and I could barely tie my own shoes. And I remember when a classroom full of teenagers got swept away by <span className="font-mono text-accent font-semibold">Pokémon Red</span> emulators.  </p>
   <p className="text-md sm:text-lg text-muted-foreground font-mono font-semibold">
-        Games have always been the proverbial campfire around which I have huddled up close to, joined by friends and family.
-        Maybe that’s why I fell in love with making them. To spread the joy that's been given to me.  </p>
+ </p>
 </Section>
 
 
 <Section>
   <div className="container mx-auto px-6 flex sm:flex-col flex-col lg:flex-row items-center justify-center gap-10">
     
-<div className="flex flex-col items-center w-full max-w-sm lg:max-w-[450px]">
-      <div className="relative aspect-[4.5/5] sm:aspect-[4/5] border-8 border-primary w-full overflow-visible">
+<div className="flex flex-col items-center w-full max-w-sm lg:max-w-.8/2">
+      <div className="relative aspect-[3.5/5] sm:aspect-[3.5/5] md:aspect-[3.5/5] border-8 border-primary w-full overflow-visible">
         <img
           src="/assets/protagonist_bs.png"
           alt="Main visual"
-          className="absolute inset-0 w-full h-full scale-[1.2] -translate-x-[15%] -translate-y-[10%]"
+          className="absolute inset-0 w-full h-full sm:scale-[1.25] scale-[1.15] -translate-x-[15%] -translate-y-[10%]"
         />
       </div>
       <p className="mt-4 text-sm text-muted-foreground italic text-center px-2">
-        Shoutout to one of Broken Seal's artists, <span className="text-accent font-medium">Nour</span>, for sharing her work on the concept art.
+        Shoutout to one of Broken Seal's artists, <a href="https://linktr.ee/nourelagha" target="blank" className="hover:underline decoration-primary underline-accent"><span className="text-accent font-bold">Nour</span></a>, for sharing her work on the concept art.
       </p>
     </div>
 
     {/* RIGHT COLUMN (text content) */}
-    <div className=" text-left">
+    <div className=" text-left lg:max-w-1/2">
       <div>
 
       <div className="flex flex-row items-end md:justify-start gap-4">
         <h2 className="text-4xl  font-extrabold font-sans text-accent leading-tight mb-2">
-         Breaking Into the Industry
+         Broken Seal Studio
         </h2>
-          <img
+          {/* <img
             src="/assets/attackleft.webp"
             alt="Animated character"
             className="w-[60px] h-[60px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] "
-          />
+          /> */}
       </div>
         <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-3 leading-tight">
-          Broken Seal Studio 
+           Breaking Into the Industry 
         </h3>
       </div>
 
 
       {/* Paragraphs */}
       <p className=" mb-4 font-mono font-semibold">
-  Broken Seal Studio is a team of artists, programmers, producers, and designers — many from game development programs — all united by the same idea:
-  junior talent doesn’t mean junior capability.
+  Broken Seal Studio is a team of artists, programmers, producers, and designers — many with experience from game development programs. We're all united by the same idea:
+  junior experience doesn’t mean junior potential.
   </p>
       <p className="text-md text-muted-foreground mb-4">
-  I work on the programming side — developing systems for quests, inventories, dialogue, and making sure it's all editor-friendly and scalable. But in this team, we all wear a few hats. Whether it's supporting designers with scripting or collaborating on UX decisions, everyone contributes to more than just their "role."
+  I work on the programming side of things with C# in the Godot engine, developing systems for quests, inventories, dialogue, and making sure it's all editor-friendly and scalable. But in this team, we all wear a few hats. Whether it's designers helping out with scripts, or programmers trying to draw a straight line. In the end, it's about coming together as a team to create something wonderful.
 
       </p>
 
-      <p className="text-md text-muted-foreground mb-4">
-  Together, under the working name <span className="text-3xl text-primary font-extrabold">Polymorphic Games</span>, we’ve set out on a quest of our own to:
-      </p>
+<p className="text-md text-muted-foreground mb-4">
+  Together, under the working name <span className="text-2xl sm:text-3xl text-primary font-extrabold">Polymorphic Games,</span> we’ve set out on a quest of our own to:
+</p>
 
-      <ul className="space-y-2">
-        <li className="flex items-center gap-2">
-          <Heart stroke="#a12e2c" fill="#e02422" className="w-12 h-12" />
-          <span><span className="font-semibold">Build a game:</span> 0/1</span>
-        </li>
-        <li className="flex items-center gap-2">
-          <Swords stroke="#363535" fill="black" className="w-12 h-12" />
-          <span><span className="font-semibold">Charm an investor:</span> 0/1</span>
-        </li>
-        <li className="flex items-center gap-2">
-          <Hammer fill="gold" className="w-12 h-12" />
-          <span><span className="font-semibold">Launch a studio:</span> 0/1</span>
-        </li>
-        <li className="flex items-center gap-2">
-          <BadgeDollarSign fill="#13c213" className="w-12 h-12" />
-          <span><span className="font-semibold">Get a job</span> 0/1</span>
-        </li>
-      </ul>
+<ul className="space-y-3">
+  {[
+    { Icon: Heart, text: 'Build a 2DHD game:', fill: '#e02422', stroke: '#a12e2c' },
+    { Icon: Swords, text: 'Charm an investor:', fill: 'black', stroke: '#363535' },
+    { Icon: Hammer, text: 'Launch a studio:', fill: 'gold' },
+    { Icon: BadgeDollarSign, text: 'Get a job:', fill: '#13c213' }
+  ].map(({ Icon, text, fill, stroke }) => (
+    <li key={text} className="flex items-center gap-3">
+      <Icon
+        className="w-10 h-10 sm:w-12 sm:h-12"
+        {...(fill && { fill })}
+        {...(stroke && { stroke })}
+      />
+      <span className="font-semibold font-mono text-sm sm:text-md">
+        {text} 0/1
+      </span>
+    </li>
+  ))}
+</ul>
+
+             <div className="flex flex-wrap gap-3 text-sm font-mono text-background mt-4">
+        <span className="bg-accent px-4 py-2 rounded-lg  font-semibold shadow-md shadow-black/20">Godot</span>
+        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">C# 8.0</span>
+        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Ink</span>
+        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Trello</span>
+      </div>
     </div>
   </div>
 </Section>
 
 <Section className="bg-primary ">
-  <div className="container mx-auto px-6 flex sm:flex-col flex-col lg:flex-row items-center justify-center gap-10">
+  <div className="container mx-auto px-6 flex  sm:flex-col-reverse flex-col-reverse lg:flex-row items-center justify-center gap-10">
     
     {/* LEFT: GIF / Video / Image */}
-    <div className="w-full flex sm:flex-col flex-col gap-10  ">
+    <div className="lg:w-1/2 w-full flex sm:flex-col flex-col gap-10  ">
+      <div className=" border-4 border-background shadow-xl">
+        <video autoPlay loop muted className="w-full h-auto object-cover">
+          <source src="/videos/eoxania_preview.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p className="text-sm text-background text-center italic py-2 px-4 bg-background/20">
+          Whiteboxed gameplay & animation logic (UE5)
+        </p>
+      </div>
       <div className=" border-4 border-background shadow-xl">
         <video autoPlay loop muted className="w-full h-auto object-cover">
           <source src="/videos/eoxania_preview.mp4" type="video/mp4" />
@@ -142,40 +161,51 @@
         </p>
       </div>
 
-         <div className="border-l-4  border-indigo-900 bg-background/10 p-4  shadow-2xl">
-      <h4 className=" text-background text-xl sm:text-4xl font-extrabold font-monomb-3 leading-tight"> The goal</h4>
-        <p className="text-md text-background font-semibold">
-         A world filled with mystical wonder, dry humor, and storytelling worth remembering — and a project that teaches me something new every time I open the editor.
-        </p>
-      </div>
+            
     </div>
 
     {/* RIGHT: TEXT */}
-    <div className=" text-left space-y-6">
+    <div className="lg:w-1/2 text-left space-y-6">
       <div>
-        <h2 className="text-4xl  font-extrabold font-sans text-background leading-tight mb-2">
+        <h2 className="text-4xl  font-extrabold font-sans text-background leading-tight mb-3">
           Eoxania
         </h2>
         {/* <h3 className="text-2xl sm:text-3xl font-extrabold font-mono text-black leading-tight"> */}
         <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-2 leading-tight">
           My Dream Game
         </h3>
-      </div>
 
-      <p className="text-md text-background font-mono font-bold">
+      <p className="text-md text-background font-mono font-bold mb-4">
         Eoxania is my dream game — a narrative RPG that started as a D&D campaign and grew into a full-fledged worldbuilding project.
       </p>
 
-      <p className="text-md text-slate-100 font-semibold">
-        I’m building it solo in Unreal Engine 5 using Blueprints — developing whiteboxed movement inspired by Assassin’s Creed, custom dialogue systems, and interactive animations.
+      <p className="text-md text-slate-100 font-semibold mb-2">
+        I’m building it solo in Unreal Engine 5, using Blueprints to develop whiteboxed movement inspired by Assassin’s Creed, environments, and interactive animations.
       </p>
 
       <p className="text-md text-slate-100 font-semibold">
         I’ve researched animation blending, customized base UE5 assets, and designed interactions through both visual scripting and code.
       </p>
-
-
+      </div>
+ 
+    <div className=" bg-background/50 p-4  shadow-2xl">
+      <h4 className=" text-background-black text-xl sm:text-4xl font-extrabold font-mono mb-3 leading-tight"> The Goal</h4>
+        <p className="text-md text-background-black/90 font-semibold mb-2">
+         To create a 3D world where fantasy meets steampunk, with awe-inspiring natural environments, filled with curious, magical and devious creatures alike, based on the spirits of old. A world where agile movements guided by the essence of your surroundings becomes a necessity in order to survive the deadly wild. 
+        </p>
+        <p className="text-md text-background-black/80  ">
+          A place where rune inscribed steampunk objects, scattered throughout the world, serve as the only reminder of a time when the humans of Eoxania was at the peak of their dominance. Yet, few exist that possess the knowledge required to use these objects, and fewer still who remember who made them.
+        </p>
+      </div>
+           <div className="flex flex-wrap gap-3 text-sm font-mono text-muted-foreground mt-4">
+        <span className="bg-background px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Unreal Engine 5</span>
+        <span className="bg-background px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Blender</span>
+        <span className="bg-background px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">C++</span>
+        <span className="bg-background px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">C#</span>
+        <span className="bg-background px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Blueprints</span>
+      </div>
     </div>
+    
   </div>
 </Section>
 
@@ -188,36 +218,54 @@
   <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-10">
     
     {/* LEFT: Description */}
-    <div className=" text-left">
+    <div className=" text-left lg:max-w-1/2">
       <div>
               <h2 className="text-4xl  font-extrabold font-sans text-accent leading-tight mb-2">
           Concept Art
         </h2>
         <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-3 leading-tight">
-          Visuals that inspire logic
+          Visuals That Inspire Logic
         </h3>
-      </div>
       <p className="text-md text-muted-foreground font-mono font-semibold mb-4">
-        It started with sketches and lore scribbled on paper. A concept art collection that helped shape the tone, characters, and history of the world.
+        Who knew drawing a map could be so much fun? Or that you can use a glass of uncooked rice to guide your unsteady hand while you draw it?
       </p>
       <p className="text-md text-muted-foreground mb-4">
-        These visuals helped guide design decisions long before the first line of Blueprint logic was written.
+        I hate the question <span className="italic font-mono">"Do you prefer backend or frontend?".</span>
       </p>
+      <p className="text-md text-muted-foreground mb-4">
+        To me, the two concepts feed off of each other, and it feeds me. It could be an image, or a sound, that sparks the desire to create. And that desire is what drives me down the Youtube rabbit hole at <span className="font-mono">04.37</span> in the morning because I <span className="italic font-semibold">need </span> to know how to make the raycasting work.
+      </p>
+      <p className="text-md text-muted-foreground mb-4">
+        And when it works, when I'm <span className="italic font-semibold">finally</span> satisfied with the result, the inevitable question enters my mind - does it still look <span className="italic font-bold">good enough?</span>
+      </p>
+      <p className="text-md text-muted-foreground mb-4">
+        And back to the drawing board we go.
+      </p>
+
+      </div>
+      <div className="flex flex-wrap gap-3 text-sm font-mono text-background mt-4">
+        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Inkarnate</span>
+        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">GM Binder</span>
+        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">ChatGPT</span>
+        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Firefly</span>
+        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Figma</span>
+        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Gimp</span>
+        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Pen & Paper</span>
+      </div>
     </div>
 
-    {/* RIGHT: Image Grid */}
     <div className="w-full max-w-2xl">
 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 group">
   {[
     "naptha.jpg",
     "wolves.jpeg",
     "mailman.jpg",
-    "stone_fox.jpg",
     "globalmap_scaled.jpg",
     "rune_golem.jpg",
-    "moon_fox.jpg",
+    "eviltrees_1.jpg",
     "steampunk_grassland.jpg",
     "vedverket.jpg",
+    "forest_fox_image.jpg",
   ].map((img, idx) => (
     <div
       key={idx}
@@ -234,7 +282,7 @@
 
 
       <p className="text-sm text-muted-foreground italic text-center mt-4">
-        Original concept art that shaped the world of Eoxania
+        Original <span className="text-accent font-semibold">D&D</span> concept art that shaped the world of Eoxania
       </p>
     </div>
   </div>
