@@ -9,7 +9,7 @@ interface FeatureIconProps {
 export default function FeatureIcon({ src, alt, label }: FeatureIconProps) {
   return (
     <div className="z-50 flex flex-col items-center group justify-center hover:cursor-pointer">
-      <div className="relative rounded-full w-[96px] h-[96px] md:w-[128px] md:h-[128px] flex justify-center items-center">
+      <div className="relative rounded-full w-[96px] h-[96px] md:w-[120px] md:h-[120px] flex justify-center items-center">
         <Image
           src={src}
           alt={alt}

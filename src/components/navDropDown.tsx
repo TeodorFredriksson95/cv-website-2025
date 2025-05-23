@@ -11,7 +11,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 export default function NavDropdown() {
   return (
 <Menu as="li" className="relative hidden md:block list-none">
-      <MenuButton className="flex items-center gap-1 px-3 py-2 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+      <MenuButton className="flex  hover:cursor-pointer items-center gap-1 px-3 py-2 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent focus:outline-none md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
         Projects
         <ChevronDownIcon className="w-4 h-4 text-gray-400" aria-hidden="true" />
       </MenuButton>
