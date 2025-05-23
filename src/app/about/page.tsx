@@ -1,10 +1,12 @@
 import Image from 'next/image';
-import { Github, Linkedin, Mail } from 'lucide-react'; 
+import { Github, Linkedin, Mail } from 'lucide-react';
+import { TechCategory } from '@/components/TechCategory';
 
 export default function AboutPage() {
   return (
-    <main className="p-8 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-[auto_1fr] gap-8 items-start">
-      
+    <main className="p-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[200px_1fr_300px] gap-12 items-start">
+
+      {/* LEFT: Sidebar */}
       <aside className="flex flex-col items-center gap-4">
         <Image
           src="/assets/profilbild.jpg"
@@ -15,7 +17,7 @@ export default function AboutPage() {
         />
         <div className="text-center">
           <h2 className="text-2xl font-extrabold text-accent">Teo Fredriksson</h2>
-          <p className="text-sm text-muted-foreground font-mono">Utvecklare & problemlösare</p>
+          <p className="text-sm text-muted-foreground font-mono">Developer & Problem Solver</p>
         </div>
         <div className="flex gap-4 mt-2">
           <a href="https://github.com/TeodorFredriksson95" target="_blank" rel="noreferrer" aria-label="GitHub">
@@ -30,26 +32,76 @@ export default function AboutPage() {
         </div>
       </aside>
 
-      {/* RIGHT: Bio Text */}
+      {/* MIDDLE: Bio Text */}
       <section>
-        <h1 className="text-4xl font-extrabold text-accent mb-4">Om mig</h1>
+        <h1 className="text-4xl font-extrabold text-accent mb-4">About Me</h1>
         <p className="text-lg font-mono text-muted-foreground font-semibold leading-relaxed mb-4">
-          Jag är en utvecklare med en förkärlek för kod, spel och problemlösning.
-          Jag bygger lika gärna webbapplikationer och system som spelvärldar, och jag trivs som bäst när teknik möter estetik.
+          I'm a developer with a passion for code, games, and solving problems. I enjoy building web applications and systems just as much as crafting game worlds — thriving at the intersection of technology and aesthetics.
         </p>
         <p className="text-lg font-mono text-muted-foreground font-semibold leading-relaxed mb-4">
-          Utanför skärmen älskar jag att spela gitarr och att träna och tappar ofta bort mig i musik, idéer och tankar om framtiden. Djur har alltid varit en del av mitt liv och om det är en sak som är säker, är det att jag en dag tänker bli en stolt hundpappa.
+          Outside the screen, I love playing guitar and staying active. I often get lost in music, ideas, and thoughts about the future. Animals have always been a big part of my life, and if there’s one thing for sure — I plan to be a proud dog dad someday.
         </p>
         <p className="text-lg font-mono text-muted-foreground font-semibold leading-relaxed">
-          Vill du snacka spelidéer, samarbeten eller projekt, eller bara kod i allmänhet (eller hundraser)?
+          Want to talk game ideas, collaborations, or code (or dog breeds)?
         </p>
         <a
           href="mailto:teofredev@gmail.com"
           className="mt-6 inline-block px-6 py-3 border border-primary text-primary font-mono font-semibold rounded hover:bg-primary hover:text-black transition"
         >
-          Hör av dig
+          Reach Out
         </a>
       </section>
+
+      {/* RIGHT: Tech Stack */}
+
+      <aside className="space-y-4">
+        
+        <TechCategory title="Tools" items={[
+          'Azure',
+          'Git & GitHub',
+          'Trello',
+          'Miro',
+          'Docker',
+          'SCRUM'
+        ]} />
+                      <TechCategory title="Cybersecurity" items={[
+          'Kali Linux',
+          'Cyber Kill Chain',
+          'The 5 Security Principles',
+          'C.I.A Triad'
+        ]} />
+          <TechCategory title="Backend" items={[
+          '.NET',
+          'C#',
+          'Node.js',
+          'Express.js',
+          'SQL',
+          'Firebase',
+          'REST APIs'
+        ]} />
+        <TechCategory title="Frontend" items={[
+          'React',
+          'React Native',
+          'TypeScript',
+          'Expo',
+          'Next.js',
+          'Tailwind CSS',
+          'Bootstrap',
+          'HTML & CSS / JS'
+        ]} />
+
+
+
+
+
+        <TechCategory title="Design" items={[
+          'Figma',
+          'Firefly',
+          'Inkarnate',
+          'Gimp'
+        ]} />
+
+      </aside>
     </main>
   );
 }
