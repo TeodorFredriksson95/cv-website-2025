@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-background px-6 py-10 border-t border-muted-foreground/10 mt-20">
+    <footer className="w-full bg-background px-6 py-10 border-t border-muted-foreground/10 mb:mt-16">
       <div className="max-w-screen-xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-muted-foreground font-mono text-sm">
         
         <div className="text-center sm:text-left">
-          <p className="mb-1 font-semibold text-accent">Unidevweb Portfolio Site</p>
-          <p>Built with React, TypeScript, Tailwind, and a mildly concerning amount of coffee.</p>
+          <p className="mb-1 font-semibold text-accent">Unidevweb Portfolio</p>
+          <p>Built with React, TypeScript, Tailwind, and 04.00 AM epiphanies.</p>
         </div>
 
         <div className="flex gap-6 items-center">

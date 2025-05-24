@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4">
         <a href="/" className="flex items-center gap-3">
           <Image src="/icons/Unidevweb_logo_small.png" alt="Unidevweb logo" width={32} height={32} />
-          <span className="text-xl font-extrabold text-accent">Unidevweb</span>
+          <span className="text-xl font-extrabold text-primary">Unidevweb</span>
         </a>
 
         <button

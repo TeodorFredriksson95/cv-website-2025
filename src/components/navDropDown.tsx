@@ -6,14 +6,23 @@ import {
   MenuItems,
   MenuItem,
 } from '@headlessui/react';
+
+import { useEffect } from 'react';
+
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
 export default function NavDropdown() {
+    useEffect(() => {
+    document.body.style.overflow = '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, []);
   return (
     <Menu as="li" className="relative hidden md:block list-none">
       <MenuButton className="flex hover:cursor-pointer items-center gap-1 px-3 py-2 rounded hover:bg-muted/20  text-muted-foreground font-mono focus:outline-none hover:text-accent transition">
         Projects
-        <ChevronDownIcon className="w-4 h-4 text-accent" aria-hidden="true" />
+        <ChevronDownIcon className="w-4 h-4 text-accent" />
       </MenuButton>
 
       <MenuItems className="absolute z-10 mt-2 w-48 origin-top-right rounded-lg bg-background border border-muted shadow-xl focus:outline-none">
@@ -21,7 +30,7 @@ export default function NavDropdown() {
           {[
             { href: '/games', label: 'Games' },
             { href: '/web', label: 'Web' },
-            { href: '/appsandmobile', label: 'Apps & Mobile' },
+            { href: '/appsandmobile', label: 'Mobile' },
           ].map(({ href, label }) => (
             <MenuItem key={href}>
               {({ active }) => (

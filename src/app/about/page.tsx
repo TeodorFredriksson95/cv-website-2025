@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { TechCategory } from '@/components/TechCategory';
@@ -16,7 +17,7 @@ export default function AboutPage() {
           className="rounded-full border-4 border-primary shadow-lg object-cover"
         />
         <div className="text-center">
-          <h2 className="text-2xl font-extrabold text-accent">Teo Fredriksson</h2>
+          <h2 className="text-2xl font-extrabold text-accent">Teodor Fredriksson</h2>
           <p className="text-sm text-muted-foreground font-mono">Developer & Problem Solver</p>
         </div>
         <div className="flex gap-4 mt-2">
@@ -54,7 +55,7 @@ export default function AboutPage() {
 
       {/* RIGHT: Tech Stack */}
 
-      <aside className="space-y-4">
+      <aside className="">
         
         <TechCategory title="Tools" items={[
           'Azure',
@@ -73,8 +74,8 @@ export default function AboutPage() {
           <TechCategory title="Backend" items={[
           '.NET',
           'C#',
-          'Node.js',
-          'Express.js',
+          'NodeJS',
+          'ExpressJS',
           'SQL',
           'Firebase',
           'REST APIs'
@@ -84,10 +85,10 @@ export default function AboutPage() {
           'React Native',
           'TypeScript',
           'Expo',
-          'Next.js',
+          'NextJS',
           'Tailwind CSS',
           'Bootstrap',
-          'HTML & CSS / JS'
+          'HTML & CSS'
         ]} />
 
 

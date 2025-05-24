@@ -16,7 +16,7 @@
     />
   </div>
 
-  <div className="flex flex-col sm:flex-row justify-center items-center w-full max-w-xl md:gap-20 mx-auto gap-10">
+  <div className="flex flex-row sm:flex-row justify-center items-center w-full max-w-xl md:gap-20 mx-auto gap-10">
     <a href="/games">
      <FeatureIcon
       src="/icons/gamepad2.svg"
@@ -31,11 +31,11 @@
       label="Web Development"
     />
     </a>
-    <a href="/mobileandapps">
+    <a href="/appsandmobile">
     <FeatureIcon
       src="/icons/mobile2.svg"
       alt="Mobile Icon"
-      label="Mobile & Apps"
+      label="App Development"
       />
       </a>
     

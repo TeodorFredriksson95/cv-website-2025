@@ -6,10 +6,10 @@ export function TechCategory({ title, items }: { title: string; items: string[] 
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full  py-3 transition-all">
+    <div className="lg:w-40 w-full  transition-all">
       <button
         onClick={() => setOpen(!open)}
-        className="w-full text-left text-primary font-bold text-md flex justify-between items-center "
+        className="w-full text-left text-primary hover:bg-primary/20 hover:cursor-pointer rounded py-3 px-2 font-bold text-md flex justify-between  items-center "
       >
   <span className={`${open ? 'text-accent' : ''}`}>{title}</span>
         <ChevronDown
@@ -24,7 +24,7 @@ export function TechCategory({ title, items }: { title: string; items: string[] 
           open ? 'grid-rows-[1fr] mt-2' : 'grid-rows-[0fr]'
         }`}
       >
-        <ul className="list-disc list-inside text-sm text-muted-foreground font-mono space-y-1 overflow-hidden">
+        <ul className="list-disc px-2 list-inside text-sm text-muted-foreground font-mono space-y-1 overflow-hidden">
           {items.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}

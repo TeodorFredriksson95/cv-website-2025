@@ -9,7 +9,7 @@ import { InlineQuote } from "@/components/InlineQuote";
 
   export default function GamesPage () {
     return (
-<div className="grid grid-rows-[20px_1fr]  justify-items-center min-h-screen mt-16">
+<div className="grid grid-rows-[20px_1fr]  justify-items-center min-h-screen sm:mt-16">
 <main className="flex flex-col  row-start-2 w-full">
         
   <Section className="text-center max-w-3xl mx-auto">
@@ -188,8 +188,8 @@ import { InlineQuote } from "@/components/InlineQuote";
       </p>
       </div>
  
-    <div className=" bg-background/50 p-4  shadow-2xl">
-      <h4 className=" text-background-black text-xl sm:text-4xl font-extrabold font-mono mb-3 leading-tight"> The Goal</h4>
+    <div className=" bg-background/50 p-4 rounded shadow-2xl">
+      <h4 className=" text-background-black text-xl sm:text-4xl font-extrabold font-sans mb-3 leading-tight underline"> The Goal</h4>
         <p className="text-md text-background-black/90 font-semibold mb-2">
          To create a 3D world where fantasy meets steampunk, with awe-inspiring natural environments, filled with curious, magical and devious creatures alike, based on the spirits of old. A world where agile movements guided by the essence of your surroundings becomes a necessity in order to survive the deadly wild. 
         </p>
