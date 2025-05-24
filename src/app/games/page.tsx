@@ -142,20 +142,20 @@ import Link from "next/link";
     
     {/* LEFT: GIF / Video / Image */}
     <div className="lg:w-1/2 w-full flex sm:flex-col flex-col gap-10  ">
-      <div className=" border-4 border-background shadow-xl">
-        <video autoPlay loop muted className="w-full h-auto object-cover">
-          <source src="/videos/eoxania_preview.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div className="  shadow-xl">
+          <img className="w-full h-auto object-cover"
+            src="/assets/eo_vault.jpg"
+            alt="Character model from the left side"
+          />
         <p className="text-sm text-background text-center italic py-2 px-4 bg-background/20">
           Whiteboxed gameplay & animation logic (UE5)
         </p>
       </div>
-      <div className=" border-4 border-background shadow-xl">
-        <video autoPlay loop muted className="w-full h-auto object-cover">
-          <source src="/videos/eoxania_preview.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div className="  shadow-xl">
+        <img className="w-full h-auto object-cover"
+            src="/assets/eo_landscape.jpg"
+            alt="Character model from the left side"
+          />
         <p className="text-sm text-background text-center italic py-2 px-4 bg-background/20">
           Whiteboxed gameplay & animation logic (UE5)
         </p>
