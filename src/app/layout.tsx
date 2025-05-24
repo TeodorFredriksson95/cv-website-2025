@@ -19,6 +19,7 @@ const firaCode = Fira_Code({
 
 
 export const metadata: Metadata = {
+  themeColor: "fffff",
   metadataBase: new URL("https://unidevwebportfolio.com"), //
   title: "Unidevweb | Portfolio",
   description: "Showcasing web, mobile, and game development by Teodor Fredriksson.",
@@ -55,8 +56,6 @@ export const viewport = {
   initialScale: 1,
   viewportFit: "cover",
 };
-
-export const themeColor = "#ffffff";
 
 
 

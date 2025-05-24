@@ -1,5 +1,6 @@
 
-  import FeatureIcon from "@/components/FeatureIcon";
+  import FeatureIcon from "@/components/FeatureIcon"; 
+import Link from 'next/link';
 
 
   export default function Home() {
@@ -17,27 +18,27 @@
   </div>
 
   <div className="flex flex-row sm:flex-row justify-center items-center w-full max-w-xl md:gap-20 mx-auto gap-10">
-    <a href="/games">
+    <Link  href="/games">
      <FeatureIcon
       src="/icons/gamepad2.svg"
       alt="Gamepad icon"
       label="Game Development"
     />
-  </a>
-    <a href="/web">
+  </Link >
+    <Link  href="/web">
     <FeatureIcon
       src="/icons/webdev2.svg"
       alt="Web Icon"
       label="Web Development"
     />
-    </a>
-    <a href="/appsandmobile">
+    </Link >
+    <Link  href="/appsandmobile">
     <FeatureIcon
       src="/icons/mobile2.svg"
       alt="Mobile Icon"
       label="App Development"
       />
-      </a>
+      </Link >
     
   </div>
 </section>

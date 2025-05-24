@@ -4,7 +4,7 @@
 
   import FeatureIcon from "@/components/FeatureIcon";
   import Section from "@/components/section";
-import { InlineQuote } from "@/components/InlineQuote";
+import Link from "next/link";
 
 
   export default function GamesPage () {
@@ -69,7 +69,7 @@ import { InlineQuote } from "@/components/InlineQuote";
         />
       </div>
       <p className="mt-4 text-sm text-muted-foreground italic text-center px-2">
-        Shoutout to one of Broken Seal's artists, <a href="https://linktr.ee/nourelagha" target="blank" className="hover:underline decoration-primary underline-accent"><span className="text-accent font-bold">Nour</span></a>, for sharing her work on the concept art.
+        Shoutout to one of Broken Seal's artists, <Link href="https://linktr.ee/nourelagha" target="blank" className="hover:underline decoration-primary underline-accent"><span className="text-accent font-bold">Nour</span></Link>, for sharing her work on the concept art.
       </p>
     </div>
 
@@ -364,12 +364,12 @@ import { InlineQuote } from "@/components/InlineQuote";
     <p className="text-md sm:text-lg font-semibold italic text-neutral-300 leading-relaxed">
       Whether you're chasing an idea, looking for inspiration, or want to build something together — I'm always down to talk.
     </p>
-    <a
+    <Link
       href="mailto:teofredev@gmail.com"
       className="mt-8 inline-block px-6 py-3 border border-primary text-primary font-mono font-semibold rounded hover:bg-primary hover:text-black transition"
     >
       Let’s build something
-    </a>
+    </Link>
   </div>
 </Section>
 

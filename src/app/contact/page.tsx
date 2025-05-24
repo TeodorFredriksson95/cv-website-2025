@@ -7,6 +7,7 @@ import {
   Instagram,
   MessageCircleMore,
 } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ContactPage() {
   return (
@@ -21,14 +22,14 @@ export default function ContactPage() {
 
         {/* Contact Links */}
         <div className="flex justify-center gap-6 sm:gap-10 mt-6 text-muted-foreground">
-          <a
+          <Link
             href="mailto:teofredev@gmail.com"
             className="hover:text-accent transition"
             aria-label="Email"
           >
             <Mail className="w-6 h-6" />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://github.com/TeodorFredriksson95"
             target="_blank"
             rel="noopener noreferrer"
@@ -36,8 +37,8 @@ export default function ContactPage() {
             aria-label="GitHub"
           >
             <Github className="w-6 h-6" />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://linkedin.com/in/teodor-fredriksson-919606b9/"
             target="_blank"
             rel="noopener noreferrer"
@@ -45,7 +46,7 @@ export default function ContactPage() {
             aria-label="LinkedIn"
           >
             <Linkedin className="w-6 h-6" />
-          </a>
+          </Link>
 
         </div>
       </div>

@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import NavDropdown from './navDropDown';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,10 +10,10 @@ export default function Navbar() {
   return (
 <nav className="sticky top-0 z-100 bg-background border-b border-muted shadow-sm">
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4">
-        <a href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3">
           <Image src="/icons/Unidevweb_logo_small.png" alt="Unidevweb logo" width={32} height={32} />
           <span className="text-xl font-extrabold text-primary">Unidevweb</span>
-        </a>
+        </Link>
 
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -37,12 +38,12 @@ export default function Navbar() {
               { href: '/contact', label: 'Contact' },
             ].map(({ href, label, mobileOnly }) => (
               <li key={label} className={mobileOnly ? 'block md:hidden' : ''}>
-                <a
+                <Link
                   href={href}
                   className="block px-3 py-2 rounded hover:text-accent hover:bg-muted/20 transition"
                 >
                   {label}
-                </a>
+                </Link>
               </li>
             ))}
 

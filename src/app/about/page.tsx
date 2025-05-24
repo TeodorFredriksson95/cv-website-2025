@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { TechCategory } from '@/components/TechCategory';
+import Link from 'next/link';
 
 export default function AboutPage() {
   return (
@@ -21,15 +22,15 @@ export default function AboutPage() {
           <p className="text-sm text-muted-foreground font-mono">Developer & Problem Solver</p>
         </div>
         <div className="flex gap-4 mt-2">
-          <a href="https://github.com/TeodorFredriksson95" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <Link href="https://github.com/TeodorFredriksson95" target="_blank" rel="noreferrer" aria-label="GitHub">
             <Github className="w-5 h-5 text-muted-foreground hover:text-accent transition" />
-          </a>
-          <a href="https://linkedin.com/in/teodor-fredriksson-919606b9/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          </Link>
+          <Link href="https://linkedin.com/in/teodor-fredriksson-919606b9/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <Linkedin className="w-5 h-5 text-muted-foreground hover:text-accent transition" />
-          </a>
-          <a href="mailto:teofredev@gmail.com" aria-label="Email">
+          </Link>
+          <Link href="mailto:teofredev@gmail.com" aria-label="Email">
             <Mail className="w-5 h-5 text-muted-foreground hover:text-accent transition" />
-          </a>
+          </Link>
         </div>
       </aside>
 
@@ -45,12 +46,12 @@ export default function AboutPage() {
         <p className="text-lg font-mono text-muted-foreground font-semibold leading-relaxed">
           Want to talk game ideas, collaborations, or code (or dog breeds)?
         </p>
-        <a
+        <Link
           href="mailto:teofredev@gmail.com"
           className="mt-6 inline-block px-6 py-3 border border-primary text-primary font-mono font-semibold rounded hover:bg-primary hover:text-black transition"
         >
           Reach Out
-        </a>
+        </Link>
       </section>
 
       {/* RIGHT: Tech Stack */}

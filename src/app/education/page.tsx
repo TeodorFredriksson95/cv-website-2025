@@ -64,7 +64,7 @@ export default function EducationPage() {
     “This is a brilliantly executed analysis that demonstrates both technical expertise and a strong ability to clearly communicate complex concepts. The risk matrix is both precise and insightful, showing excellent strategic thinking.”
   </p>
 
-  <a
+  <Link
     className="hover:underline decoration-accent"
     href="https://www.kth.se/profile/subasic"
     target="_blank"
@@ -73,7 +73,7 @@ export default function EducationPage() {
     <footer className="text-sm text-accent font-semibold italic">
       Robin Kamo, Cybersecurity Instructor
     </footer>
-  </a>
+  </Link>
 </div>
 
 
@@ -141,7 +141,7 @@ export default function EducationPage() {
   </p>
 
   {/* Author */}
-  <a
+  <Link
     className="hover:underline decoration-accent"
     href="https://www.kth.se/profile/subasic"
     target="_blank"
@@ -150,7 +150,7 @@ export default function EducationPage() {
     <footer className="text-sm text-accent italic font-semibold">
       Nihad Subasic, Examiner & Lecturer at KTH Royal Institute of Technology
     </footer>
-  </a>
+  </Link>
 </div>
 
 
@@ -175,12 +175,12 @@ export default function EducationPage() {
     <p className="text-md sm:text-lg font-mono mb-8">
       If you’re learning, building, or just need someone to remind you that you’re not alone — reach out. I’d love to connect, chat, or share some encouragement.
     </p>
-    <a
+    <Link
       href="mailto:teofredev@gmail.com"
       className="inline-block px-6 py-3 border border-background text-background font-mono font-semibold rounded hover:bg-accent hover:border-accent hover:text-background transition"
     >
       Reach Out Anytime
-    </a>
+    </Link>
   </div>
 </Section>
 

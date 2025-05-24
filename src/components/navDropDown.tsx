@@ -10,6 +10,7 @@ import {
 import { useEffect } from 'react';
 
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import Link from 'next/link';
 
 export default function NavDropdown() {
     useEffect(() => {
@@ -34,7 +35,7 @@ export default function NavDropdown() {
           ].map(({ href, label }) => (
             <MenuItem key={href}>
               {({ active }) => (
-                <a
+                <Link
                   href={href}
                   className={`block px-4 py-2 text-sm font-mono  hover:bg-muted/20 ${
                     active
@@ -43,7 +44,7 @@ export default function NavDropdown() {
                   } transition`}
                 >
                   {label}
-                </a>
+                </Link>
               )}
             </MenuItem>
           ))}

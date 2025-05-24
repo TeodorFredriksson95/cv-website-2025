@@ -2,6 +2,7 @@
 
 import Section from '@/components/section';
 import FeatureIcon from '@/components/FeatureIcon';
+import Link from 'next/link';
 
 export default function AppsAndMobilePage() {
   return (
@@ -139,12 +140,12 @@ export default function AppsAndMobilePage() {
     <p className="text-md sm:text-lg font-mono mb-8">
       If it involves code, creativity, or creative probelm solving — I’m in.
     </p>
-    <a
+    <Link
       href="mailto:teofredev@gmail.com"
       className="inline-block px-6 py-3 border border-background text-background font-mono font-semibold rounded hover:bg-accent hover:border-accent hover:text-background transition"
     >
       Let’s talk
-    </a>
+    </Link>
   </div>
 </Section>
 

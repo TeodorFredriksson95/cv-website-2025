@@ -1,5 +1,6 @@
 import FeatureIcon from "@/components/FeatureIcon";
 import Section from "@/components/section";
+import Link from "next/link";
 
 export default function WebPage() {
   return (
@@ -128,9 +129,6 @@ Unidevweb</h2>
   <p className="text-sm leading-relaxed text-primary-foreground">
     <span className="text-primary text-lg font-semibold">Best Thesis Award:</span> The project was awarded top honors and voted <span className="font-semibold text-lg italic">"Best thesis project 2023"</span> at Newton School of Applied Sciences.
   </p>
-  <a className='hover:underline decoration-primary' href='https://www.kth.se/profile/subasic' target='_blank' rel="noopener noreferrer">
-
-  </a>
 </div>
 
       <div className="flex flex-wrap gap-3 text-sm font-mono text-background mt-4">
@@ -244,12 +242,12 @@ Created as a custom template for a campaign presented at the Swedish Parliament,
     <p className="text-md sm:text-lg font-mono mb-8">
       Let’s connect and turn your idea into something real.
     </p>
-    <a
+    <Link
       href="mailto:teofredev@gmail.com"
       className="inline-block px-6 py-3 border border-background text-background font-mono font-semibold rounded hover:bg-background hover:text-primary transition"
     >
       Reach Out
-    </a>
+    </Link>
   </div>
 </Section>
 
