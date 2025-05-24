@@ -6,7 +6,7 @@ export function TechCategory({ title, items }: { title: string; items: string[] 
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="lg:w-40 w-full  transition-all">
+    <div className="lg:w-80 w-full  transition-all">
       <button
         onClick={() => setOpen(!open)}
         className="w-full text-left text-primary hover:bg-primary/20 hover:cursor-pointer rounded py-3 px-2 font-bold text-md flex justify-between  items-center "

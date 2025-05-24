@@ -170,7 +170,6 @@ import { InlineQuote } from "@/components/InlineQuote";
         <h2 className="text-4xl  font-extrabold font-sans text-background leading-tight mb-3">
           Eoxania
         </h2>
-        {/* <h3 className="text-2xl sm:text-3xl font-extrabold font-mono text-black leading-tight"> */}
         <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-2 leading-tight">
           My Dream Game
         </h3>
@@ -180,7 +179,7 @@ import { InlineQuote } from "@/components/InlineQuote";
       </p>
 
       <p className="text-md text-slate-100 font-semibold mb-2">
-        I’m building it solo in Unreal Engine 5, using Blueprints to develop whiteboxed movement inspired by Assassin’s Creed, environments, and interactive animations.
+        I’m building it solo in Unreal Engine 5, using Blueprints to develop whiteboxed environments, animations and movement inspired by Assassin’s Creed.
       </p>
 
       <p className="text-md text-slate-100 font-semibold">
@@ -190,9 +189,11 @@ import { InlineQuote } from "@/components/InlineQuote";
  
     <div className=" bg-background/50 p-4 rounded shadow-2xl">
       <h4 className=" text-background-black text-xl sm:text-4xl font-extrabold font-sans mb-3 leading-tight underline"> The Goal</h4>
-        <p className="text-md text-background-black/90 font-semibold mb-2">
-         To create a 3D world where fantasy meets steampunk, with awe-inspiring natural environments, filled with curious, magical and devious creatures alike, based on the spirits of old. A world where agile movements guided by the essence of your surroundings becomes a necessity in order to survive the deadly wild. 
+        <p className="text-md text-background-black/90 font-semibold font-mono mb-2">
+         To create a 3D world where fantasy meets steampunk, with awe-inspiring natural environments, filled with curious, magical and devious creatures alike, based on the spirits of old.
         </p>
+        <p className="text-md text-background-black/90  mb-2">
+          A world where agile movements guided by the essence of your surroundings becomes a necessity in order to survive the deadly wild.         </p>
         <p className="text-md text-background-black/80  ">
           A place where rune inscribed steampunk objects, scattered throughout the world, serve as the only reminder of a time when the humans of Eoxania was at the peak of their dominance. Yet, few exist that possess the knowledge required to use these objects, and fewer still who remember who made them.
         </p>

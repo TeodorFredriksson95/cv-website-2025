@@ -40,51 +40,44 @@ export default function EducationPage() {
             </ul>
 
             {/* Quotes */}
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
-              
+<div className="mt-6 p-6 rounded-lg shadow-lg bg-accent/10 border-l-4 border-accent">
+  <div className="flex items-center mb-3">
+    {[...Array(5)].map((_, i) => (
+      <svg
+        key={i}
+        className="w-4 h-4 text-yellow-400"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 22 20"
+      >
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+      </svg>
+    ))}
+  </div>
+
+  <h3 className="text-xl font-extrabold text-primary leading-relaxed mb-2">
+    Brilliant Work!
+  </h3>
+
+  <p className="italic text-md text-muted-foreground leading-relaxed mb-4">
+    “This is a brilliantly executed analysis that demonstrates both technical expertise and a strong ability to clearly communicate complex concepts. The risk matrix is both precise and insightful, showing excellent strategic thinking.”
+  </p>
+
+  <a
+    className="hover:underline decoration-accent"
+    href="https://www.kth.se/profile/subasic"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <footer className="text-sm text-accent font-semibold italic">
+      Robin Kamo, Cybersecurity Instructor
+    </footer>
+  </a>
+</div>
 
 
 
-              {[
-                {
-                  text: "Du har skrivit en insiktsfull och personligt formulerad analys [...] riskmatrisen är både tydlig och träffsäker.",
-                  author: "Robin Kamo, Cybersecurity Instructor"
-                }
-              ].map((q, i) => (
-                <blockquote key={i} className="bg-muted/10 border-l-4 border-accent p-6 rounded-lg shadow-md">
-                   <div className="flex items-center mb-2">
-                      <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                      </svg>
-                      <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                      </svg>
-                      <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                      </svg>
-                      <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                      </svg>
-                      <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                      </svg>
-                  </div>
-                  <p className="italic text-sm leading-relaxed text-muted-foreground">“{q.text}”</p>
-                  <a className='hover:underline decoration-accent' href='https://www.linkedin.com/in/kakashidota/' target='blank'>
-                    <footer className="mt-4 text-xs text-accent font-semibold">{q.author}</footer>
-                  </a>
-                </blockquote>
-              ))}
-            </div>
-
-            <div className="flex flex-wrap gap-4 text-sm">
-              <Link href="/Teodor Fredriksson Cybersäkerhetsanalys för Tech-Högskolan.docx" target="_blank" className="bg-accent text-background px-4 py-2 rounded shadow hover:bg-accent/80 transition font-mono font-semibold">
-                View Report 1
-              </Link>
-              <Link href="/Teodor Fredriksson Inlämningsuppgift 2 Cybersäkerhetsanalys för Tech-Högskolan Innehållsförteckning (2).docx" target="_blank" className="bg-accent text-background px-4 py-2 rounded shadow hover:bg-accent/80 transition font-mono font-semibold">
-                View Report 2
-              </Link>
-            </div>
           </div>
         </Section>
 
@@ -119,14 +112,48 @@ export default function EducationPage() {
               <li>PowerShell</li>
             </ul>
 
-            <div className="mt-4 p-4 border-l-4 border-accent bg-muted/10 rounded">
-              <p className="text-sm leading-relaxed">
-                <span className="text-accent font-semibold">Best Thesis Award</span>: Our final project — a visual low-code database editor — was awarded top honors.
-              </p>
-              <a className='hover:underline decoration-accent' href='https://www.kth.se/profile/subasic' target='blank'>
-                  <footer className="mt-4 text-xs text-accent italic font-semibold">Nihad Subasic, Examiner & Lecturer at KTH Royal Institute of Technology</footer>
-              </a>
-            </div>
+<div className="mt-6 p-6 rounded-lg shadow-lg bg-accent/10 border-l-4 border-accent relative">
+  {/* Decorative Quote Mark */}
+
+  {/* Star Row */}
+  <div className="flex items-center mb-3">
+    {[...Array(5)].map((_, i) => (
+      <svg
+        key={i}
+        className="w-4 h-4 text-yellow-400"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 22 20"
+      >
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+      </svg>
+    ))}
+  </div>
+
+  {/* Headline */}
+  <h3 className="text-xl font-extrabold text-primary leading-relaxed mb-2">
+    Best Thesis Project 2023
+  </h3>
+
+  {/* Quote Text */}
+  <p className="italic text-md text-muted-foreground leading-relaxed mb-4">
+    Awarded top honors for our low-code thesis which included a research paper combined with a low-code database editor.
+  </p>
+
+  {/* Author */}
+  <a
+    className="hover:underline decoration-accent"
+    href="https://www.kth.se/profile/subasic"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <footer className="text-sm text-accent italic font-semibold">
+      Nihad Subasic, Examiner & Lecturer at KTH Royal Institute of Technology
+    </footer>
+  </a>
+</div>
+
+
           </div>
         </Section>
 
