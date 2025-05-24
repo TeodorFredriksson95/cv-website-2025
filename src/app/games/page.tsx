@@ -349,7 +349,7 @@ import { InlineQuote } from "@/components/InlineQuote";
 />
 
 {/* General dark overlay */}
-<div className="absolute inset-0 bg-black/50 z-0" />
+<div className="absolute inset-0 bg-black/30 z-0" />
 
   </div>
 

@@ -40,7 +40,7 @@ export default function EducationPage() {
             </ul>
 
             {/* Quotes */}
-<div className="mt-6 p-6 rounded-lg shadow-lg bg-accent/10 border-l-4 border-accent">
+<div className="mt-6 p-6 rounded-lg shadow-lg bg-accent/5 border-l-4 border-accent">
   <div className="flex items-center mb-3">
     {[...Array(5)].map((_, i) => (
       <svg
@@ -112,7 +112,7 @@ export default function EducationPage() {
               <li>PowerShell</li>
             </ul>
 
-<div className="mt-6 p-6 rounded-lg shadow-lg bg-accent/10 border-l-4 border-accent relative">
+<div className="mt-6 p-6 rounded-lg shadow-lg bg-accent/5 border-l-4 border-accent relative">
   {/* Decorative Quote Mark */}
 
   {/* Star Row */}
