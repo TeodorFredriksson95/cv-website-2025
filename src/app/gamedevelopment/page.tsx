@@ -111,7 +111,7 @@ import Link from "next/link";
             alt="Character model from the left side"
           />
         <p className="text-sm  text-center italic py-2 px-4 bg-gray-50">
-          Whiteboxed gameplay (UE5)
+          White boxed gameplay (UE5)
         </p>
       </div>
       <div className="  shadow-xl">
@@ -120,7 +120,7 @@ import Link from "next/link";
             alt="Character model from the left side"
           />
         <p className="text-sm  text-center italic py-2 px-4 bg-gray-50">
-          Whiteboxed worldbuilding (UE5)
+          White boxed worldbuilding (UE5)
         </p>
       </div>
 
@@ -141,7 +141,7 @@ import Link from "next/link";
       </p>
 
       <p className="text-md text-slate-100 font-semibold mb-2">
-        I’m building it solo in Unreal Engine 5, using Blueprints to develop whiteboxed environments, animations and movement inspired by Assassin’s Creed.
+        I’m building it solo in Unreal Engine 5, using Blueprints to develop white boxed environments, animations and movement inspired by Assassin’s Creed.
       </p>
 
       <p className="text-md text-slate-100 font-semibold">
