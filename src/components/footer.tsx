@@ -8,7 +8,7 @@ export default function Footer() {
         
         <div className="text-center sm:text-left">
           <p className="mb-1 font-semibold text-accent">Unidevweb Portfolio</p>
-          <p>Built with React, TypeScript, Tailwind, and 04.00 AM epiphanies.</p>
+          <p>Built with React, TypeScript and Tailwind CSS</p>
         </div>
 
         <div className="flex gap-6 items-center">
