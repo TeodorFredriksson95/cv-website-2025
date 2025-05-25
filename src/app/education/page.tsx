@@ -21,7 +21,7 @@ export default function EducationPage() {
                     />
                     </div>
           <p className="text-lg font-mono text-muted-foreground font-semibold">
-  My learning has been shaped by formal education, real-world projects, and mentors who believed in learning by doing.
+  My learning has been shaped by formal education, real-world projects, and mentors who believed in learning by doing
           </p>
         </Section>
 
@@ -157,13 +157,13 @@ export default function EducationPage() {
 <Section className="bg-primary text-background py-20">
   <div className="max-w-3xl mx-auto text-center">
     <h2 className="text-4xl sm:text-5xl font-extrabold font-sans mb-6">
-      To the Juniors and Dreamers
+      To the Juniors
     </h2>
     <p className="text-md sm:text-lg font-mono font-semibold mb-6">
       Feeling like you don’t belong? Struggling with imposter syndrome, or unsure if you’ll ever ‘get it’? I’ve been there too.
     </p>
     <p className="text-md sm:text-lg font-mono mb-8">
-      If you’re learning, building, or just need someone to remind you that you’re not alone — reach out. I’d love to connect, chat, or share some encouragement.
+      If you need advice, or just want to vent, you're always free to reach out.
     </p>
     <Link
       href="mailto:teofredev@gmail.com"

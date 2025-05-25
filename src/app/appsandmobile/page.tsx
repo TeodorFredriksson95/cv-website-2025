@@ -22,7 +22,7 @@ export default function AppsAndMobilePage() {
           />
         </div>
         <p className="text-lg font-mono text-muted-foreground font-semibold">
-          Exploring how mobile devices can connect, motivate, and empower users — through utility, competition, or creativity.
+          I love building apps that improve everyday life and keep users engaged
         </p>
       </Section>
 
@@ -129,9 +129,7 @@ export default function AppsAndMobilePage() {
     <p className="text-md sm:text-lg font-mono font-semibold mb-6">
       Whether you’re planning a side project, looking to expand your team, or just need to bounce ideas — I’d love to hear about it.
     </p>
-    <p className="text-md sm:text-lg font-mono mb-8">
-      If it involves code, creativity, or creative probelm solving — I’m in.
-    </p>
+
     <Link
       href="mailto:teofredev@gmail.com"
       className="inline-block px-6 py-3 border border-background text-background font-mono font-semibold rounded hover:bg-accent hover:border-accent hover:text-background transition"

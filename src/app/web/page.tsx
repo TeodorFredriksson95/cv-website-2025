@@ -20,7 +20,7 @@ export default function WebPage() {
               />
               </div>
         <p className="text-lg font-mono text-muted-foreground font-semibold">
-          From backend APIs to frontend polish — my goal is to build efficient systems that are easy to use.
+          From backend APIs to frontend polish — my goal is to build efficient systems that are easy to use
         </p>
       </Section>
 
@@ -226,14 +226,12 @@ Created as a custom template for a campaign presented at the Swedish Parliament,
 <Section className="bg-primary text-background py-20">
   <div className="max-w-3xl mx-auto text-center">
     <h2 className="text-4xl sm:text-5xl font-extrabold font-sans mb-6">
-      Building something?
+      Got a website in mind?
     </h2>
     <p className="text-md sm:text-lg font-mono font-semibold mb-6">
-      Whether you need a backend API, a snappy frontend, or just a fresh perspective — I’d love to hear what you're working on.
+      Whether you need a backend API, a clean frontend, or just a fresh perspective — I’d love to hear what you're working on.
     </p>
-    <p className="text-md sm:text-lg font-mono mb-8">
-      Let’s connect and turn your idea into something real.
-    </p>
+
     <Link
       href="mailto:teofredev@gmail.com"
       className="inline-block px-6 py-3 border border-background text-background font-mono font-semibold rounded hover:bg-background hover:text-primary transition"

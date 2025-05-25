@@ -39,7 +39,7 @@ export default function AboutPage() {
           I'm a developer with a passion for code, games, and solving problems. I enjoy building web applications and systems just as much as cooking up game worlds, and I love it when tech meets aesthetics.
         </p>
         <p className="text-lg font-sans text-muted-foreground  leading-relaxed mb-4">
-          Outside the screen, I love playing guitar and staying active. I often get lost in music, ideas, and thoughts about the future. Animals have always been a big part of my life, and if there’s one thing for sure — I plan to be a proud dog dad someday.
+          Outside the screen, I love playing guitar and staying active. I often get lost in music, ideas, and thoughts about the future. Animals have always been a big part of my life, and one of my long-term goals is to be a dog daddy.
         </p>
         <p className="text-lg font-sans text-muted-foreground  leading-relaxed">
           Want to talk game ideas, collaborations, or code (or dog breeds)?
