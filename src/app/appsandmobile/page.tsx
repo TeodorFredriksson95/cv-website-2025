@@ -10,8 +10,7 @@ export default function AppsAndMobilePage() {
 
 <main className="flex flex-col  row-start-2 w-full">
 
-      {/* Hero Section */}
-      <Section className="text-center max-w-3xl mx-auto mb-20">
+      <Section className="text-center max-w-3xl mx-auto md:mb-10">
         <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">
           Mobile Development
         </h1>
@@ -27,7 +26,6 @@ export default function AppsAndMobilePage() {
         </p>
       </Section>
 
-      {/* Project: Motivational Exercise */}
 <Section>
   <div className="flex flex-col lg:flex-row items-start gap-10">
     <div className="max-w-xl">
@@ -74,15 +72,13 @@ export default function AppsAndMobilePage() {
 <Section>
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-    {/* The Florist */}
 <div className=" bg-gradient-to-br from-primary/10 to-background border shadow-xl rounded-lg p-6">
   <div className="flex flex-col flex-1 justify-between h-full">
 
-    {/* Top content */}
     <div>
       <h2 className="text-3xl font-extrabold text-accent mb-2">The Florist</h2>
       <p className="text-md font-mono text-muted-foreground font-semibold mb-4">
-        Designed to support florists in planning and crafting flower arrangements based on occasion using an intuitive interface. Users could explore and study flora in a searchable library sourced via the Perenual API.
+        Designed to support florists in planning and crafting flower arrangements based on occasion using an intuitive interface. Users could explore and study flora in a searchable library sourced via the <Link className="hover:underline decoration-primary underline-accent text-accent" href="https://perenual.com/docs/api">Perenual API</Link>.
       </p>
       <ul className="list-disc list-inside text-sm font-mono text-muted-foreground mb-4">
         <li>Plant database exploration via external API</li>
@@ -90,7 +86,6 @@ export default function AppsAndMobilePage() {
       </ul>
     </div>
 
-    {/* Bottom-aligned tech badges */}
     <div className="mt-auto flex flex-wrap gap-2 text-sm font-mono text-background pt-4">
       {["React Native", "Expo", "TypeScript", "Perenual API"].map((tech) => (
         <span key={tech} className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">{tech}</span>
@@ -100,23 +95,20 @@ export default function AppsAndMobilePage() {
 </div>
 
 
-    {/* Mapping Industries */}
-{/* Mapping Industries */}
-<div className="flex flex-col bg-gradient-to-br from-muted/10 to-background border shadow-xl rounded-lg p-6">
+<div className="flex flex-col bg-gradient-to-br from-primary/10 to-accent/20 border shadow-xl rounded-lg p-6">
   <div className="flex flex-col flex-1 justify-between h-full">
     <div>
       <h2 className="text-3xl font-extrabold text-accent mb-2">Mapping Industries</h2>
       <p className="text-md font-mono text-muted-foreground font-semibold mb-4">
-        Built during my internship, this project focused on backend systems and UI features to manage local work orders at golf clubs world wide.
+        Built during my internship at <Link className="hover:underline decoration-primary underline-accent text-accent" target='blank' href="https://www.redmind.se/en/">Redmind AB</Link>, this project focused on backend systems and UI features to manage local work orders at golf clubs world wide.
       </p>
       <ul className="list-disc list-inside text-sm font-mono text-muted-foreground mb-4">
         <li>Backend REST APIs and Firebase auth</li>
-        <li>GUI powered by GIS functions</li>
+        <li>GUI based on GIS functions</li>
         <li>Agile workflow with peer development</li>
       </ul>
     </div>
 
-    {/* This stays stuck to the bottom */}
     <div className="mt-auto flex flex-wrap gap-2 text-sm font-mono text-background pt-4">
       {["NodeJS", "React", "TypeScript", "Firebase"].map((tech) => (
         <span key={tech} className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">

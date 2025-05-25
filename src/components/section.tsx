@@ -5,7 +5,7 @@ interface SectionProps {
 }
 
 export default function Section({ children, className = "", narrow = false }: SectionProps) {
-  const paddingClass = className.includes("py-") ? "" : "py-16";
+  const paddingClass = className.includes("py-") ? "" : "md:py-16 py-8";
 
   return (
     <section className={`${paddingClass} ${className}`}>

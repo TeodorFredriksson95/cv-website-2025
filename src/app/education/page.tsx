@@ -1,5 +1,6 @@
 'use client';
 
+import FeatureIcon from '@/components/FeatureIcon';
 import Section from '@/components/section';
 import Link from 'next/link';
 
@@ -8,24 +9,29 @@ export default function EducationPage() {
     <div className="grid grid-rows-[20px_1fr] justify-items-center min-h-screen sm:mt-16">
       <main className="flex flex-col row-start-2 w-full">
 
-        {/* Hero Section */}
-        <Section className="text-center max-w-3xl mx-auto mb-20">
+        <Section className="text-center max-w-3xl mx-auto md:mb-10">
           <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">
             Education
           </h1>
+              <div className="flex justify-center mb-4">
+                  <FeatureIcon
+                    src="/icons/student.svg"
+                    alt="Student cap icon"
+                    label=""
+                    />
+                    </div>
           <p className="text-lg font-mono text-muted-foreground font-semibold">
-            Formal programs, real-world projects, and the mentors who helped me along the way.
+  My learning has been shaped by formal education, real-world projects, and mentors who believed in learning by doing.
           </p>
         </Section>
 
-        {/* Cybersecurity */}
         <Section>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-extrabold font-sans text-accent mb-2">
               Cybersecurity | 2025
             </h2>
             <p className="text-md font-mono text-muted-foreground font-semibold mb-4">
-              A program covering threat modeling, technical mitigation, and cyber law. Hands-on experience with pentesting using virtual machines hosted on Azure and analysis of cyber kill chains and core cybersecurity principles.
+              A program covering threat modeling, technical mitigation, and cyber law. Hands-on experience with pentesting using virtual machines hosted on Azure, analysis of cyber kill chains and core cybersecurity principles.
             </p>
                 <ul className="list-disc list-inside grid grid-cols-1 sm:grid-cols-2 gap-y-2 mb-6 text-sm font-mono text-muted-foreground">
               <li>Linux Kali & Pentesting</li>
@@ -39,7 +45,6 @@ export default function EducationPage() {
               <li>Network Segmentation</li>
             </ul>
 
-            {/* Quotes */}
 <div className="mt-6 p-6 rounded-lg shadow-lg bg-accent/5 border-l-4 border-accent">
   <div className="flex items-center mb-3">
     {[...Array(5)].map((_, i) => (
@@ -81,7 +86,6 @@ export default function EducationPage() {
           </div>
         </Section>
 
-        {/* .NET Program */}
         <Section>
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-extrabold font-sans text-accent mb-2">
@@ -113,9 +117,7 @@ export default function EducationPage() {
             </ul>
 
 <div className="mt-6 p-6 rounded-lg shadow-lg bg-accent/5 border-l-4 border-accent relative">
-  {/* Decorative Quote Mark */}
 
-  {/* Star Row */}
   <div className="flex items-center mb-3">
     {[...Array(5)].map((_, i) => (
       <svg
@@ -130,39 +132,27 @@ export default function EducationPage() {
     ))}
   </div>
 
-  {/* Headline */}
   <h3 className="text-xl font-extrabold text-primary leading-relaxed mb-2">
     Best Thesis Project 2023
   </h3>
 
-  {/* Quote Text */}
   <p className="italic text-md text-muted-foreground leading-relaxed mb-4">
     Awarded top honors for our low-code thesis which included a research paper combined with a low-code database editor.
   </p>
 
-  {/* Author */}
   <Link
     className="hover:underline decoration-accent"
     href="https://www.kth.se/profile/subasic"
     target="_blank"
     rel="noopener noreferrer"
   >
-    <footer className="text-sm text-accent italic font-semibold">
-      Nihad Subasic, Examiner & Lecturer at KTH Royal Institute of Technology
-    </footer>
+
   </Link>
 </div>
 
 
           </div>
         </Section>
-
-        {/* <Section className="text-center max-w-3xl mx-auto mt-12">
-          <h3 className="text-xl font-extrabold font-sans text-accent mb-2">Recommendations</h3>
-          <p className="text-sm font-mono text-muted-foreground">
-            I'm currently waiting on written permissions from former instructors. Their endorsements will appear here soon.
-          </p>
-        </Section> */}
 
 <Section className="bg-primary text-background py-20">
   <div className="max-w-3xl mx-auto text-center">

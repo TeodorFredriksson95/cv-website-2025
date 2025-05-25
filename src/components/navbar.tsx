@@ -10,9 +10,14 @@ export default function Navbar() {
   return (
 <nav className="sticky top-0 z-100 bg-background border-b border-muted shadow-sm">
       <div className="max-w-screen-xl mx-auto flex flex-wrap items-center justify-between p-4">
-        <Link href="/" className="flex items-center gap-3">
-          <Image src="/icons/Unidevweb_logo_small.png" alt="Unidevweb logo" width={32} height={32} />
-          <span className="text-xl font-extrabold text-primary">Unidevweb</span>
+        <Link href="/" >
+          <div>
+            <div className="flex items-center gap-3">
+              <Image src="/icons/Unidevweb_logo_small.png" alt="Unidevweb logo" width={32} height={32} />
+              <span className="text-xl font-extrabold text-primary">Unidevweb</span>
+            </div>
+            <p className='text-accent font-bold'>- Teodor Fredriksson Portfolio</p>
+          </div>
         </Link>
 
         <button
@@ -41,6 +46,7 @@ export default function Navbar() {
                 <Link
                   href={href}
                   className="block px-3 py-2 rounded hover:text-accent hover:bg-muted/20 transition"
+                 onClick={() => setIsOpen(!isOpen)}
                 >
                   {label}
                 </Link>

@@ -9,7 +9,7 @@ export default function WebPage() {
 
 <main className="flex flex-col  row-start-2 w-full">
 
-      <Section className="text-center max-w-3xl mb-20 mx-auto">
+      <Section className="text-center max-w-3xl md:mb-10 mx-auto">
         <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight">Web <br className="block sm:hidden"/>Development</h1>
             <div className="flex justify-center">
 
@@ -20,13 +20,12 @@ export default function WebPage() {
               />
               </div>
         <p className="text-lg font-mono text-muted-foreground font-semibold">
-          From backend APIs to frontend polish — my goal is to build systems that solves a problem and feel easy to use.
+          From backend APIs to frontend polish — my goal is to build efficient systems that are easy to use.
         </p>
       </Section>
 
 <Section>
   <div className="flex flex-col lg:flex-row items-start gap-10">
-    {/* LEFT SIDE — Text */}
     <div className="max-w-xl">
               <h2 className="text-4xl  font-extrabold font-sans text-accent leading-tight mb-2">
 Unidevweb</h2>
@@ -34,7 +33,7 @@ Unidevweb</h2>
           A Story-Driven API
         </h3>
       <p className="text-md text-muted-foreground mb-4 font-mono font-semibold">
-        The idea was to create a web based cover letter and resume through creative story-telling and a public but protected open REST API, serving relevant information about my technical skills.
+        The idea was to create a web based cover letter and resume through creative storytelling and a public but protected open REST API, serving relevant information about my technical skills.
       </p>
       <p className="text-md text-muted-foreground mb-2 font-semibold">Focus areas:</p>
         <ul className="list-disc list-inside text-md text-muted-foreground mb-5 space-y-1">
@@ -56,7 +55,6 @@ Unidevweb</h2>
         </div>
     </div>
 <div className="grid sm:grid-cols-2 gap-4">
-  {/* Top wide image */}
   <div className="col-span-2  shadow-2xl/40 overflow-hidden ">
     <img
       src="/showcase/unidevwebcover.png"
@@ -65,7 +63,6 @@ Unidevweb</h2>
     />
   </div>
 
-  {/* Bottom left image */}
   <div className=" shadow-2xl/40 aspect-[4/5]">
     <img
       src="/showcase/unidevwebmenu.png"
@@ -74,7 +71,6 @@ Unidevweb</h2>
     />
   </div>
 
-  {/* Bottom right image */}
   <div className="shadow-2xl/40  aspect-[4/5]">
     <img
       src="/showcase/unidevwebapi.png"
@@ -90,7 +86,6 @@ Unidevweb</h2>
 <Section>
   <div className="flex flex-col lg:flex-row items-start gap-10">
     
-    {/* LEFT — Description */}
     <div className="max-w-xl">
       <h2 className="text-3xl  font-extrabold font-sans text-accent mb-2 leading-tight">Low-code Project</h2>
         <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-3 leading-tight">
@@ -141,7 +136,6 @@ Unidevweb</h2>
       </div>
     </div>
 
-    {/* RIGHT — Screenshot Grid */}
     <div className="grid grid-cols-2 gap-4 w-full  ">
       <img src="/showcase/image10.png" alt="Create Database" className="shadow-2xl/40 rounded object-cover col-span-2" />
       <img src="/showcase/image6.png" alt="Create Database" className="shadow-2xl/40 rounded object-cover col-span-2" />
@@ -155,7 +149,6 @@ Unidevweb</h2>
 <Section>
   <div className="flex flex-col gap-16">
 
-    {/* Project 1 — E-commerce */}
     <div className="flex flex-col lg:flex-row items-start gap-10">
        <div className="max-w-xl">
                 <h2 className="text-4xl  font-extrabold font-sans text-accent leading-tight mb-2">
@@ -189,7 +182,6 @@ Created as a custom template for a campaign presented at the Swedish Parliament,
       </div>
     </div>
 
-    {/* Project 2 — Campaign Site */}
     <div className="flex flex-col  lg:flex-row items-start gap-10">
            <div className="max-w-xl">
             <h2 className="text-4xl  font-extrabold font-sans text-accent leading-tight mb-2">

@@ -20,7 +20,6 @@ export default function ContactPage() {
           Whether it’s about a job, a project, a game idea, or just a question — I’m always down to chat.
         </p>
 
-        {/* Contact Links */}
         <div className="flex justify-center gap-6 sm:gap-10 mt-6 text-muted-foreground">
           <Link
             href="mailto:teofredev@gmail.com"

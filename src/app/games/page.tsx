@@ -12,7 +12,7 @@ import Link from "next/link";
 <div className="grid grid-rows-[20px_1fr]  justify-items-center min-h-screen sm:mt-16">
 <main className="flex flex-col  row-start-2 w-full">
         
-  <Section className="text-center max-w-3xl mx-auto">
+  <Section className="text-center max-w-3xl md:mb-10 mx-auto">
     <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">Game <br className="block sm:hidden" />Development</h1>
     <div className="flex justify-center mb-4">
         <FeatureIcon
@@ -22,50 +22,19 @@ import Link from "next/link";
           />
           </div>
     <p className="text-lg font-mono text-muted-foreground font-semibold">
-              Games have always been the proverbial campfire around which I have huddled up close to, joined by friends and family.
-        Maybe that’s why I fell in love with making them. To spread the joy that's been given to me.
+     From 2DHD games and pixel art to 3D modelling and Blueprints - I love making games that leave a mark 
     </p>
   </Section>
-
-<Section className="w-full text-center max-w-3xl mx-auto">
-<div className="flex flex-wrap justify-center items-center mb-4 gap-6 sm:gap-10 md:gap-16">
-  <img
-    src="/assets/nour_forward_bs.png"
-    alt="Character model from the front"
-    className="h-[150px] sm:h-[200px] md:h-[250px] w-auto object-contain"
-  />
-  <img
-    src="/assets/nour_left_bs.png"
-    alt="Character model from the left side"
-    className="h-[150px] sm:h-[200px] md:h-[250px] w-auto object-contain"
-  />
-  <img
-    src="/assets/nour_back_bs.png"
-    alt="Character model from the back"
-    className="h-[150px] sm:h-[200px] md:h-[250px] w-auto object-contain"
-  />
-</div>
-
-  <p className="text-md sm:text-lg text-muted-foreground font-mono font-semibold mb-4">
-        I still remember being 6 years old, sitting on the edge of my seat, watching my brother play Diablo II.
-        I was scared <span className="font-bold text-accent italic text-xl">!@#$&</span><span className="italic">-less.</span>  But I couldn't walk away.  </p>
-  <p className="text-md sm:text-lg text-muted-foreground font-mono  mb-4">
-      I still remember begging my mother to enter the Cobra Car cheat codes in Age of Empires for me —
-        I <span className="font-semibold italic">had </span>to ask her, because the instructions were in English, and I could barely tie my own shoes. And I remember when a classroom full of teenagers got swept away by <span className="font-mono text-accent font-semibold">Pokémon Red</span> emulators.  </p>
-  <p className="text-md sm:text-lg text-muted-foreground font-mono font-semibold">
- </p>
-</Section>
-
 
 <Section>
   <div className="container mx-auto px-6 flex sm:flex-col flex-col lg:flex-row items-center justify-center gap-10">
     
 <div className="flex flex-col items-center w-full max-w-sm lg:max-w-.8/2">
-      <div className="relative aspect-[3.5/5] sm:aspect-[3.5/5] md:aspect-[3.5/5] border-8 border-primary w-full overflow-visible">
+      <div className="relative aspect-[3.5/5] sm:aspect-[3.5/5]  border-8 border-primary w-full overflow-visible">
         <img
           src="/assets/protagonist_bs.png"
           alt="Main visual"
-          className="absolute inset-0 w-full h-full sm:scale-[1.25] scale-[1.15] -translate-x-[15%] -translate-y-[10%]"
+          className="absolute inset-0 w-full h-full md:scale-[1.2] scale-[1.1] -translate-x-[15%] -translate-y-[5%] md:-translate-y-[10%]"
         />
       </div>
       <p className="mt-4 text-sm text-muted-foreground italic text-center px-2">
@@ -73,7 +42,6 @@ import Link from "next/link";
       </p>
     </div>
 
-    {/* RIGHT COLUMN (text content) */}
     <div className=" text-left lg:max-w-1/2">
       <div>
 
@@ -81,11 +49,7 @@ import Link from "next/link";
         <h2 className="text-4xl  font-extrabold font-sans text-accent leading-tight mb-2">
          Broken Seal Studio
         </h2>
-          {/* <img
-            src="/assets/attackleft.webp"
-            alt="Animated character"
-            className="w-[60px] h-[60px] sm:w-[60px] sm:h-[60px] md:w-[75px] md:h-[75px] "
-          /> */}
+
       </div>
         <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-3 leading-tight">
            Breaking Into the Industry 
@@ -93,7 +57,6 @@ import Link from "next/link";
       </div>
 
 
-      {/* Paragraphs */}
       <p className=" mb-4 font-mono font-semibold">
   Broken Seal Studio is a team of artists, programmers, producers, and designers — many with experience from game development programs. We're all united by the same idea:
   junior experience doesn’t mean junior potential.
@@ -104,7 +67,7 @@ import Link from "next/link";
       </p>
 
 <p className="text-md text-muted-foreground mb-4">
-  Together, under the working name <span className="text-2xl sm:text-3xl text-primary font-extrabold">Polymorphic Games,</span> we’ve set out on a quest of our own to:
+  Together, under the working name <span className="text-xl  text-primary font-extrabold">Polymorphic Games,</span> we’ve set out on a quest of our own to:
 </p>
 
 <ul className="space-y-3">
@@ -132,6 +95,7 @@ import Link from "next/link";
         <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">C# 8.0</span>
         <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Ink</span>
         <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Trello</span>
+        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Agile</span>
       </div>
     </div>
   </div>
@@ -140,15 +104,14 @@ import Link from "next/link";
 <Section className="bg-primary ">
   <div className="container mx-auto px-6 flex  sm:flex-col-reverse flex-col-reverse lg:flex-row items-center justify-center gap-10">
     
-    {/* LEFT: GIF / Video / Image */}
     <div className="lg:w-1/2 w-full flex sm:flex-col flex-col gap-10  ">
       <div className="  shadow-xl">
           <img className="w-full h-auto object-cover"
             src="/assets/eo_vault.jpg"
             alt="Character model from the left side"
           />
-        <p className="text-sm text-background text-center italic py-2 px-4 bg-background/20">
-          Whiteboxed gameplay & animation logic (UE5)
+        <p className="text-sm  text-center italic py-2 px-4 bg-gray-50">
+          Whiteboxed gameplay (UE5)
         </p>
       </div>
       <div className="  shadow-xl">
@@ -156,15 +119,14 @@ import Link from "next/link";
             src="/assets/eo_landscape.jpg"
             alt="Character model from the left side"
           />
-        <p className="text-sm text-background text-center italic py-2 px-4 bg-background/20">
-          Whiteboxed gameplay & animation logic (UE5)
+        <p className="text-sm  text-center italic py-2 px-4 bg-gray-50">
+          Whiteboxed worldbuilding (UE5)
         </p>
       </div>
 
             
     </div>
 
-    {/* RIGHT: TEXT */}
     <div className="lg:w-1/2 text-left space-y-6">
       <div>
         <h2 className="text-4xl  font-extrabold font-sans text-background leading-tight mb-3">
@@ -175,7 +137,7 @@ import Link from "next/link";
         </h3>
 
       <p className="text-md text-background font-mono font-bold mb-4">
-        Eoxania is my dream game — a narrative RPG that started as a D&D campaign and grew into a full-fledged worldbuilding project.
+        Eoxania is my dream game — an RPG that started as a D&D campaign and grew into a full-fledged worldbuilding project.
       </p>
 
       <p className="text-md text-slate-100 font-semibold mb-2">
@@ -214,11 +176,9 @@ import Link from "next/link";
 
 
 
-{/* CONCEPT ART SECTION */}
 <Section className="bg-background">
   <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-10">
     
-    {/* LEFT: Description */}
     <div className=" text-left lg:max-w-1/2">
       <div>
               <h2 className="text-4xl  font-extrabold font-sans text-accent leading-tight mb-2">
@@ -228,20 +188,15 @@ import Link from "next/link";
           Visuals That Inspire Logic
         </h3>
       <p className="text-md text-muted-foreground font-mono font-semibold mb-4">
-        Who knew drawing a map could be so much fun? Or that you can use a glass of uncooked rice to guide your unsteady hand while you draw it?
+  Storytelling and art have always helped scratch my creative itch. Whether it’s imagining worlds, designing characters, or sketching mechanics, I find joy in bringing ideas to life visually.
       </p>
       <p className="text-md text-muted-foreground mb-4">
-        I hate the question <span className="italic font-mono">"Do you prefer backend or frontend?".</span>
+  To me, creative problem solving means stepping beyond your dedicated role to shape the final result. I love multi-faceted tasks that allow me to contribute across disciplines, whether it's visualizing an environment on paper or prototyping a mechanic in code. That’s why you’ll often find me with a GIMP window open right next to my code editor.
       </p>
       <p className="text-md text-muted-foreground mb-4">
-        To me, the two concepts feed off of each other, and it feeds me. It could be an image, or a sound, that sparks the desire to create. And that desire is what drives me down the Youtube rabbit hole at <span className="font-mono">04.37</span> in the morning because I <span className="italic font-semibold">need </span> to know how to make the raycasting work.
+To me, visuals inspire logic.
       </p>
-      <p className="text-md text-muted-foreground mb-4">
-        And when it works, when I'm <span className="italic font-semibold">finally</span> satisfied with the result, the inevitable question enters my mind - does it still look <span className="italic font-bold">good enough?</span>
-      </p>
-      <p className="text-md text-muted-foreground mb-4">
-        And back to the drawing board we go.
-      </p>
+
 
       </div>
       <div className="flex flex-wrap gap-3 text-sm font-mono text-background mt-4">
@@ -292,7 +247,6 @@ import Link from "next/link";
 
 
 <Section className="relative bg-black py-20 overflow-hidden">
-  {/* Background images */}
   <div className="absolute inset-0 z-0 flex justify-center items-center">
     <div className="w-1/2 h-full hidden sm:flex justify-start">
       <img
@@ -312,7 +266,6 @@ import Link from "next/link";
 
 
 
-{/* Top Edge Blur */}
 <div
   className="absolute top-0 left-0 w-full h-16 sm:h-24 md:h-20 backdrop-blur-sm sm:backdrop-blur-sm pointer-events-none z-10"
   style={{
@@ -321,7 +274,6 @@ import Link from "next/link";
   }}
 />
 
-{/* Bottom Edge Blur */}
 <div
   className="absolute bottom-0 left-0 w-full h-16 sm:h-24 md:h-20 backdrop-blur-sm sm:backdrop-blur-sm pointer-events-none z-10"
   style={{
@@ -330,7 +282,6 @@ import Link from "next/link";
   }}
 />
 
-{/* Left Edge Blur */}
 <div
   className="absolute left-0 top-0 h-full w-16 sm:w-24 md:w-20 backdrop-blur-sm sm:backdrop-blur-sm pointer-events-none z-10"
   style={{
@@ -339,7 +290,6 @@ import Link from "next/link";
   }}
 />
 
-{/* Right Edge Blur */}
 <div
   className="absolute right-0 top-0 h-full w-20 sm:w-32 md:w-40 backdrop-blur-sm sm:backdrop-blur-md pointer-events-none z-10"
   style={{
@@ -348,12 +298,10 @@ import Link from "next/link";
   }}
 />
 
-{/* General dark overlay */}
 <div className="absolute inset-0 bg-black/30 z-0" />
 
   </div>
 
-  {/* Centered text overlay */}
   <div className="relative z-20 flex flex-col items-center justify-center text-center h-full max-w-3xl mx-auto px-6 text-white">
     <h2 className="text-4xl sm:text-5xl font-extrabold text-accent mb-6">
       Want to build games?
