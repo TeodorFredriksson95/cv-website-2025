@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Unidevweb",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://cv-website-2025-i55q.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Unidevweb Portfolio Cover",
