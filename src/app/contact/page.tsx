@@ -17,7 +17,7 @@ export default function ContactPage() {
           Get In Touch
         </h1>
         <p className="text-md sm:text-lg text-muted-foreground font-mono font-semibold mb-8">
-          Whether it’s about a job, a project, a game idea, or just a question — I’m always down to chat.
+          Whether it’s about a job, a project, a game idea, or just a question in general — I’m always down to chat.
         </p>
 
         <div className="flex justify-center gap-6 sm:gap-10 mt-6 text-muted-foreground">
