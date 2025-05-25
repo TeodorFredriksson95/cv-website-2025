@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Unidevweb | Portfolio",
     description: "Projects in web, mobile, and game development. Built with React, Next.js and Tailwind",
-    url: "https://unidevweb.com",
+    url: "https://cv-website-2025-i55q.vercel.app/",
     siteName: "Unidevweb",
     images: [
       {

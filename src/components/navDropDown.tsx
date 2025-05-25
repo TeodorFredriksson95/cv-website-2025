@@ -29,9 +29,9 @@ export default function NavDropdown() {
       <MenuItems className="absolute z-10 mt-2 w-48 origin-top-right rounded-lg bg-background border border-muted shadow-xl focus:outline-none">
         <div className="py-1">
           {[
-            { href: '/games', label: 'Games' },
-            { href: '/web', label: 'Web' },
-            { href: '/appsandmobile', label: 'Mobile' },
+            { href: '/gamedevelopment', label: 'Games' },
+            { href: '/webdevelopment', label: 'Web' },
+            { href: '/mobiledevelopment', label: 'Mobile' },
           ].map(({ href, label }) => (
             <MenuItem key={href}>
               {({ active }) => (

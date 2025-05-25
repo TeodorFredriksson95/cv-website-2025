@@ -35,9 +35,9 @@ export default function Navbar() {
           <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 text-sm font-mono text-muted-foreground">
             <NavDropdown />
             {[
-              { href: '/web', label: 'Web', mobileOnly: true },
-              { href: '/games', label: 'Games', mobileOnly: true },
-              { href: '/appsandmobile', label: 'Apps & Mobile', mobileOnly: true },
+              { href: '/webdevelopment', label: 'Web', mobileOnly: true },
+              { href: '/gamedevelopment', label: 'Games', mobileOnly: true },
+              { href: '/mobiledevelopment', label: 'Apps & Mobile', mobileOnly: true },
               { href: '/education', label: 'Education' },
               { href: '/about', label: 'About' },
               { href: '/contact', label: 'Contact' },

@@ -58,21 +58,21 @@ import Link from 'next/link';
   </div>
 
   <div className="flex flex-row flex-wrap justify-center items-center w-full max-w-xl md:gap-20 mx-auto gap-10">
-    <Link href="/games">
+    <Link href="/gamedevelopment">
       <FeatureIcon
         src="/icons/gamepad2.svg"
         alt="Gamepad icon"
         label="Game Development"
       />
     </Link>
-    <Link href="/web">
+    <Link href="/webdevelopment">
       <FeatureIcon
         src="/icons/webdev2.svg"
         alt="Web Icon"
         label="Web Development"
       />
     </Link>
-    <Link href="/appsandmobile">
+    <Link href="/mobiledevelopment">
       <FeatureIcon
         src="/icons/mobile2.svg"
         alt="Mobile Icon"
