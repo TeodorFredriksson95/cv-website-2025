@@ -4,7 +4,7 @@
   --color-primary: #05b2d2;
   --color-accent: #e02422;
   --color-background: #fff;
-  --color-background-gray: #eaeaea;
+  --color-background-gray: #dfdfdf;
   --color-background-black: #000;
   --color-foreground: #f1f5f9;
   --color-muted: #1f2937;
@@ -34,5 +34,5 @@ html[style*="overflow: hidden"] {
 }
 
 body {
-  background-color: #eaeaea;
+  background-color: #dfdfdf;
 }
