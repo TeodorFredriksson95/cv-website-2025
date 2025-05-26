@@ -50,7 +50,7 @@ export default function EducationPage() {
     {[...Array(5)].map((_, i) => (
       <svg
         key={i}
-        className="w-4 h-4 text-yellow-400"
+        className="w-4 h-4 text-yellow-600"
         aria-hidden="true"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
@@ -61,7 +61,7 @@ export default function EducationPage() {
     ))}
   </div>
 
-  <h3 className="text-xl font-extrabold text-primary leading-relaxed mb-2">
+  <h3 className="text-xl font-extrabold text-primary-changed leading-relaxed mb-2">
     Brilliant Work!
   </h3>
 
@@ -70,12 +70,12 @@ export default function EducationPage() {
   </p>
 
   <Link
-    className="hover:underline decoration-accent"
-    href="https://www.kth.se/profile/subasic"
+    className="hover:underline decoration-primary"
+    href="https://www.linkedin.com/in/kakashidota/"
     target="_blank"
     rel="noopener noreferrer"
   >
-    <footer className="text-sm text-accent font-semibold italic">
+    <footer className="text-md text-accent font-bold italic">
       Robin Kamo, Cybersecurity Instructor
     </footer>
   </Link>
@@ -122,7 +122,7 @@ export default function EducationPage() {
     {[...Array(5)].map((_, i) => (
       <svg
         key={i}
-        className="w-4 h-4 text-yellow-400"
+        className="w-4 h-4 text-yellow-600"
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
         viewBox="0 0 22 20"
@@ -132,22 +132,34 @@ export default function EducationPage() {
     ))}
   </div>
 
-  <h3 className="text-xl font-extrabold text-primary leading-relaxed mb-2">
+  <h3 className="text-xl font-extrabold text-primary-changed leading-relaxed mb-2">
     Best Thesis Project 2023
   </h3>
 
   <p className="italic text-md text-muted-foreground leading-relaxed mb-4">
     Awarded top honors for our low-code thesis which included a research paper combined with a low-code database editor.
   </p>
-
   <Link
-    className="hover:underline decoration-accent"
-    href="https://www.kth.se/profile/subasic"
+    className="hover:underline decoration-primary"
+    href="https://www.linkedin.com/in/martin-lenart-4a938427/"
     target="_blank"
     rel="noopener noreferrer"
   >
-
+    <footer className="text-md text-accent font-bold italic">
+      Martin Lennart, Teacher in .NET
+    </footer>
   </Link>
+  <Link
+    className="hover:underline decoration-primary"
+    href="https://www.kth.se/profile/subasic/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <footer className="text-md text-accent font-bold italic">
+      Nihad Subasic, Examiner & Lecturer at KTH Royal Institue of Technology
+    </footer>
+  </Link>
+
 </div>
 
 

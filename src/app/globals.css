@@ -12,6 +12,7 @@
   --color-highlight: #2dd4bf;
   --color-white: "fff";
   --color-on-primary: #f8fafc;
+      --text-primary-changed: #0c7689;
 
   --font-sans: var(--font-sora);
   --font-mono: var(--font-fira-code);
@@ -25,6 +26,7 @@
     --color-lighter-primary: #05b2d2;
     --color-lighter-accent: #a12e2c;
     --green: #13c213;
+    --text-primary-changed: #0c7689;
   }
 }
 
