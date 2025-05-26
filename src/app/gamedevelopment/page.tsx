@@ -110,7 +110,7 @@ import Link from "next/link";
             src="/assets/eo_vault.jpg"
             alt="Character model from the left side"
           />
-        <p className="text-sm  text-center italic py-2 px-4 bg-gray-50">
+        <p className="text-sm  text-center font-semibold italic py-2 px-4 bg-background-gray">
           White boxed gameplay (UE5)
         </p>
       </div>
@@ -119,7 +119,7 @@ import Link from "next/link";
             src="/assets/eo_landscape.jpg"
             alt="Character model from the left side"
           />
-        <p className="text-sm  text-center italic py-2 px-4 bg-gray-50">
+        <p className="text-sm  text-center font-semibold italic py-2 px-4 bg-background-gray">
           White boxed worldbuilding (UE5)
         </p>
       </div>
@@ -129,22 +129,19 @@ import Link from "next/link";
 
     <div className="lg:w-1/2 text-left space-y-6">
       <div>
-        <h2 className="text-4xl  font-extrabold font-sans text-background leading-tight mb-3">
+        <h2 className="text-4xl  font-extrabold font-sans text-slate-900 leading-tight mb-3">
           Eoxania
         </h2>
-        <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-2 leading-tight">
-          My Dream Game
-        </h3>
 
-      <p className="text-md text-background font-mono font-bold mb-4">
+      <p className="text-md text-white/90 font-mono font-bold mb-4">
         Eoxania is my dream game — an RPG that started as a D&D campaign and grew into a full-fledged worldbuilding project.
       </p>
 
-      <p className="text-md text-slate-100 font-semibold mb-2">
+      <p className="text-md text-white/90 font-semibold mb-2">
         I’m building it solo in Unreal Engine 5, using Blueprints to develop white boxed environments, animations and movement inspired by Assassin’s Creed.
       </p>
 
-      <p className="text-md text-slate-100 font-semibold">
+      <p className="text-md text-white/90 font-semibold">
         I’ve researched animation blending, customized base UE5 assets, and designed interactions through both visual scripting and code.
       </p>
       </div>
