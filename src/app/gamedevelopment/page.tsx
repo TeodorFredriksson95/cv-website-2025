@@ -176,7 +176,7 @@ import Link from "next/link";
 
 
 
-<Section className="bg-background">
+<Section className="bg-background-gray">
   <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-10">
     
     <div className=" text-left lg:max-w-1/2">
