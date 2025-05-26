@@ -65,7 +65,7 @@ export default function EducationPage() {
     Brilliant Work!
   </h3>
 
-  <p className="italic text-md text-muted-foreground leading-relaxed mb-4">
+<p className="italic text-md  font-semibold leading-relaxed mb-4">
     “This is a brilliantly executed analysis that demonstrates both technical expertise and a strong ability to clearly communicate complex concepts. The risk matrix is both precise and insightful, showing excellent strategic thinking.”
   </p>
 
@@ -117,7 +117,6 @@ export default function EducationPage() {
             </ul>
 
 <div className="mt-6 p-6 rounded-lg shadow-lg bg-accent/5 border-l-4 border-accent relative">
-
   <div className="flex items-center mb-3">
     {[...Array(5)].map((_, i) => (
       <svg
@@ -136,19 +135,9 @@ export default function EducationPage() {
     Best Thesis Project 2023
   </h3>
 
-  <p className="italic text-md text-muted-foreground leading-relaxed mb-4">
-    Awarded top honors for our low-code thesis which included a research paper combined with a low-code database editor.
+<p className="italic text-md  font-semibold leading-relaxed mb-4">
+  "The group demonstrated a scientific and analytical approach, delivering a professional thesis report. /.../ Their work reflects the maturity of fully qualified engineers and they are highly recommended to any employer."
   </p>
-  <Link
-    className="hover:underline decoration-primary"
-    href="https://www.linkedin.com/in/martin-lenart-4a938427/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <footer className="text-md text-accent font-bold italic">
-      Martin Lennart, Teacher in .NET
-    </footer>
-  </Link>
   <Link
     className="hover:underline decoration-primary"
     href="https://www.kth.se/profile/subasic/"
@@ -156,11 +145,13 @@ export default function EducationPage() {
     rel="noopener noreferrer"
   >
     <footer className="text-md text-accent font-bold italic">
-      Nihad Subasic, Examiner & Lecturer at KTH Royal Institue of Technology
+      Nihad Subasic, Examiner & Lecturer at KTH Royal Institute of Technology
     </footer>
   </Link>
-
 </div>
+
+
+
 
 
           </div>
