@@ -138,6 +138,9 @@ export default function EducationPage() {
 <p className="italic text-md  font-semibold leading-relaxed mb-4">
   "The group demonstrated a scientific and analytical approach, delivering a professional thesis report. /.../ Their work reflects the maturity of fully qualified engineers and they are highly recommended to any employer."
   </p>
+<p className="italic text-sm leading-relaxed mb-4">
+  The above quote has been translated from Swedish.
+  </p>
   <Link
     className="hover:underline decoration-primary"
     href="https://www.kth.se/profile/subasic/"
