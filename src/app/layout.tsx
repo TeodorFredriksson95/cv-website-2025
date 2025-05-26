@@ -20,27 +20,23 @@ const firaCode = Fira_Code({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://unidevwebportfolio.com"), //
-  title: "Unidevweb | Portfolio",
+  title: "Teodor Fredriksson | Portfolio",
   description: "Showcasing web, mobile, and game development by Teodor Fredriksson.",
   icons: {
     icon: "/favicon.png"
-    // icon: [
-    //   { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-    //   { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-    //   { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
-    // ]
+
   },
   openGraph: {
-    title: "Unidevweb | Portfolio",
+    title: "Teodor Fredriksson | Portfolio",
     description: "Projects in web, mobile, and game development. Built with React, Next.js and Tailwind",
     url: "https://cv-website-2025-i55q.vercel.app/",
-    siteName: "Unidevweb",
+    siteName: "Teodor Fredriksson Portfolio",
     images: [
       {
         url: "https://cv-website-2025-i55q.vercel.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Unidevweb Portfolio Cover",
+        alt: "Teodor Fredriksson Portfolio Cover",
       },
     ],
     locale: "en_US",
