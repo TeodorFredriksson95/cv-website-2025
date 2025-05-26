@@ -10,7 +10,7 @@ export default function AboutPage() {
 
       <aside className="flex flex-col items-center gap-4">
         <Image
-          src="/assets/cv_profilepic5.jpg"
+          src="/assets/cv_profilepic4.jpg"
           alt="Profile picture"
           width={160}
           height={160}

@@ -15,7 +15,7 @@ import Link from 'next/link';
 
   <div className="flex flex-col items-center mb-10">
        <Image
-            src="/assets/cv_profilepic5.jpg"
+            src="/assets/cv_profilepic4.jpg"
             alt="Profile picture"
             width={160}
             height={160}
