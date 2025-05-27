@@ -62,21 +62,21 @@ import Link from 'next/link';
       <FeatureIcon
         src="/icons/gamepad2.svg"
         alt="Gamepad icon"
-        label="Game Development"
+        label="Games"
       />
     </Link>
     <Link href="/webdevelopment">
       <FeatureIcon
         src="/icons/webdev2.svg"
         alt="Web Icon"
-        label="Web Development"
+        label="Web"
       />
     </Link>
     <Link href="/mobiledevelopment">
       <FeatureIcon
         src="/icons/mobile2.svg"
         alt="Mobile Icon"
-        label="App Development"
+        label="Apps"
       />
     </Link>
   </div>

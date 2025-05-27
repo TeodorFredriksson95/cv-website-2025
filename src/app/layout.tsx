@@ -64,8 +64,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${sora.variable} ${firaCode.variable} antialiased`}>
         <Navbar/>
-        {children}
+        <div className="min-h-screen flex flex-col">
+         <main className="flex-1">
+          {children}
+          </main> 
         <Footer />
+        </div>
       </body>
     </html>
   );
