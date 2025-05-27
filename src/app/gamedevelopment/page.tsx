@@ -9,10 +9,11 @@ import Link from "next/link";
 
   export default function GamesPage () {
     return (
-<div className="grid grid-rows-[20px_1fr]  justify-items-center min-h-screen sm:mt-16">
+<div className="grid grid-rows-[_1fr]  justify-items-center min-h-screen ">
 <main className="flex flex-col  row-start-2 w-full">
-        
-  <Section className="text-center max-w-3xl md:mb-10 mx-auto">
+  <Section className="text-center   ">
+  <div className="container  bg-background-gray rounded shadow-lg/20 p-4 mx-auto ">
+
     <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">Game <br className="block sm:hidden" />Development</h1>
     <div className="flex justify-center mb-4">
         <FeatureIcon
@@ -21,129 +22,192 @@ import Link from "next/link";
           label=""
           />
           </div>
-    <p className="text-lg font-mono text-muted-foreground font-semibold">
+    <p className="text-lg w-full md:w-4/7 mx-auto font-mono text-muted-foreground font-semibold">
      From 2DHD games and pixel art to 3D modelling and Blueprints - I love making games that leave a mark 
     </p>
+          </div>
   </Section>
 
-<Section>
-  <div className="container mx-auto px-6 flex sm:flex-col flex-col lg:flex-row items-center justify-center gap-10">
+<Section >
+  <div className="rounded border-2 shadow-lg/20">
+
+  <div className="container  rounded bg-background-gray  p-4 mx-auto px-6 flex sm:flex-col flex-col lg:flex-row items-center  gap-10">
     
-<div className="flex flex-col items-center w-full max-w-sm lg:max-w-.8/2">
-      <div className="relative aspect-[3.5/5] sm:aspect-[3.5/5]  border-8 border-primary w-full overflow-visible">
+<div className="bg-gradient-to-b shadow-[-3px_0px_10px_5px_rgba(0,0,0,0.55)]  from-[#d66f00] to-[#131313] p-4 rounded flex-col items-center w-full max-w-sm lg:flex-1">
+      <div className="relative  shadow-[-15px_10px_25px_5px_rgba(0,0,0,0.85)]   bg-background-black/60 aspect-[3.5/5] sm:aspect-[3.5/5]  border-8 border-primary w-full overflow-visible">
         <img
           src="/assets/protagonist_bs.png"
           alt="Main visual"
           className="absolute inset-0 w-full h-full md:scale-[1.2] scale-[1.1] -translate-x-[15%] -translate-y-[5%] md:-translate-y-[10%]"
         />
       </div>
-      <p className="mt-4 text-sm text-muted-foreground italic text-center px-2">
-        Shoutout to one of Broken Seal's artists, <Link href="https://linktr.ee/nourelagha" target="blank" className="hover:underline decoration-primary underline-accent"><span className="text-accent font-bold">Nour</span></Link>, for sharing her work on the concept art.
+      <p className="mt-4 shadow-lg/20 shadow-slate-50/20 border-2 border-orange-300 bg-orange-400 rounded p-2 font-semibold text-sm  italic text-center px-2">
+        Shoutout to one of Broken Seal's artists, <Link href="https://linktr.ee/nourelagha" target="blank" className="hover:underline decoration-primary decoration-2 underline-accent"><span className="text font-bold">Nour</span></Link>, for sharing her work on the concept art.
       </p>
     </div>
 
-    <div className=" text-left lg:max-w-1/2">
-      <div>
+<div className="flex flex-col lg:flex-1 gap-2">
+
+    <div className="  inset-ring-1 p-4 rounded  bg-blue-300 text-left lg:flex-1">
+      <div className="border-b-2 mb-3">
 
       <div className="flex flex-row items-end md:justify-start gap-4">
-        <h2 className="text-4xl  font-extrabold font-sans text-accent leading-tight mb-2">
-         Broken Seal Studio
+        <h2 className="text-4xl  font-extrabold font-sans text-background-black leading-tight mb-2">
+         Broken Seal
         </h2>
 
       </div>
-        <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-3 leading-tight">
-           Breaking Into the Industry 
-        </h3>
+
       </div>
 
 
       <p className=" mb-4 font-mono font-semibold">
-  Broken Seal Studio is a team of artists, programmers, producers, and designers — many with experience from game development programs. We're all united by the same idea:
-  junior experience doesn’t mean junior potential.
-  </p>
-      <p className="text-md text-muted-foreground mb-4">
-  I work on the programming side of things with C# in the Godot engine, developing systems for quests, inventories, dialogue, and making sure it's all editor-friendly and scalable. But in this team, we all wear a few hats. Whether it's designers helping out with scripts, or programmers trying to draw a straight line. In the end, it's about coming together as a team to create something wonderful.
-
+      Broken Seal is a 2DHD RPG game-project created by a group of people who have all studied fields relevant to game development. A demo of the game is set to be showcased at the Sweden Game Awards 2025.
       </p>
+      <p className=" mb-4  font-bold">
+        With this project we hope to achieve one of two things:</p>
+        <div className="p-4 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
 
-<p className="text-md text-muted-foreground mb-4">
-  Together, under the working name <span className="text-xl  text-primary font-extrabold">Polymorphic Games,</span> we’ve set out on a quest of our own to:
-</p>
+      <ul className="list-disc px-5">
+        <li className="italic font-semibold">Either generate enough interest in our game to fund a studio of our own</li>
+        <p className="font-semibold italic">or</p>
+        <li className="italic font-semibold">Use this project as leverage to get hired</li>
+      </ul>
+        </div>
 
-<ul className="space-y-3">
-  {[
-    { Icon: Heart, text: 'Build a 2DHD game:', fill: '#e02422', stroke: '#a12e2c' },
-    { Icon: Swords, text: 'Charm an investor:', fill: 'black', stroke: '#363535' },
-    { Icon: Hammer, text: 'Launch a studio:', fill: 'gold' },
-    { Icon: BadgeDollarSign, text: 'Get a job:', fill: '#13c213' }
-  ].map(({ Icon, text, fill, stroke }) => (
-    <li key={text} className="flex items-center gap-3">
-      <Icon
-        className="w-10 h-10 sm:w-12 sm:h-12"
-        {...(fill && { fill })}
-        {...(stroke && { stroke })}
-      />
-      <span className="font-semibold font-mono text-sm sm:text-md">
-        {text} 0/1
-      </span>
-    </li>
-  ))}
-</ul>
-
-             <div className="flex flex-wrap gap-3 text-sm font-mono text-background mt-4">
-        <span className="bg-accent px-4 py-2 rounded-lg  font-semibold shadow-md shadow-black/20">Godot</span>
-        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">C# 8.0</span>
-        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Ink</span>
-        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Trello</span>
-        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Agile</span>
+      <div className=" mt-4 mb-2 rounded ">
+        <p className="  font-semibold italic text-xl">
+          While I do aid the artists and producers as best I can, most of my time in this project is currently spent on:
+        </p>
+      </div>
+        <div className="p-4 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
+          <ul className="list-disc px-5">
+        <li className="italic font-semibold">Designing and implementing the quest, dialogue and inventory system</li>
+        <li className="italic font-semibold">Testing and documenting bugs</li>
+        <li className="italic font-semibold">Reviewing finished code assignments</li>
+        <li className="italic font-semibold">Creating reusable resource files and scenes</li>
+        <li className="italic font-semibold">Writing TDDs to enhance team efficiency</li>
+      </ul>
       </div>
     </div>
+
+<div className="flex flex-wrap gap-4 mt-4">
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/csharpIcon.png" alt="Blender" className="max-w-full max-h-full object-contain" />
   </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/javascript-seeklogo.png" alt="Blueprints" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/blender_icon_64x64.png" alt="C#" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/Logomark_Full Color.png" alt="Blender" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/react.png" alt="Blender" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/UE-Icon-2023-Black.png" alt="Blender" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/ts-logo-128.png" alt="Blender" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/GitHub_Logo.png" alt="Blender" className="max-w-full max-h-full object-contain" />
+  </div>
+</div>  
+  </div>
+</div>
+  </div>
+
 </Section>
 
-<Section className="bg-primary ">
-  <div className="container mx-auto px-6 flex  sm:flex-col-reverse flex-col-reverse lg:flex-row items-center justify-center gap-10">
-    
-    <div className="lg:w-1/2 w-full flex sm:flex-col flex-col gap-10  ">
-      <div className="  shadow-xl">
+<Section className="pt-0 rounded  ">
+    <div className="container grid gap-10  grid-cols-1 md:grid-cols-2 bg-background-gray rounded shadow-lg/20 p-4 mx-auto px-6 ">
+        <div className="bg-gray-50 p-4 rounded">
+                <div className="border-b-2 mb-3">
+                    <h2 className="text-4xl font-extrabold font-sans text-accent leading-tight">
+                      C# / GDScript
+                    </h2>
+                </div>
+                      <p className="text-md text-white/90 font-mono font-bold mb-4">
+                      As I come from a .NET background it feels well within my comfort zone that Broken Seal is currently being developed with C# as opposed to GDScript.
+                      </p>
+        </div>
+        <div className="bg-gray-50">
           <img className="w-full h-auto object-cover"
+              src="/showcase/vs_code_pic.png"
+              alt="Character model from the left side"
+            />
+          <p className="text-sm  text-center font-semibold italic py-2 px-4 bg-background-gray">
+            White boxed gameplay (UE5)
+          </p>
+          hello
+        </div>
+        <div className="bg-gray-50">
+          hello
+        </div>
+        <div className="bg-gray-50">
+          hello
+        </div>
+</div>
+</Section>
+
+<Section className="bg-primary/30 ">
+  <div className="container mx-auto  flex  sm:flex-col-reverse flex-col-reverse lg:flex-row items-center justify-center gap-10">
+    
+<div className="  text-left lg:flex-1">
+      <div className=" bg-black/10 rounded p-1 inset-shadow-sm/50 inset-shadow/50 mb-4 ">
+          <img className="w-full  rounded-t border-2 h-auto object-cover"
             src="/assets/eo_vault.jpg"
             alt="Character model from the left side"
           />
-        <p className="text-sm  text-center font-semibold italic py-2 px-4 bg-background-gray">
+        <p className="text-sm text-background border-t-2  border-gray-500 text-center  italic py-2 px-4 bg-black">
           White boxed gameplay (UE5)
         </p>
       </div>
-      <div className="  shadow-xl">
-        <img className="w-full h-auto object-cover"
+      <div className=" bg-black/10 rounded p-1 inset-shadow-sm/50 inset-shadow/50 mb-4 ">
+          <img className="w-full  rounded-t border-2 h-auto object-cover"
             src="/assets/eo_landscape.jpg"
             alt="Character model from the left side"
           />
-        <p className="text-sm  text-center font-semibold italic py-2 px-4 bg-background-gray">
+        <p className="text-sm text-background border-t-2 border-gray-500 text-center  italic py-2 px-4 bg-black">
           White boxed worldbuilding (UE5)
         </p>
       </div>
-
-            
     </div>
 
-    <div className="lg:w-1/2 text-left space-y-6">
+    <div className="lg:w-1/2 text-left border-2 border-cyan-500 space-y-6 bg-cyan-300/80 p-4 shadow-[5px_0px_6px_4px_rgba(0,0,0,0.45)]  rounded">
       <div>
-        <h2 className="text-4xl  font-extrabold font-sans text-slate-900 leading-tight mb-3">
-          Eoxania
-        </h2>
+        <div className="border-b-2 mb-3">
+
+          <h2 className="text-4xl  font-extrabold font-sans text-slate-900 leading-tight">
+            Eoxania
+          </h2>
+        </div>
 
       <p className="text-md text-white/90 font-mono font-bold mb-4">
         Eoxania is my dream game — an RPG that started as a D&D campaign and grew into a full-fledged worldbuilding project.
       </p>
 
-      <p className="text-md text-white/90 font-semibold mb-2">
-        I’m building it solo in Unreal Engine 5, using Blueprints to develop white boxed environments, animations and movement inspired by Assassin’s Creed.
+      <p className="font-semibold italic text-xl mb-2">
+        I’m currently building it solo in Unreal Engine 5, using the following tools: 
       </p>
 
-      <p className="text-md text-white/90 font-semibold">
-        I’ve researched animation blending, customized base UE5 assets, and designed interactions through both visual scripting and code.
+      <p className="text-xl text-white/90 font-bold italic mb-2">
+        Tools 
       </p>
+        <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
+          <ul className="list-disc px-5">
+        <li className="italic font-semibold">Blueprints to modify & implement game logic</li>
+        <li className="italic font-semibold">Blender to create white boxed objects</li>
+        <li className="italic font-semibold">Quixel to import Megascans</li>
+        <li className="italic font-semibold">UE5 editor to modify default 3D animations</li>
+        <li className="italic font-semibold">C# to link APIs outside the engine with in-game interactions</li>
+      </ul>
+      </div>
+
       </div>
  
     <div className=" bg-background/50 p-4 rounded shadow-2xl">
@@ -151,19 +215,42 @@ import Link from "next/link";
         <p className="text-md text-background-black/90 font-semibold font-mono mb-2">
          To create a 3D world where fantasy meets steampunk, with awe-inspiring natural environments, filled with curious, magical and devious creatures alike, based on the spirits of old.
         </p>
-        <p className="text-md text-background-black/90  mb-2">
+        <p className="text-md text-background-black/90 font-semibold mb-2">
           A world where agile movements guided by the essence of your surroundings becomes a necessity in order to survive the deadly wild.         </p>
-        <p className="text-md text-background-black/80  ">
+        <p className="text-md text-background-black/80 font-semibold ">
           A place where rune inscribed steampunk objects, scattered throughout the world, serve as the only reminder of a time when the humans of Eoxania was at the peak of their dominance. Yet, few exist that possess the knowledge required to use these objects, and fewer still who remember who made them.
         </p>
       </div>
-           <div className="flex flex-wrap gap-3 text-sm font-mono text-muted-foreground mt-4">
-        <span className="bg-background px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Unreal Engine 5</span>
-        <span className="bg-background px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Blender</span>
-        <span className="bg-background px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">C++</span>
-        <span className="bg-background px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">C#</span>
-        <span className="bg-background px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Blueprints</span>
-      </div>
+
+
+<div className="flex flex-wrap gap-4 mt-4">
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/jsIconGreen.svg" alt="Unreal Engine" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/javascript-seeklogo.png" alt="Blueprints" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/blender_icon_64x64.png" alt="C#" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/Logomark_Full Color.png" alt="Blender" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/react.png" alt="Blender" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/UE-Icon-2023-Black.png" alt="Blender" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/ts-logo-128.png" alt="Blender" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/GitHub_Logo.png" alt="Blender" className="max-w-full max-h-full object-contain" />
+  </div>
+</div>
+
+      
     </div>
     
   </div>
@@ -174,7 +261,7 @@ import Link from "next/link";
 
 
 <Section className="bg-background-gray">
-  <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center gap-10">
+  <div className="container mx-auto  flex flex-col lg:flex-row items-center justify-center gap-10">
     
     <div className=" text-left lg:max-w-1/2">
       <div>
