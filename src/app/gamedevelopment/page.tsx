@@ -41,12 +41,12 @@ export default function GamesPage() {
                     className="absolute inset-0 w-full h-full md:scale-[1.2] scale-[1.1] -translate-x-[15%] -translate-y-[5%] md:-translate-y-[10%]"
                   />
                 </div>
-                <p className="mt-4 shadow-lg/20 shadow-slate-50/20 border-2 border-orange-300 bg-orange-400 rounded p-2 font-semibold text-sm  italic text-center px-2">
+                <p className="mt-4 shadow-lg/20  border-2 border-orange-300 bg-orange-400 rounded p-2 font-semibold text-[15px] italic text-center px-2">
                   Shoutout to one of Broken Seal's artists,{" "}
                   <Link
                     href="https://linktr.ee/nourelagha"
                     target="blank"
-                    className="hover:underline decoration-primary decoration-2 underline-accent"
+                    className="hover:decoration-black/70 underline decoration-black decoration-2 underline-accent hover:text-black/70"
                   >
                     <span className="text font-bold">Nour</span>
                   </Link>
