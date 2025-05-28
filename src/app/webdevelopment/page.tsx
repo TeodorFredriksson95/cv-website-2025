@@ -150,17 +150,14 @@ export default function WebPage() {
           </div>
         </Section>
 
-        <Section>
-          <div className="flex relative flex-col bg-blue-50 shadow-lg/20 p-4 rounded ">
-          
+        <Section className="bg-primary/30 ">
+          <div className="flex relative flex-col p-4 rounded ">
             <div className="flex  flex-col lg:flex-row items-start gap-10">
-              <div className="max-w-xl  flex-1 inset-ring-1 bg-blue-200 shadow-lg/20 p-4 rounded">
-
+            <div className="lg:w-1/2 text-left border-2 border-cyan-500 space-y-6 bg-cyan-300/80 p-4 shadow-[5px_0px_6px_4px_rgba(0,0,0,0.45)]  rounded">
                 <div className="border-b-2 mb-3 flex flex-row items-center justify-between">
                   <h2 className="text-4xl font-extrabold font-sans text-slate-900 leading-tight">
-                    Low-code Project
+                    Low-code Database
                   </h2>
-      
                 </div>
 
                 <p className="text-md text-muted-foreground mb-4 font-mono font-semibold">
@@ -179,7 +176,8 @@ export default function WebPage() {
                       pitfalls of low-code apps
                     </li>
                     <li className="italic font-semibold">
-                      Create and demo a low-code app using React, TypeScript and SQL
+                      Create and demo a low-code app using React, TypeScript and
+                      SQL
                     </li>
                   </ul>
                 </div>
@@ -247,52 +245,80 @@ export default function WebPage() {
           </div>
         </Section>
 
-<Section>
-  <div className="flex flex-col bg-blue-50 shadow-lg/20 p-4 rounded gap-16">
-    {/* Campaign Site */}
-    <div className="flex flex-col lg:flex-row items-start gap-10">
-      {/* Text Block */}
-      <div className="max-w-xl flex-1 inset-ring-1 bg-blue-200 shadow-lg/20 p-4 rounded">
-        <div className="border-b-2 mb-3 flex flex-row items-center justify-between">
-          <h2 className="text-4xl font-extrabold font-sans text-slate-900 leading-tight">Campaign Site</h2>
-        </div>
-        <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-3 leading-tight">
-          A Hub for Information
-        </h3>
-        <p className="text-md text-muted-foreground font-mono font-semibold mb-4">
-          Created as a custom template for a campaign presented at the Swedish Parliament, designed to follow up on issues of homelessness and financial vulnerability. User-friendly for non-developers and fully documented for future updates.
-        </p>
-        <p className="text-lg text-white/90 font-bold font-mono mb-2">Focus areas:</p>
-        <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
-          <ul className="list-disc px-5">
-            <li className="italic font-semibold">Custom template</li>
-            <li className="italic font-semibold">User-friendly interface for non-developers</li>
-            <li className="italic font-semibold">Thorough documentation</li>
-          </ul>
-        </div>
+        <Section className="">
+          <div className="flex flex-col bg-blue-50 shadow-lg/20 p-4 rounded gap-16">
+            <div className="flex flex-col  lg:flex-row-reverse items-start gap-10">
+              <div className="max-w-xl flex-1 inset-ring-1 bg-blue-200 shadow-lg/20 p-4 rounded">
+                <div className="border-b-2 mb-3 flex flex-row items-center justify-between">
+                  <h2 className="text-4xl font-extrabold font-sans text-slate-900 leading-tight">
+                    Campaign Site
+                  </h2>
+                </div>
 
-        {/* Logos */}
-        <div className="flex flex-wrap gap-4 mt-4">
-          {[
-            { src: "/logos/jsIconGreen.svg", alt: "Nodejs" },
-            { src: "/logos/javascript-seeklogo.png", alt: "Javascript" },
-            { src: "/logos/htmllogo.png", alt: "HTML" },
-            { src: "/logos/csslogo.png", alt: "CSS" },
-            { src: "/logos/PHP-logo.svg", alt: "PHP" },
-            { src: "/logos/wordpress.png", alt: "Wordpress" },
-          ].map((logo, idx) => (
-            <div key={idx} className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20">
-              <img src={logo.src} alt={logo.alt} className="max-w-full max-h-full object-contain" />
-            </div>
-          ))}
-        </div>
-      </div>
+                <p className="text-md text-muted-foreground font-mono font-semibold mb-4">
+                  Created as a custom template for a campaign presented at the
+                  Swedish Parliament, designed to follow up on issues of
+                  homelessness and financial vulnerability. User-friendly for
+                  non-developers and fully documented for future updates.
+                </p>
+                <p className="text-lg text-white/90 font-bold font-mono mb-2">
+                  Focus areas:
+                </p>
+                <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
+                  <ul className="list-disc px-5">
+                    <li className="italic font-semibold">
+                      Custom-made Wordpress template using PHP, HTML & CSS
+                    </li>
+                    <li className="italic font-semibold">
+                      User-friendly interface for non-developers
+                    </li>
+                    <li className="italic font-semibold">
+                      Thorough documentation
+                    </li>
+                  </ul>
+                </div>
+                <p className="text-lg text-white/90 font-bold font-mono mb-2">
+                  Key features:
+                </p>
+                <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
+                  <ul className="list-disc px-5">
+                    <li className="italic font-semibold">News aggregator</li>
+                    <li className="italic font-semibold">
+                      Used as a campaign tool for a political hearing in Sweden
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex flex-wrap gap-4 mt-4">
+                  {[
+                    { src: "/logos/jsIconGreen.svg", alt: "Nodejs" },
+                    {
+                      src: "/logos/javascript-seeklogo.png",
+                      alt: "Javascript",
+                    },
+                    { src: "/logos/htmllogo.png", alt: "HTML" },
+                    { src: "/logos/csslogo.png", alt: "CSS" },
+                    { src: "/logos/PHP-logo.svg", alt: "PHP" },
+                    { src: "/logos/wordpress.png", alt: "Wordpress" },
+                  ].map((logo, idx) => (
+                    <div
+                      key={idx}
+                      className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20"
+                    >
+                      <img
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
 
-      {/* Image Block */}
-          <div className="flex-1 grid grid-cols-2 gap-4 p-3 inset-ring-1 inset-ring-black/10 rounded inset-shadow-sm inset-shadow-black bg-blue-200">
+              {/* Image Block */}
+              <div className="flex-1 grid grid-cols-2 gap-4 p-3 inset-ring-1 inset-ring-black/10 rounded inset-shadow-sm inset-shadow-black bg-blue-200">
                 <div className="col-span-2 rounded border-2 border-gray-500 shadow-2xl/40 overflow-hidden">
                   <img
-                    src="/showcase/image10.png"
+                    src="/showcase/socialtfrikort_2.png"
                     alt="Create Database"
                     className="w-full h-auto object-cover rounded"
                   />
@@ -305,75 +331,116 @@ export default function WebPage() {
                   />
                 </div>
               </div>
-    </div>
-
-    {/* E-commerce Storefront */}
-    <div className="flex flex-col lg:flex-row items-start gap-10">
-      {/* Text Block */}
-      <div className="max-w-xl flex-1 inset-ring-1 bg-blue-200 shadow-lg/20 p-4 rounded">
-        <div className="border-b-2 mb-3 flex flex-row items-center justify-between">
-          <h2 className="text-4xl font-extrabold font-sans text-slate-900 leading-tight">E-commerce Storefront</h2>
-        </div>
-        <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-3 leading-tight">
-          Empowering the Financially Marginalized
-        </h3>
-        <p className="text-md text-muted-foreground font-mono font-semibold mb-4">
-          A photo-oriented e-commerce site with a custom template built from scratch for an association driving social policy changes.
-        </p>
-        <p className="text-lg text-white/90 font-bold font-mono mb-2">Focus areas:</p>
-        <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
-          <ul className="list-disc px-5">
-            <li className="italic font-semibold">Accessible admin panel</li>
-            <li className="italic font-semibold">Easy to use without prior web development experience</li>
-            <li className="italic font-semibold">Thorough documentation</li>
-            <li className="italic font-semibold">Seamless shopping experience</li>
-          </ul>
-        </div>
-
-        {/* Logos */}
-        <div className="flex flex-wrap gap-4 mt-4">
-          {[
-            { src: "/logos/jsIconGreen.svg", alt: "Nodejs" },
-            { src: "/logos/javascript-seeklogo.png", alt: "Javascript" },
-            { src: "/logos/htmllogo.png", alt: "HTML" },
-            { src: "/logos/csslogo.png", alt: "CSS" },
-            { src: "/logos/PHP-logo.svg", alt: "PHP" },
-            { src: "/logos/wordpress.png", alt: "Wordpress" },
-          ].map((logo, idx) => (
-            <div key={idx} className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20">
-              <img src={logo.src} alt={logo.alt} className="max-w-full max-h-full object-contain" />
             </div>
-          ))}
-        </div>
-      </div>
 
-      {/* Image Block */}
-      <div className="flex-1 shadow-2xl/40 border-2 border-gray-500 p-3 rounded bg-blue-200">
-        <img src="/showcase/socialabildbyran.png" alt="Campaign site" className="w-full h-auto object-cover rounded" />
-      </div>
-    </div>
-  </div>
-</Section>
+          </div>
+        </Section>
 
-
-        <Section className="bg-primary text-background py-20">
+                <Section className="bg-primary text-background py-20">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl sm:text-5xl font-extrabold font-sans mb-6">
               Got a website in mind?
             </h2>
             <p className="text-md sm:text-lg font-mono font-semibold mb-6">
               Whether you need a backend API, a clean frontend, or just a fresh
-              perspective — I’d love to hear what you're working on.
+              perspective — feel free to get in touch.
             </p>
 
-            <Link
-              href="mailto:teofredev@gmail.com"
-              className="inline-block px-6 py-3 border border-background text-background font-mono font-semibold rounded hover:bg-background hover:text-primary transition"
-            >
-              Reach Out
-            </Link>
           </div>
         </Section>
+        <Section className="">
+          <div className="flex flex-col bg-blue-50 shadow-lg/20 p-4 rounded gap-16">
+  
+
+            {/* E-commerce Storefront */}
+            <div className="flex flex-col lg:flex-row items-start gap-10">
+              {/* Text Block */}
+              <div className="max-w-xl flex-1 inset-ring-1 bg-blue-200 shadow-lg/20 p-4 rounded">
+                <div className="border-b-2 mb-3 flex flex-row items-center justify-between">
+                  <h2 className="text-4xl font-extrabold font-sans text-slate-900 leading-tight">
+                    E-commerce Storefront
+                  </h2>
+                </div>
+
+                <p className="text-md text-muted-foreground font-mono font-semibold mb-4">
+                  A photo-oriented e-commerce site with a custom template built
+                  from scratch for an association driving social policy changes.
+                </p>
+                
+                <p className="text-lg text-white/90 font-bold font-mono mb-2">
+                  Focus areas:
+                </p>
+                <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
+                  <ul className="list-disc px-5">
+                    <li className="italic font-semibold">
+                      Custom-made Wordpress template using PHP, HTML & CSS
+                    </li>
+                    <li className="italic font-semibold">
+                      User-friendly interface for non-developers
+                    </li>
+                    <li className="italic font-semibold">
+                      Thorough documentation
+                    </li>
+                  </ul>
+                </div>
+                <p className="text-lg text-white/90 font-bold font-mono mb-2">
+                  Key features:
+                </p>
+                <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
+                  <ul className="list-disc px-5">
+                    <li className="italic font-semibold">Storefront for images suited for journalistic publications</li>
+              
+                  </ul>
+                </div>
+
+                <div className="flex flex-wrap gap-4 mt-4">
+                  {[
+                    { src: "/logos/jsIconGreen.svg", alt: "Nodejs" },
+                    {
+                      src: "/logos/javascript-seeklogo.png",
+                      alt: "Javascript",
+                    },
+                    { src: "/logos/htmllogo.png", alt: "HTML" },
+                    { src: "/logos/csslogo.png", alt: "CSS" },
+                    { src: "/logos/PHP-logo.svg", alt: "PHP" },
+                    { src: "/logos/wordpress.png", alt: "Wordpress" },
+                  ].map((logo, idx) => (
+                    <div
+                      key={idx}
+                      className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20"
+                    >
+                      <img
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Image Block */}
+                          <div className="flex-1 grid grid-cols-2 gap-4 p-3 inset-ring-1 inset-ring-black/10 rounded inset-shadow-sm inset-shadow-black bg-blue-200">
+                <div className="col-span-2 rounded border-2 border-gray-500 shadow-2xl/40 overflow-hidden">
+                  <img
+                    src="/showcase/socialbildbyran_2.png"
+                    alt="Create Database"
+                    className="w-full h-auto object-cover rounded"
+                  />
+                </div>
+                <div className="shadow-2xl/20 border-2 border-gray-500 rounded col-span-2">
+                  <img
+                    src="/showcase/socialabildbyran.png"
+                    alt="Create Database"
+                    className="w-full h-auto object-cover rounded-xs"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Section>
+
+
       </main>
     </div>
   );

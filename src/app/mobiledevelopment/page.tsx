@@ -9,7 +9,7 @@ export default function AppsAndMobilePage() {
 <div className="grid grid-rows-[_1fr]  justify-items-center min-h-screen ">
 <main className="flex flex-col  row-start-2 w-full">
   <Section className="text-center   ">
-  <div className="container  bg-background-gray rounded shadow-lg/20 p-4 mx-auto ">
+          <div className="container  bg-gray-50 rounded-md border-4 border-primary/50 shadow-lg/20 p-4 mx-auto ">
 
     <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">Mobile <br className="block sm:hidden"/>Development</h1>
     <div className="flex justify-center mb-4">
