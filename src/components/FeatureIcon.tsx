@@ -1,5 +1,5 @@
 import Image from "next/image";
-import * as motion from "motion/react-client"
+import * as motion from "motion/react-client";
 
 interface FeatureIconProps {
   src: string;
@@ -8,7 +8,12 @@ interface FeatureIconProps {
   delay?: number;
 }
 
-export default function FeatureIcon({ src, alt, label, delay = 0 }: FeatureIconProps) {
+export default function FeatureIcon({
+  src,
+  alt,
+  label,
+  delay = 0,
+}: FeatureIconProps) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0, x: 0, y: 0 }}
@@ -19,7 +24,8 @@ export default function FeatureIcon({ src, alt, label, delay = 0 }: FeatureIconP
         damping: 10,
         delay,
       }}
-      className="z-50 flex flex-col items-center group justify-center hover:cursor-pointer w-[50px] sm:w-[100px] md:w-[80px]"
+      className="z-50 flex flex-col items-center group justify-center hover:cursor-pointer [@media(max-width:369px)]:w-[30px]  [@media(min-width:400px)]:w-[30px]  [@media(min-width:449px)]:w-[40px]
+    [@media(min-width:450px)]:w-[60px]  sm:w-[100px] md:w-[80px]"
     >
       <div className="relative w-full aspect-square">
         <Image
