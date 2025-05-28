@@ -187,7 +187,7 @@ export default function GamesPage() {
                   campaign and grew into a full-fledged worldbuilding project.
                 </p>
 
-                <p className="text-lg text-white/90 font-bold font-mono mb-2">
+                <p className="text-lg text-white/90 font-bold font-mono ">
                   During the project I used:
                 </p>
                 <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
@@ -288,7 +288,7 @@ export default function GamesPage() {
                   mentality that is willing to find and use new tools that are
                   the most efficient for me to use.
                 </p>
-                <p className="text-lg text-muted-foreground font-mono font-semibold mb-4">
+                <p className="text-lg text-muted-foreground font-mono font-bold ">
                   To create concept art I have used:
                 </p>
                   <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
