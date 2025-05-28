@@ -6,25 +6,26 @@ import Link from 'next/link';
 
 export default function AppsAndMobilePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr]  justify-items-center min-h-screen sm:mt-16">
-
+<div className="grid grid-rows-[_1fr]  justify-items-center min-h-screen ">
 <main className="flex flex-col  row-start-2 w-full">
+  <Section className="text-center   ">
+  <div className="container  bg-background-gray rounded shadow-lg/20 p-4 mx-auto ">
 
-      <Section className="text-center max-w-3xl mx-auto md:mb-10">
-        <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">
-          Mobile Development
-        </h1>
-        <div className="flex justify-center mb-4">
-          <FeatureIcon
-            src="/icons/mobile2.svg"
+    <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">Mobile <br className="block sm:hidden"/>Development</h1>
+    <div className="flex justify-center mb-4">
+        <FeatureIcon
+          src="/icons/mobile2.svg"
             alt="Mobile Icon"
             label=""
+
           />
-        </div>
-        <p className="text-lg font-mono text-muted-foreground font-semibold">
-          I love building apps that improve everyday life and keep users engaged
+          </div>
+    <p className="text-lg w-full md:w-4/7 mx-auto font-mono text-muted-foreground font-semibold">
+        I love building apps that improve everyday life and keep users engaged
         </p>
-      </Section>
+          </div>
+  </Section>
+
 
 <Section>
   <div className="flex flex-col lg:flex-row items-start gap-10">
@@ -49,11 +50,39 @@ export default function AppsAndMobilePage() {
         <li>Low barrier to entry</li>
       </ul>
 
-      <div className="flex flex-wrap gap-2 text-sm font-mono text-background">
-        {["React Native", "Expo", "Firebase", "ExpressJS", "NodeJS", "TypeScript", "CSS"].map(tech => (
-          <span key={tech} className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">{tech}</span>
-        ))}
-      </div>
+      <div className="flex flex-wrap gap-4 mt-4">
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/jsIconGreen.svg" alt="Nodejs" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/javascript-seeklogo.png" alt="Javascript" className="max-w-full max-h-full object-contain" />
+  </div>
+
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/Logomark_Full Color.png" alt="Firebase" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/react.png" alt="React" className="max-w-full max-h-full object-contain" />
+  </div>
+
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/ts-logo-128.png" alt="TypeScript" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/GitHub_Logo.png" alt="Github" className="max-w-full max-h-full object-contain" />
+  </div>
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/expo-seeklogo.png" alt="Expo" className="max-w-full max-h-full object-contain" />
+  </div>
+
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
+  </div>
+
+ 
+</div> 
     </div>
 
     <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 w-full">
@@ -86,11 +115,29 @@ export default function AppsAndMobilePage() {
       </ul>
     </div>
 
-    <div className="mt-auto flex flex-wrap gap-2 text-sm font-mono text-background pt-4">
-      {["React Native", "Expo", "TypeScript", "Perenual API"].map((tech) => (
-        <span key={tech} className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">{tech}</span>
-      ))}
-    </div>
+<div className="flex flex-wrap gap-4 mt-4">
+
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/Logomark_Full Color.png" alt="Firebase" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/react.png" alt="React" className="max-w-full max-h-full object-contain" />
+  </div>
+
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/ts-logo-128.png" alt="TypeScript" className="max-w-full max-h-full object-contain" />
+  </div>
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/expo-seeklogo.png" alt="Expo" className="max-w-full max-h-full object-contain" />
+  </div>
+
+ 
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
+  </div>
+
+</div> 
   </div>
 </div>
 
@@ -109,13 +156,29 @@ export default function AppsAndMobilePage() {
       </ul>
     </div>
 
-    <div className="mt-auto flex flex-wrap gap-2 text-sm font-mono text-background pt-4">
-      {["NodeJS", "React", "TypeScript", "Firebase"].map((tech) => (
-        <span key={tech} className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">
-          {tech}
-        </span>
-      ))}
-    </div>
+<div className="flex flex-wrap gap-4 mt-4">
+
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/Logomark_Full Color.png" alt="Firebase" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/react.png" alt="React" className="max-w-full max-h-full object-contain" />
+  </div>
+
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/ts-logo-128.png" alt="TypeScript" className="max-w-full max-h-full object-contain" />
+  </div>
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/expo-seeklogo.png" alt="Expo" className="max-w-full max-h-full object-contain" />
+  </div>
+
+ 
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
+  </div>
+
+</div> 
   </div>
 </div>
 

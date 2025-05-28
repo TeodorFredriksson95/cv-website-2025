@@ -31,7 +31,7 @@ import Link from "next/link";
 <Section >
   <div className="rounded border-2 shadow-lg/20">
 
-  <div className="container  rounded bg-background-gray  p-4 mx-auto px-6 flex sm:flex-col flex-col lg:flex-row items-center  gap-10">
+  <div className="container  rounded bg-secondary-bg  p-4 mx-auto px-6 flex sm:flex-col flex-col lg:flex-row items-center lg:items-start  gap-10">
     
 <div className="bg-gradient-to-b shadow-[-3px_0px_10px_5px_rgba(0,0,0,0.55)]  from-[#d66f00] to-[#131313] p-4 rounded flex-col items-center w-full max-w-sm lg:flex-1">
       <div className="relative  shadow-[-15px_10px_25px_5px_rgba(0,0,0,0.85)]   bg-background-black/60 aspect-[3.5/5] sm:aspect-[3.5/5]  border-8 border-primary w-full overflow-visible">
@@ -89,34 +89,23 @@ import Link from "next/link";
         <li className="italic font-semibold">Writing TDDs to enhance team efficiency</li>
       </ul>
       </div>
-    </div>
-
-<div className="flex flex-wrap gap-4 mt-4">
+      <div className="flex flex-wrap gap-4 mt-4">
   <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/csharpIcon.png" alt="Blender" className="max-w-full max-h-full object-contain" />
   </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/javascript-seeklogo.png" alt="Blueprints" className="max-w-full max-h-full object-contain" />
+      <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/trello-icon-gradient-blue@2x.png" alt="Blender" className="max-w-full max-h-full object-contain" />
   </div>
   <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/blender_icon_64x64.png" alt="C#" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/Logomark_Full Color.png" alt="Blender" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/react.png" alt="Blender" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/UE-Icon-2023-Black.png" alt="Blender" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/ts-logo-128.png" alt="Blender" className="max-w-full max-h-full object-contain" />
+    <img src="/logos/godot-seeklogo.png" alt="Blender" className="max-w-full max-h-full object-contain" />
   </div>
   <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/GitHub_Logo.png" alt="Blender" className="max-w-full max-h-full object-contain" />
   </div>
 </div>  
+    </div>
+
+
   </div>
 </div>
   </div>
@@ -155,7 +144,7 @@ import Link from "next/link";
 </Section>
 
 <Section className="bg-primary/30 ">
-  <div className="container mx-auto  flex  sm:flex-col-reverse flex-col-reverse lg:flex-row items-center justify-center gap-10">
+  <div className="container mx-auto  flex  sm:flex-col-reverse flex-col-reverse lg:flex-row items-center lg:items-start justify-center gap-10">
     
 <div className="  text-left lg:flex-1">
       <div className=" bg-black/10 rounded p-1 inset-shadow-sm/50 inset-shadow/50 mb-4 ">
@@ -225,29 +214,19 @@ import Link from "next/link";
 
 <div className="flex flex-wrap gap-4 mt-4">
   <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/jsIconGreen.svg" alt="Unreal Engine" className="max-w-full max-h-full object-contain" />
+    <img src="/logos/blender_icon_64x64.png" alt="Blender" className="max-w-full max-h-full object-contain" />
   </div>
   <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/javascript-seeklogo.png" alt="Blueprints" className="max-w-full max-h-full object-contain" />
+    <img src="/logos/UE-Icon-2023-Black.png" alt="Unreal Engine 5" className="max-w-full max-h-full object-contain" />
   </div>
   <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/blender_icon_64x64.png" alt="C#" className="max-w-full max-h-full object-contain" />
+    <img src="/logos/GitHub_Logo.png" alt="Github" className="max-w-full max-h-full object-contain" />
   </div>
   <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/Logomark_Full Color.png" alt="Blender" className="max-w-full max-h-full object-contain" />
+    <img src="/logos/csharpIcon.png" alt="C#" className="max-w-full max-h-full object-contain" />
   </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/react.png" alt="Blender" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/UE-Icon-2023-Black.png" alt="Blender" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/ts-logo-128.png" alt="Blender" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/GitHub_Logo.png" alt="Blender" className="max-w-full max-h-full object-contain" />
-  </div>
+
+
 </div>
 
       
@@ -261,9 +240,9 @@ import Link from "next/link";
 
 
 <Section className="bg-background-gray">
-  <div className="container mx-auto  flex flex-col lg:flex-row items-center justify-center gap-10">
+  <div className="container  mx-auto bg-secondary-bg/60 p-4 flex rounded flex-col lg:flex-row items-start justify-center gap-10">
     
-    <div className=" text-left lg:max-w-1/2">
+    <div className=" bg-background-gray  text-left lg:max-w-1/2">
       <div>
               <h2 className="text-4xl  font-extrabold font-sans text-accent leading-tight mb-2">
           Concept Art
@@ -283,19 +262,26 @@ To me, visuals inspire logic.
 
 
       </div>
-      <div className="flex flex-wrap gap-3 text-sm font-mono text-background mt-4">
-        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Inkarnate</span>
-        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">GM Binder</span>
-        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">ChatGPT</span>
-        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Firefly</span>
-        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Figma</span>
-        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Gimp</span>
-        <span className="bg-primary px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Pen & Paper</span>
-      </div>
+<div className="flex   flex-wrap gap-4 mt-4">
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/gmbinder.png" alt="GMBinder" className="max-w-full max-h-full object-contain" />
+  </div>
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/gimp.png" alt="Gimp" className="max-w-full max-h-full object-contain" />
+  </div>
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
+  </div>
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/512px-ChatGPT-Logo.png" alt="ChatGPT" className="max-w-full max-h-full object-contain" />
+  </div>
+</div>  
     </div>
 
-    <div className="w-full max-w-2xl">
-<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 group">
+    <div className="w-full max-w-2xl  rounded-lg">
+<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-4 group">
   {[
     "naptha.jpg",
     "wolves.jpeg",
@@ -321,7 +307,7 @@ To me, visuals inspire logic.
 </div>
 
 
-      <p className="text-sm text-muted-foreground italic text-center mt-4">
+      <p className="text-sm text-muted-foreground italic text-center py-2">
         Original <span className="text-accent font-semibold">D&D</span> concept art that shaped the world of Eoxania
       </p>
     </div>

@@ -4,25 +4,26 @@ import Link from "next/link";
 
 export default function WebPage() {
   return (
-  
-    <div className="grid grid-rows-[20px_1fr]  justify-items-center min-h-screen sm:mt-16">
-
+<div className="grid grid-rows-[_1fr]  justify-items-center min-h-screen ">
 <main className="flex flex-col  row-start-2 w-full">
+  <Section className="text-center   ">
+  <div className="container  bg-background-gray rounded shadow-lg/20 p-4 mx-auto ">
 
-      <Section className="text-center max-w-3xl md:mb-10 mx-auto">
-        <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight">Web <br className="block sm:hidden"/>Development</h1>
-            <div className="flex justify-center">
-
-            <FeatureIcon
-              src="/icons/webdev2.svg"
+    <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">Web <br className="block sm:hidden"/>Development
+</h1>
+    <div className="flex justify-center mb-4">
+        <FeatureIcon
+         src="/icons/webdev2.svg"
               alt="Web Icon"
               label=""
-              />
-              </div>
-        <p className="text-lg font-mono text-muted-foreground font-semibold">
-          From backend APIs to frontend polish — my goal is to build efficient systems that are easy to use
+
+          />
+          </div>
+    <p className="text-lg w-full md:w-4/7 mx-auto font-mono text-muted-foreground font-semibold">
+From backend APIs to frontend polish — my goal is to build efficient systems that are easy to use
         </p>
-      </Section>
+          </div>
+  </Section>
 
 <Section>
   <div className="flex flex-col lg:flex-row items-start gap-10">
@@ -44,15 +45,33 @@ Unidevweb</h2>
           <li>Reusable and well-documented API design</li>
         </ul>
 
+<div className="flex flex-wrap gap-4 mt-4">
 
-        <div className="flex flex-wrap justify-start text-background gap-4 text-sm font-mono">
-          <span className="bg-accent px-4 py-2 font-semibold rounded-lg shadow-md shadow-black/20">ASP.NET</span>
-          <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">PostgreSQL</span>
-          <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Entity Framework</span>
-          <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">OAuth 2.0</span>
-          <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Azure</span>
-          <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">CI/CD</span>
-        </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/Logomark_Full Color.png" alt="Firbase" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/react.png" alt="React" className="max-w-full max-h-full object-contain" />
+  </div>
+
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/ts-logo-128.png" alt="TypeScript" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/GitHub_Logo.png" alt="Github" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/csharpIcon.png" alt="C#" className="max-w-full max-h-full object-contain" />
+  </div>
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/Microsoft_Azure.svg" alt="Azure" className="max-w-full max-h-full object-contain" />
+  </div>
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/dotnet-logo.png" alt="dotnet" className="max-w-full max-h-full object-contain" />
+  </div>
+  
+</div>  
     </div>
 <div className="grid sm:grid-cols-2 gap-4">
   <div className="col-span-2  shadow-2xl/40 overflow-hidden ">
@@ -126,14 +145,36 @@ Unidevweb</h2>
   </p>
 </div>
 
-      <div className="flex flex-wrap gap-3 text-sm font-mono text-background mt-4">
-        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">React</span>
-        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">TypeScript</span>
-        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">NodeJS</span>
-        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">MySQL</span>
-        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Figma</span>
-        <span className="bg-accent px-4 py-2 rounded-lg font-semibold shadow-md shadow-black/20">Lucidchart</span>
-      </div>
+     <div className="flex flex-wrap gap-4 mt-4">
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/jsIconGreen.svg" alt="Nodejs" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/javascript-seeklogo.png" alt="Javascript" className="max-w-full max-h-full object-contain" />
+  </div>
+
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/react.png" alt="React" className="max-w-full max-h-full object-contain" />
+  </div>
+
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/ts-logo-128.png" alt="TypeScript" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/GitHub_Logo.png" alt="Github" className="max-w-full max-h-full object-contain" />
+  </div>
+
+
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/MYSQL.png" alt="MySQL" className="max-w-full max-h-full object-contain" />
+  </div>
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
+  </div>
+
+</div>  
     </div>
 
     <div className="grid grid-cols-2 gap-4 w-full  ">
@@ -166,11 +207,31 @@ Created as a custom template for a campaign presented at the Swedish Parliament,
           <li>User-friendly interface for non-developers</li>
           <li>Thorough documentation</li>
         </ul>
-        <div className="flex flex-wrap gap-2 text-sm font-mono text-background">
-          <span className="bg-primary px-4 py-2 font-semibold rounded shadow-md shadow-black/20">WordPress</span>
-          <span className="bg-primary px-4 py-2 font-semibold rounded shadow-md shadow-black/20">PHP</span>
-          <span className="bg-primary px-4 py-2 font-semibold rounded shadow-md shadow-black/20">Custom Template</span>
-        </div>
+       <div className="flex flex-wrap gap-4 mt-4">
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/jsIconGreen.svg" alt="Nodejs" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/javascript-seeklogo.png" alt="Javascript" className="max-w-full max-h-full object-contain" />
+  </div>
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/htmllogo.png" alt="Html" className="max-w-full max-h-full object-contain" />
+  </div>
+
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
+  </div>
+
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/PHP-logo.svg" alt="PHP" className="max-w-full max-h-full object-contain" />
+  </div>
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/wordpress.png" alt="Wordpress" className="max-w-full max-h-full object-contain" />
+  </div>
+</div>  
       </div>
 
       <div className="w-full shadow-2xl/40 aspect-[7/3]">
@@ -200,12 +261,31 @@ Created as a custom template for a campaign presented at the Swedish Parliament,
           <li>Thorough documentation</li>
           <li>Seamless shopping experience</li>
         </ul>
-        <div className="flex  flex-wrap gap-2 text-sm font-mono text-background">
-          <span className="bg-primary px-4 py-2 font-semibold rounded shadow-md shadow-black/20">WordPress</span>
-          <span className="bg-primary px-4 py-2 font-semibold rounded shadow-md shadow-black/20">PHP</span>
-          <span className="bg-primary px-4 py-2 font-semibold rounded shadow-md shadow-black/20">WooCommerce</span>
-          <span className="bg-primary px-4 py-2 font-semibold rounded shadow-md shadow-black/20">Custom Template</span>
-        </div>
+       <div className="flex flex-wrap gap-4 mt-4">
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/jsIconGreen.svg" alt="Nodejs" className="max-w-full max-h-full object-contain" />
+  </div>
+  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/javascript-seeklogo.png" alt="Javascript" className="max-w-full max-h-full object-contain" />
+  </div>
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/htmllogo.png" alt="Html" className="max-w-full max-h-full object-contain" />
+  </div>
+
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
+  </div>
+
+
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/PHP-logo.svg" alt="PHP" className="max-w-full max-h-full object-contain" />
+  </div>
+    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <img src="/logos/wordpress.png" alt="Wordpress" className="max-w-full max-h-full object-contain" />
+  </div>
+</div>  
       </div>
 
 

@@ -36,7 +36,6 @@ export default function Navbar() {
               { href: '/mobiledevelopment', label: 'Apps & Mobile', mobileOnly: true },
               { href: '/education', label: 'Education' },
               { href: '/about', label: 'About' },
-              { href: '/contact', label: 'Contact' },
             ].map(({ href, label, mobileOnly }) => (
               <li key={label} className={mobileOnly ? 'block md:hidden' : ''}>
                 <Link

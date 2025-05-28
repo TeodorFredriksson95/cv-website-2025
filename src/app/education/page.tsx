@@ -6,24 +6,23 @@ import Link from 'next/link';
 
 export default function EducationPage() {
   return (
-    <div className="grid grid-rows-[20px_1fr] justify-items-center min-h-screen sm:mt-16">
-      <main className="flex flex-col row-start-2 w-full">
+<div className="grid grid-rows-[_1fr]  justify-items-center min-h-screen ">
+<main className="flex flex-col  row-start-2 w-full">
+  <Section className="text-center   ">
+  <div className="container  bg-background-gray rounded shadow-lg/20 p-4 mx-auto ">
 
-        <Section className="text-center max-w-3xl mx-auto md:mb-10">
-          <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">
-            Education
-          </h1>
-              <div className="flex justify-center mb-4">
-                  <FeatureIcon
-                    src="/icons/student.svg"
-                    alt="Student cap icon"
-                    label=""
-                    />
-                    </div>
-          <p className="text-lg font-mono text-muted-foreground font-semibold">
-  My learning has been shaped by formal education, real-world projects, and mentors who believed in learning by doing
-          </p>
-        </Section>
+    <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">Education</h1>
+    <div className="flex justify-center mb-4">
+        <FeatureIcon
+         src="/icons/student.svg"
+          alt="Student cap icon"
+          label=""
+          />
+          </div>
+    <p className="text-lg w-full md:w-4/7 mx-auto font-mono text-muted-foreground font-semibold">
+          My learning has been shaped by formal education, real-world projects, and mentors who believed in learning by doing    </p>
+          </div>
+  </Section>
 
         <Section>
           <div className="max-w-4xl mx-auto">
@@ -163,20 +162,12 @@ export default function EducationPage() {
 <Section className="bg-primary text-background py-20">
   <div className="max-w-3xl mx-auto text-center">
     <h2 className="text-4xl sm:text-5xl font-extrabold font-sans mb-6">
-      To the Juniors
+      Want to talk code?
     </h2>
     <p className="text-md sm:text-lg font-mono font-semibold mb-6">
-      Feeling like you don’t belong? Struggling with imposter syndrome, or unsure if you’ll ever ‘get it’? I’ve been there too.
+      Senior or junior, if you ever want to talk code, games, styles, or just want to do a feedback trade, I'm always down for a chat.
     </p>
-    <p className="text-md sm:text-lg font-mono mb-8">
-      If you need advice, or just want to vent, you're always free to reach out.
-    </p>
-    <Link
-      href="mailto:teofredev@gmail.com"
-      className="inline-block px-6 py-3 border border-background text-background font-mono font-semibold rounded hover:bg-accent hover:border-accent hover:text-background transition"
-    >
-      Reach Out Anytime
-    </Link>
+
   </div>
 </Section>
 
