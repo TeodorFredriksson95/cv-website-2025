@@ -11,7 +11,7 @@ export default function GamesPage() {
     <div className="grid grid-rows-[_1fr]  justify-items-center min-h-screen ">
       <main className="flex flex-col  row-start-2 w-full">
         <Section className="text-center   ">
-          <div className="container  bg-gray-50 rounded-md border-4 border-primary/50 shadow-lg/20 p-4 mx-auto ">
+          <div className="container  bg-gray-50 rounded-md border-2 border-black/50 shadow-lg/20 p-4 mx-auto ">
             <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">
               Game <br className="block sm:hidden" />
               Development
@@ -31,7 +31,7 @@ export default function GamesPage() {
         </Section>
 
         <Section>
-          <div className="rounded border-2 shadow-lg/20">
+          <div className="rounded border-0 shadow-lg/10">
             <div className="container  rounded bg-blue-50  p-4 mx-auto px-6 flex sm:flex-col flex-col lg:flex-row items-center lg:items-start  gap-10">
               <div className="bg-gradient-to-b shadow-[-3px_0px_10px_5px_rgba(0,0,0,0.55)]  from-[#d66f00] to-[#131313] p-4 rounded flex-col items-center w-full max-w-sm lg:flex-1">
                 <div className="relative  shadow-[-15px_10px_25px_5px_rgba(0,0,0,0.85)]   bg-background-black/60 aspect-[3.5/5] sm:aspect-[3.5/5]  border-8 border-primary w-full overflow-visible">
@@ -55,10 +55,10 @@ export default function GamesPage() {
               </div>
 
               <div className="flex flex-col lg:flex-1 gap-2">
-                <div className="  inset-ring-1 p-4 rounded  bg-blue-200 text-left lg:flex-1">
+                <div className="  border-1 border-black/50 p-4 rounded  bg-blue-200/80 shadow-lg/10 text-left lg:flex-1">
                   <div className="border-b-2 mb-3">
                     <div className="flex flex-row items-end md:justify-start gap-4">
-                      <h2 className="text-4xl  font-extrabold font-sans text-background-black leading-tight mb-2">
+                      <h2 className="text-4xl  font-extrabold font-sans text-background-black leading-tight ">
                         Broken Seal
                       </h2>
                     </div>
@@ -114,28 +114,28 @@ export default function GamesPage() {
                     </ul>
                   </div>
                   <div className="flex flex-wrap gap-4 mt-4">
-                    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+                    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-md shadow-md shadow-black/20">
                       <img
                         src="/logos/csharpIcon.png"
                         alt="Blender"
                         className="max-w-full max-h-full object-contain"
                       />
                     </div>
-                    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+                    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-md shadow-md shadow-black/20">
                       <img
                         src="/logos/trello-icon-gradient-blue@2x.png"
                         alt="Blender"
                         className="max-w-full max-h-full object-contain"
                       />
                     </div>
-                    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+                    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-md shadow-md shadow-black/20">
                       <img
                         src="/logos/godot-seeklogo.png"
                         alt="Blender"
                         className="max-w-full max-h-full object-contain"
                       />
                     </div>
-                    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+                    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-md shadow-md shadow-black/20">
                       <img
                         src="/logos/GitHub_Logo.png"
                         alt="Blender"
@@ -174,7 +174,7 @@ export default function GamesPage() {
               </div>
             </div>
 
-            <div className="lg:w-1/2 text-left border-2 border-cyan-500 space-y-6 bg-cyan-300/80 p-4 shadow-[5px_0px_6px_4px_rgba(0,0,0,0.45)]  rounded">
+            <div className="lg:w-1/2 text-left border-1 border-black/50 space-y-6 bg-cyan-300/80 p-4 shadow-[5px_0px_6px_4px_rgba(0,0,0,0.45)]  rounded">
               <div>
                 <div className="border-b-2 mb-3">
                   <h2 className="text-4xl  font-extrabold font-sans text-slate-900 leading-tight">
@@ -240,28 +240,28 @@ export default function GamesPage() {
               </div>
 
               <div className="flex flex-wrap gap-4 mt-4">
-                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-md shadow-md shadow-black/20">
                   <img
                     src="/logos/blender_icon_64x64.png"
                     alt="Blender"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-md shadow-md shadow-black/20">
                   <img
                     src="/logos/UE-Icon-2023-Black.png"
                     alt="Unreal Engine 5"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-md shadow-md shadow-black/20">
                   <img
                     src="/logos/GitHub_Logo.png"
                     alt="Github"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-md shadow-md shadow-black/20">
                   <img
                     src="/logos/csharpIcon.png"
                     alt="C#"
@@ -274,11 +274,11 @@ export default function GamesPage() {
         </Section>
 
         <Section className="bg-background-gray">
-          <div className="container shadow-lg/20 mx-auto bg-blue-50 p-4 flex rounded flex-col lg:flex-row items-start justify-center gap-10">
-            <div className=" inset-ring-1 p-4 rounded  bg-blue-200 text-left lg:max-w-1/2">
+          <div className="container shadow-lg/10 mx-auto bg-blue-50 p-4 flex rounded flex-col lg:flex-row items-start justify-center gap-10">
+            <div className=" border-1 border-black/50 p-4 rounded  bg-blue-200/80 shadow-lg/10 text-left lg:max-w-1/2">
               <div>
                 <div className="border-b-2 mb-3">
-                  <h2 className="text-4xl  font-extrabold font-sans text-background-black leading-tight mb-2">
+                  <h2 className="text-4xl  font-extrabold font-sans text-background-black leading-tight ">
                     Concept Art
                   </h2>
                 </div>
@@ -314,21 +314,21 @@ export default function GamesPage() {
                   </div>
               </div>
               <div className="flex   flex-wrap gap-4 mt-4">
-                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-md shadow-md shadow-black/20">
                   <img
                     src="/logos/gmbinder.png"
                     alt="GMBinder"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-md shadow-md shadow-black/20">
                   <img
                     src="/logos/gimp.png"
                     alt="Gimp"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-md shadow-md shadow-black/20">
                   <img
                     src="/logos/csslogo.png"
                     alt="CSS"
@@ -336,7 +336,7 @@ export default function GamesPage() {
                   />
                 </div>
 
-                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-md shadow-md shadow-black/20">
                   <img
                     src="/logos/chatgptcut.png"
                     alt="ChatGPT"

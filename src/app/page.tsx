@@ -49,7 +49,7 @@ export default function Home() {
             <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-2">
               Teodor Fredriksson
             </h1>
-            <div className="p-5 bg-blue-200 border-2 border-gray-600 rounded shadow-2xl">
+            <div className="p-5 bg-blue-200/80 border-2 border-gray-600 rounded shadow-2xl">
 
             <p className=" font-mono text-muted-foreground font-semibold max-w-xl">
               The prospect of creation has always been a huge motivator for me. I enjoy the process of searching for and testing what looks good, sounds good, feels good. From games, to music, to APIs - it's all about the joy of crafting something. 
