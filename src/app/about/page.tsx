@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 import { TechCategory } from '@/components/TechCategory';
 import Link from 'next/link';
 import Section from '@/components/section';
@@ -21,17 +21,46 @@ export default function AboutPage() {
           <h2 className="text-2xl font-extrabold text-accent">Teodor Fredriksson</h2>
           <p className="text-sm text-muted-foreground font-mono">Developer & Problem Solver</p>
         </div>
-        <div className="flex gap-4 mt-2">
-          <Link href="https://github.com/TeodorFredriksson95" target="_blank" rel="noreferrer" aria-label="GitHub">
-            <Github className="w-5 h-5 text-muted-foreground hover:text-accent transition" />
-          </Link>
-          <Link href="https://linkedin.com/in/teodor-fredriksson-919606b9/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-            <Linkedin className="w-5 h-5 text-muted-foreground hover:text-accent transition" />
-          </Link>
-          <Link href="mailto:teofredev@gmail.com" aria-label="Email">
-            <Mail className="w-5 h-5 text-muted-foreground hover:text-accent transition" />
-          </Link>
-        </div>
+            <div className="flex flex-col gap-2 mt-4 items-center text-muted-foreground">
+              <div className="flex items-center gap-4">
+                <Link
+                  href="mailto:teofredev@gmail.com"
+                  className="hover:text-accent transition"
+                  aria-label="Email"
+                >
+                  <Mail className="w-6 h-6" />
+                </Link>
+
+                <Link
+                  href="https://github.com/TeodorFredriksson95"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-accent transition"
+                  aria-label="GitHub"
+                >
+                  <Github className="w-6 h-6" />
+                </Link>
+
+                <Link
+                  href="https://linkedin.com/in/teodor-fredriksson-919606b9/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-accent transition"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-6 h-6" />
+                </Link>
+              </div>
+
+              <a
+                href="tel:+46761611369"
+                className="flex items-center gap-2 text-sm font-mono font-semibold hover:text-accent transition"
+                aria-label="Phone"
+              >
+                <Phone className="w-5 h-5" />
+                <span>+46 76 161 13 69</span>
+              </a>
+            </div>
       </aside>
 
       <section>
