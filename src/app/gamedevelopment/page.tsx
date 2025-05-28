@@ -1,10 +1,14 @@
   'use client'
   import Image from "next/image";
   import { Swords, Scroll, Heart, Anvil, Gavel, Hammer, BicepsFlexed, BadgeDollarSign } from "lucide-react";
+import { IoMdClose } from "react-icons/io";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+import 'swiper/css';
   import FeatureIcon from "@/components/FeatureIcon";
   import Section from "@/components/section";
 import Link from "next/link";
+import Gallery from "@/components/Gallery";
 
 
   export default function GamesPage () {
@@ -112,36 +116,6 @@ import Link from "next/link";
 
 </Section>
 
-<Section className="pt-0 rounded  ">
-    <div className="container grid gap-10  grid-cols-1 md:grid-cols-2 bg-background-gray rounded shadow-lg/20 p-4 mx-auto px-6 ">
-        <div className="bg-gray-50 p-4 rounded">
-                <div className="border-b-2 mb-3">
-                    <h2 className="text-4xl font-extrabold font-sans text-accent leading-tight">
-                      C# / GDScript
-                    </h2>
-                </div>
-                      <p className="text-md text-white/90 font-mono font-bold mb-4">
-                      As I come from a .NET background it feels well within my comfort zone that Broken Seal is currently being developed with C# as opposed to GDScript.
-                      </p>
-        </div>
-        <div className="bg-gray-50">
-          <img className="w-full h-auto object-cover"
-              src="/showcase/vs_code_pic.png"
-              alt="Character model from the left side"
-            />
-          <p className="text-sm  text-center font-semibold italic py-2 px-4 bg-background-gray">
-            White boxed gameplay (UE5)
-          </p>
-          hello
-        </div>
-        <div className="bg-gray-50">
-          hello
-        </div>
-        <div className="bg-gray-50">
-          hello
-        </div>
-</div>
-</Section>
 
 <Section className="bg-primary/30 ">
   <div className="container mx-auto  flex  sm:flex-col-reverse flex-col-reverse lg:flex-row items-center lg:items-start justify-center gap-10">
@@ -281,30 +255,8 @@ To me, visuals inspire logic.
     </div>
 
     <div className="w-full max-w-2xl  rounded-lg">
-<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-4 group">
-  {[
-    "naptha.jpg",
-    "wolves.jpeg",
-    "mailman.jpg",
-    "globalmap_scaled.jpg",
-    "rune_golem.jpg",
-    "eviltrees_1.jpg",
-    "steampunk_grassland.jpg",
-    "vedverket.jpg",
-    "forest_fox_image.jpg",
-  ].map((img, idx) => (
-    <div
-      key={idx}
-      className="overflow-hidden rounded-xl shadow-md will-change-transform transform transition duration-300 ease-in-out group-hover:scale-95 hover:scale-115 hover:z-10"
-    >
-      <img
-        src={`/concepts/${img}`}
-        alt={`Concept ${idx + 1}`}
-        className="w-full h-auto object-cover will-change-transform transition duration-300 ease-in-out group-hover:brightness-75 hover:brightness-100"
-      />
-    </div>
-  ))}
-</div>
+      <Gallery />
+
 
 
       <p className="text-sm text-muted-foreground italic text-center py-2">
@@ -373,13 +325,13 @@ To me, visuals inspire logic.
   </div>
 
   <div className="relative z-20 flex flex-col items-center justify-center text-center h-full max-w-3xl mx-auto px-6 text-white">
-    <h2 className="text-4xl sm:text-5xl font-extrabold text-accent mb-6">
+    <h2 className="text-4xl sm:text-5xl font-extrabold text-red-500 mb-6">
       Want to build games?
     </h2>
-    <p className="text-md sm:text-lg text-neutral-300 font-mono font-semibold mb-6">
+    <p className="text-md sm:text-lg text-background font-mono font-semibold mb-6">
       Do you have a prototype you want to test? A story arch that keeps playing in the theatre of your mind? A weird mechanic you can’t stop tweaking?
     </p>
-    <p className="text-md sm:text-lg font-semibold italic text-neutral-300 leading-relaxed">
+    <p className="text-md sm:text-lg font-semibold italic text-background leading-relaxed">
       Whether you're chasing an idea, looking for inspiration, or want to build something together — I'm always down to talk.
     </p>
     <Link

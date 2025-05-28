@@ -41,3 +41,8 @@ html[style*="overflow: hidden"] {
 body {
   background-color: #f1efef;
 }
+
+.swiper-pagination-bullet-active {
+     background-color: white !important;
+}
+
