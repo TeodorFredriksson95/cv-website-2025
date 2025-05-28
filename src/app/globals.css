@@ -35,6 +35,10 @@
   }
 }
 
+li {
+      margin-top: calc(var(--spacing) * 2);
+}
+
 html[style*="overflow: hidden"] {
   overflow: auto !important;
   padding-right: 0 !important;

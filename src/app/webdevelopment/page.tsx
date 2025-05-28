@@ -264,9 +264,8 @@ export default function WebPage() {
 
                 <p className="text-md text-muted-foreground font-mono font-semibold mb-4">
                   Created as a custom template for a campaign presented at the
-                  Swedish Parliament, designed to follow up on issues of
-                  homelessness and financial vulnerability. User-friendly for
-                  non-developers and fully documented for future updates.
+                  Swedish Parliament 2025, designed to follow up on issues of
+                  homelessness and financial vulnerability.
                 </p>
                 <p className="text-lg text-white/90 font-bold font-mono mb-2">
                   Focus areas:
