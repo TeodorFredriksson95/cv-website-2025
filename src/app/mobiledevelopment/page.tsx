@@ -270,15 +270,7 @@ export default function AppsAndMobilePage() {
                     <li className="italic font-semibold">Create assets and place them on a map</li>
                     <li className="italic font-semibold">Use global assets to create local work worders</li>
                     <li className="italic font-semibold">Assign work orders to local staff</li>
-                    <li className="italic font-semibold">
-                        Tools to visualize flower compositions
-                    </li>
-                    <li className="italic font-semibold">
-                      Tools to visualize color schema for arrangements
-                    </li>
-                    <li className="italic font-semibold">
-                       Flower & plant research in-app
-                    </li>
+            
                   </ul>
                 </div>
   
