@@ -24,7 +24,7 @@ export default function FeatureIcon({
         damping: 10,
         delay,
       }}
-      className="z-50 flex flex-col items-center group justify-center hover:cursor-pointer [@media(max-width:369px)]:w-[30px]  [@media(min-width:400px)]:w-[30px]  [@media(min-width:449px)]:w-[40px]
+      className="z-50 flex flex-col items-center group justify-center hover:cursor-pointer [@media(max-width:369px)]:w-[40px]  [@media(min-width:400px)]:w-[30px]  [@media(min-width:449px)]:w-[40px]
     [@media(min-width:450px)]:w-[60px]  sm:w-[100px] md:w-[80px]"
     >
       <div className="relative w-full aspect-square">
