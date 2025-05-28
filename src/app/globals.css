@@ -16,6 +16,7 @@
       --text-primary-changed: #0c7689;
 
     --color-secondary-bg: #FDFBD4;
+    --color-sd-gray: #f6f5eb;
 
   --font-sans: var(--font-sora);
   --font-mono: var(--font-fira-code);
@@ -30,6 +31,7 @@
     --color-lighter-accent: #a12e2c;
     --green: #13c213;
     --text-primary-changed: #0c7689;
+    --text: #f6f5eb;
   }
 }
 

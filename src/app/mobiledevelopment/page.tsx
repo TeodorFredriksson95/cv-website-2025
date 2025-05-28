@@ -51,33 +51,33 @@ export default function AppsAndMobilePage() {
       </ul>
 
       <div className="flex flex-wrap gap-4 mt-4">
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+  <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/jsIconGreen.svg" alt="Nodejs" className="max-w-full max-h-full object-contain" />
   </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+  <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/javascript-seeklogo.png" alt="Javascript" className="max-w-full max-h-full object-contain" />
   </div>
 
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+  <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/Logomark_Full Color.png" alt="Firebase" className="max-w-full max-h-full object-contain" />
   </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+  <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/react.png" alt="React" className="max-w-full max-h-full object-contain" />
   </div>
 
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+  <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/ts-logo-128.png" alt="TypeScript" className="max-w-full max-h-full object-contain" />
   </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+  <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/GitHub_Logo.png" alt="Github" className="max-w-full max-h-full object-contain" />
   </div>
 
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/expo-seeklogo.png" alt="Expo" className="max-w-full max-h-full object-contain" />
   </div>
 
 
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
   </div>
 
@@ -117,23 +117,23 @@ export default function AppsAndMobilePage() {
 
 <div className="flex flex-wrap gap-4 mt-4">
 
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+  <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/Logomark_Full Color.png" alt="Firebase" className="max-w-full max-h-full object-contain" />
   </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+  <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/react.png" alt="React" className="max-w-full max-h-full object-contain" />
   </div>
 
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+  <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/ts-logo-128.png" alt="TypeScript" className="max-w-full max-h-full object-contain" />
   </div>
 
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/expo-seeklogo.png" alt="Expo" className="max-w-full max-h-full object-contain" />
   </div>
 
  
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
   </div>
 
@@ -158,23 +158,23 @@ export default function AppsAndMobilePage() {
 
 <div className="flex flex-wrap gap-4 mt-4">
 
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+  <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/Logomark_Full Color.png" alt="Firebase" className="max-w-full max-h-full object-contain" />
   </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+  <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/react.png" alt="React" className="max-w-full max-h-full object-contain" />
   </div>
 
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+  <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/ts-logo-128.png" alt="TypeScript" className="max-w-full max-h-full object-contain" />
   </div>
 
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/expo-seeklogo.png" alt="Expo" className="max-w-full max-h-full object-contain" />
   </div>
 
  
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
+    <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
     <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
   </div>
 

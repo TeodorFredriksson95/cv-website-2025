@@ -4,325 +4,377 @@ import Link from "next/link";
 
 export default function WebPage() {
   return (
-<div className="grid grid-rows-[_1fr]  justify-items-center min-h-screen ">
-<main className="flex flex-col  row-start-2 w-full">
-  <Section className="text-center   ">
-  <div className="container  bg-background-gray rounded shadow-lg/20 p-4 mx-auto ">
-
-    <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">Web <br className="block sm:hidden"/>Development
-</h1>
-    <div className="flex justify-center mb-4">
-        <FeatureIcon
-         src="/icons/webdev2.svg"
-              alt="Web Icon"
-              label=""
-
-          />
+    <div className="grid grid-rows-[_1fr]  justify-items-center min-h-screen ">
+      <main className="flex flex-col  row-start-2 w-full">
+        <Section className="text-center   ">
+          <div className="container  bg-gray-50 rounded-md border-4 border-primary/50 shadow-lg/20 p-4 mx-auto ">
+            <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">
+              Web <br className="block sm:hidden" />
+              Development
+            </h1>
+            <div className="flex justify-center mb-4">
+              <FeatureIcon src="/icons/webdev2.svg" alt="Web Icon" label="" />
+            </div>
+            <p className="text-lg w-full md:w-4/7 mx-auto font-mono text-muted-foreground font-semibold">
+              From backend APIs to frontend polish — I love building systems
+              that are efficient and feel easy to use
+            </p>
           </div>
-    <p className="text-lg w-full md:w-4/7 mx-auto font-mono text-muted-foreground font-semibold">
-From backend APIs to frontend polish — my goal is to build efficient systems that are easy to use
-        </p>
-          </div>
-  </Section>
+        </Section>
 
-<Section>
-  <div className="flex flex-col lg:flex-row items-start gap-10">
-    <div className="max-w-xl">
-              <h2 className="text-4xl  font-extrabold font-sans text-accent leading-tight mb-2">
-Unidevweb</h2>
-        <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-3 leading-tight">
-          A Story-Driven API
-        </h3>
-      <p className="text-md text-muted-foreground mb-4 font-mono font-semibold">
-        The idea was to create a web based cover letter and resume through creative storytelling and a public but protected open REST API, serving relevant information about my technical skills.
-      </p>
-      <p className="text-md text-muted-foreground mb-2 font-semibold">Focus areas:</p>
-        <ul className="list-disc list-inside text-md text-muted-foreground mb-5 space-y-1">
-          <li>Modular architecture</li>
-          <li>CI/CD pipelines with GitHub and Azure</li>
-          <li>Secure OAuth 2.0 authentication</li>
-          <li>Layered authorization</li>
-          <li>Reusable and well-documented API design</li>
-        </ul>
-
-<div className="flex flex-wrap gap-4 mt-4">
-
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/Logomark_Full Color.png" alt="Firbase" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/react.png" alt="React" className="max-w-full max-h-full object-contain" />
-  </div>
-
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/ts-logo-128.png" alt="TypeScript" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/GitHub_Logo.png" alt="Github" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/csharpIcon.png" alt="C#" className="max-w-full max-h-full object-contain" />
-  </div>
-
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/Microsoft_Azure.svg" alt="Azure" className="max-w-full max-h-full object-contain" />
-  </div>
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/dotnet-logo.png" alt="dotnet" className="max-w-full max-h-full object-contain" />
-  </div>
-  
-</div>  
-    </div>
-<div className="grid sm:grid-cols-2 gap-4">
-  <div className="col-span-2  shadow-2xl/40 overflow-hidden ">
-    <img
-      src="/showcase/unidevwebcover.png"
-      alt="Unidevweb Menu"
-      className="w-full h-auto rounded object-cover"
-    />
-  </div>
-
-  <div className=" shadow-2xl/40 aspect-[4/5]">
-    <img
-      src="/showcase/unidevwebmenu.png"
-      alt="Mobile view"
-      className="w-full h-full rounded object-cover"
-    />
-  </div>
-
-  <div className="shadow-2xl/40  aspect-[4/5]">
-    <img
-      src="/showcase/unidevwebapi.png"
-      alt="API view"
-      className="w-full rounded h-full object-cover"
-    />
-  </div>
-</div>
-  </div>
-</Section>
-
-
-<Section>
-  <div className="flex flex-col lg:flex-row items-start gap-10">
-    
-    <div className="max-w-xl">
-      <h2 className="text-3xl  font-extrabold font-sans text-accent mb-2 leading-tight">Low-code Project</h2>
-        <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-3 leading-tight">
-        A Thesis on the Usage of Low-code
-      </h3>
-      
-      <p className="text-md text-muted-foreground mb-4 font-mono font-semibold">
-        Built as part of my thesis, this low-code React app provides a visual UI for managing relational databases — create, edit, and visualize schema logic without writing SQL.
-      </p>
-        <p className="text-md text-muted-foreground mb-2 font-semibold">Focus areas:</p>
-          <ul className="list-disc list-inside text-md text-muted-foreground mb-5 space-y-1">
-          <li>External database management without coding experience</li>
-          <li>Self-explanatory UI</li>
-          <li>Theoretical deep dive and presentation of low-code concepts</li>
-        </ul>
-
-           
-           <div className="mt-4 p-4 border-l-4 border-primary bg-primary/10 rounded shadow-md">
-            <div className="flex items-center mb-2">
-                      <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                      </svg>
-                      <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                      </svg>
-                      <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                      </svg>
-                      <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                      </svg>
-                      <svg className="w-4 h-4 text-yellow-300 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-                          <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-                      </svg>
-                  </div>
-  <p className="text-sm leading-relaxed text-primary-foreground">
-    <span className="text-primary text-lg font-semibold">Best Thesis Award:</span> The project was awarded top honors and voted <span className="font-semibold text-lg italic">"Best thesis project 2023"</span> at Newton School of Applied Sciences.
-  </p>
-</div>
-
-     <div className="flex flex-wrap gap-4 mt-4">
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/jsIconGreen.svg" alt="Nodejs" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/javascript-seeklogo.png" alt="Javascript" className="max-w-full max-h-full object-contain" />
-  </div>
-
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/react.png" alt="React" className="max-w-full max-h-full object-contain" />
-  </div>
-
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/ts-logo-128.png" alt="TypeScript" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/GitHub_Logo.png" alt="Github" className="max-w-full max-h-full object-contain" />
-  </div>
-
-
-
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/MYSQL.png" alt="MySQL" className="max-w-full max-h-full object-contain" />
-  </div>
-
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
-  </div>
-
-</div>  
-    </div>
-
-    <div className="grid grid-cols-2 gap-4 w-full  ">
-      <img src="/showcase/image10.png" alt="Create Database" className="shadow-2xl/40 rounded object-cover col-span-2" />
-      <img src="/showcase/image6.png" alt="Create Database" className="shadow-2xl/40 rounded object-cover col-span-2" />
-    </div>
-
-  </div>
-</Section>
-
-
-
-<Section>
-  <div className="flex flex-col gap-16">
-
-    <div className="flex flex-col lg:flex-row items-start gap-10">
-       <div className="max-w-xl">
-                <h2 className="text-4xl  font-extrabold font-sans text-accent leading-tight mb-2">
-                    Campaign Site
+        <Section>
+          <div className="flex flex-col bg-blue-50 shadow-lg/20 p-4 rounded lg:flex-row items-start gap-10">
+            <div className="max-w-xl inset-ring-1 bg-blue-200 shadow-lg/20 p-4 rounded">
+              <div className="border-b-2  mb-3">
+                <h2 className="text-4xl  font-extrabold font-sans text-slate-900 leading-tight">
+                  Unidevweb
                 </h2>
-                  <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-3 leading-tight">
-        A Hub for Information
-      </h3>
+              </div>
+              <p className="text-md text-muted-foreground mb-4 font-mono font-semibold">
+                A web based cover letter and resume with creative storytelling
+                and a public but protected open REST API, serving relevant
+                information about my technical skills and education.
+              </p>
+              <p className="text-lg text-white/90 font-bold font-mono mb-2">
+                Focus areas:
+              </p>
+              <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
+                <ul className="list-disc px-5">
+                  <li className="italic font-semibold">ASP.NET REST API</li>
+                  <li className="italic font-semibold">Modular architecture</li>
+                  <li className="italic font-semibold">
+                    CI/CD pipelines with GitHub and Azure
+                  </li>
+                  <li className="italic font-semibold">
+                    Secure OAuth 2.0 authentication
+                  </li>
+                  <li className="italic font-semibold">
+                    Layered authorization
+                  </li>
+                  <li className="italic font-semibold">Microservices</li>
+                </ul>
+              </div>
+              <p className="text-lg text-white/90 font-bold font-mono mb-2">
+                Key features:
+              </p>
+              <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
+                <ul className="list-disc px-5">
+                  <li className="italic font-semibold">Open REST API</li>
+                  <li className="italic font-semibold">API Documentation</li>
+                  <li className="italic font-semibold">
+                    Authentication through known providers
+                  </li>
+                  <li className="italic font-semibold">CSS animations</li>
+                </ul>
+              </div>
+
+              <div className="flex flex-wrap gap-4 mt-4">
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20">
+                  <img
+                    src="/logos/Logomark_Full Color.png"
+                    alt="Firbase"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20">
+                  <img
+                    src="/logos/react.png"
+                    alt="React"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20">
+                  <img
+                    src="/logos/ts-logo-128.png"
+                    alt="TypeScript"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20">
+                  <img
+                    src="/logos/GitHub_Logo.png"
+                    alt="Github"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20">
+                  <img
+                    src="/logos/csharpIcon.png"
+                    alt="C#"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20">
+                  <img
+                    src="/logos/Microsoft_Azure.svg"
+                    alt="Azure"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <div className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20">
+                  <img
+                    src="/logos/dotnet-logo.png"
+                    alt="dotnet"
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-4 p-3 inset-ring-1 inset-ring-black/10 rounded inset-shadow-sm inset-shadow-black bg-blue-200">
+              <div className="col-span-2 border-gray-500 border-2 rounded-md shadow-2xl/40 overflow-hidden ">
+                <img
+                  src="/showcase/unidevwebcover.png"
+                  alt="Unidevweb Menu"
+                  className="w-full h-auto bg-accent/10 rounded  inset-shadow-sm inset-shadow-black   object-cover"
+                />
+              </div>
+
+              <div className="border-gray-500 border-2 rounded-md shadow-2xl/40 aspect-[4/5]">
+                <img
+                  src="/showcase/unidevwebmenu.png"
+                  alt="Mobile view"
+                  className="w-full h-full bg-accent/10 rounded  inset-shadow-sm inset-shadow-black   object-cover"
+                />
+              </div>
+
+              <div className="shadow-2xl/40 border-gray-500 border-2 rounded-md aspect-[4/5]">
+                <img
+                  src="/showcase/unidevwebapi.png"
+                  alt="API view"
+                  className="w-full h-full bg-accent/10 rounded  inset-shadow-sm inset-shadow-black   object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </Section>
+
+        <Section>
+          <div className="flex relative flex-col bg-blue-50 shadow-lg/20 p-4 rounded ">
+          
+            <div className="flex  flex-col lg:flex-row items-start gap-10">
+              <div className="max-w-xl  flex-1 inset-ring-1 bg-blue-200 shadow-lg/20 p-4 rounded">
+
+                <div className="border-b-2 mb-3 flex flex-row items-center justify-between">
+                  <h2 className="text-4xl font-extrabold font-sans text-slate-900 leading-tight">
+                    Low-code Project
+                  </h2>
+      
+                </div>
+
+                <p className="text-md text-muted-foreground mb-4 font-mono font-semibold">
+                  Built as part of my thesis, this low-code React app provides a
+                  visual UI for managing relational databases — create, edit,
+                  and visualize schema logic without writing SQL.
+                </p>
+
+                <p className="text-lg text-white/90 font-bold font-mono mb-2">
+                  Focus areas:
+                </p>
+                <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
+                  <ul className="list-disc px-5">
+                    <li className="italic font-semibold">
+                      Write a research paper on usage, statistics, benefits, and
+                      pitfalls of low-code apps
+                    </li>
+                    <li className="italic font-semibold">
+                      Create and demo a low-code app using React, TypeScript and SQL
+                    </li>
+                  </ul>
+                </div>
+
+                <p className="text-lg text-white/90 font-bold font-mono mb-2">
+                  Key features:
+                </p>
+                <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
+                  <ul className="list-disc px-5">
+                    <li className="italic font-semibold">
+                      CRUD operations on relational databases
+                    </li>
+                    <li className="italic font-semibold">
+                      Enables users without SQL knowledge to perform actions on
+                      databases safely
+                    </li>
+                    <li className="italic font-semibold">Intuitive UI</li>
+                  </ul>
+                </div>
+
+                <div className="flex flex-wrap gap-4 mt-4">
+                  {[
+                    { src: "/logos/jsIconGreen.svg", alt: "Nodejs" },
+                    {
+                      src: "/logos/javascript-seeklogo.png",
+                      alt: "Javascript",
+                    },
+                    { src: "/logos/react.png", alt: "React" },
+                    { src: "/logos/ts-logo-128.png", alt: "TypeScript" },
+                    { src: "/logos/GitHub_Logo.png", alt: "GitHub" },
+                    { src: "/logos/MYSQL.png", alt: "MySQL" },
+                    { src: "/logos/csslogo.png", alt: "CSS" },
+                  ].map((logo, idx) => (
+                    <div
+                      key={idx}
+                      className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20"
+                    >
+                      <img
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex-1 grid grid-cols-2 gap-4 p-3 inset-ring-1 inset-ring-black/10 rounded inset-shadow-sm inset-shadow-black bg-blue-200">
+                <div className="col-span-2 rounded border-2 border-gray-500 shadow-2xl/40 overflow-hidden">
+                  <img
+                    src="/showcase/image10.png"
+                    alt="Create Database"
+                    className="w-full h-auto object-cover rounded"
+                  />
+                </div>
+                <div className="shadow-2xl/20 border-2 border-gray-500 rounded col-span-2">
+                  <img
+                    src="/showcase/image6.png"
+                    alt="Create Database"
+                    className="w-full h-auto object-cover rounded-xs"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Section>
+
+<Section>
+  <div className="flex flex-col bg-blue-50 shadow-lg/20 p-4 rounded gap-16">
+    {/* Campaign Site */}
+    <div className="flex flex-col lg:flex-row items-start gap-10">
+      {/* Text Block */}
+      <div className="max-w-xl flex-1 inset-ring-1 bg-blue-200 shadow-lg/20 p-4 rounded">
+        <div className="border-b-2 mb-3 flex flex-row items-center justify-between">
+          <h2 className="text-4xl font-extrabold font-sans text-slate-900 leading-tight">Campaign Site</h2>
+        </div>
+        <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-3 leading-tight">
+          A Hub for Information
+        </h3>
         <p className="text-md text-muted-foreground font-mono font-semibold mb-4">
-Created as a custom template for a campaign presented at the Swedish Parliament, designed to follow up on issues of homelessness and financial vulnerability. User-friendly for non-developers and fully documented for future updates.        </p>
-                 <p className="text-md text-muted-foreground mb-2 font-semibold">Focus areas:</p>
+          Created as a custom template for a campaign presented at the Swedish Parliament, designed to follow up on issues of homelessness and financial vulnerability. User-friendly for non-developers and fully documented for future updates.
+        </p>
+        <p className="text-lg text-white/90 font-bold font-mono mb-2">Focus areas:</p>
+        <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
+          <ul className="list-disc px-5">
+            <li className="italic font-semibold">Custom template</li>
+            <li className="italic font-semibold">User-friendly interface for non-developers</li>
+            <li className="italic font-semibold">Thorough documentation</li>
+          </ul>
+        </div>
 
-            <ul className="list-disc list-inside text-md text-muted-foreground mb-5 space-y-1">
-          <li>Custom template</li>
-          <li>User-friendly interface for non-developers</li>
-          <li>Thorough documentation</li>
-        </ul>
-       <div className="flex flex-wrap gap-4 mt-4">
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/jsIconGreen.svg" alt="Nodejs" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/javascript-seeklogo.png" alt="Javascript" className="max-w-full max-h-full object-contain" />
-  </div>
-
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/htmllogo.png" alt="Html" className="max-w-full max-h-full object-contain" />
-  </div>
-
-
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
-  </div>
-
-
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/PHP-logo.svg" alt="PHP" className="max-w-full max-h-full object-contain" />
-  </div>
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/wordpress.png" alt="Wordpress" className="max-w-full max-h-full object-contain" />
-  </div>
-</div>  
+        {/* Logos */}
+        <div className="flex flex-wrap gap-4 mt-4">
+          {[
+            { src: "/logos/jsIconGreen.svg", alt: "Nodejs" },
+            { src: "/logos/javascript-seeklogo.png", alt: "Javascript" },
+            { src: "/logos/htmllogo.png", alt: "HTML" },
+            { src: "/logos/csslogo.png", alt: "CSS" },
+            { src: "/logos/PHP-logo.svg", alt: "PHP" },
+            { src: "/logos/wordpress.png", alt: "Wordpress" },
+          ].map((logo, idx) => (
+            <div key={idx} className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20">
+              <img src={logo.src} alt={logo.alt} className="max-w-full max-h-full object-contain" />
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="w-full shadow-2xl/40 aspect-[7/3]">
-        <img
-          src="/showcase/socialtfrikort.png"
-          alt="E-commerce site"
-          className="w-full rounded h-full object-cover"
-        />
-      </div>
+      {/* Image Block */}
+          <div className="flex-1 grid grid-cols-2 gap-4 p-3 inset-ring-1 inset-ring-black/10 rounded inset-shadow-sm inset-shadow-black bg-blue-200">
+                <div className="col-span-2 rounded border-2 border-gray-500 shadow-2xl/40 overflow-hidden">
+                  <img
+                    src="/showcase/image10.png"
+                    alt="Create Database"
+                    className="w-full h-auto object-cover rounded"
+                  />
+                </div>
+                <div className="shadow-2xl/20 border-2 border-gray-500 rounded col-span-2">
+                  <img
+                    src="/showcase/socialtfrikort.png"
+                    alt="Create Database"
+                    className="w-full h-auto object-cover rounded-xs"
+                  />
+                </div>
+              </div>
     </div>
 
-    <div className="flex flex-col  lg:flex-row items-start gap-10">
-           <div className="max-w-xl">
-            <h2 className="text-4xl  font-extrabold font-sans text-accent leading-tight mb-2">
-            E-commerce Storefront
-            </h2>
+    {/* E-commerce Storefront */}
+    <div className="flex flex-col lg:flex-row items-start gap-10">
+      {/* Text Block */}
+      <div className="max-w-xl flex-1 inset-ring-1 bg-blue-200 shadow-lg/20 p-4 rounded">
+        <div className="border-b-2 mb-3 flex flex-row items-center justify-between">
+          <h2 className="text-4xl font-extrabold font-sans text-slate-900 leading-tight">E-commerce Storefront</h2>
+        </div>
         <h3 className="text-xl sm:text-2xl font-extrabold font-mono text-black mb-3 leading-tight">
-        Empowering the Financially Marginalized
-      </h3>
+          Empowering the Financially Marginalized
+        </h3>
         <p className="text-md text-muted-foreground font-mono font-semibold mb-4">
           A photo-oriented e-commerce site with a custom template built from scratch for an association driving social policy changes.
         </p>
-              <p className="text-md text-muted-foreground mb-2 font-semibold">Focus areas:</p>
-          <ul className="list-disc list-inside text-md text-muted-foreground mb-5 space-y-1">
-          <li>Accessible admin panel</li>
-          <li>Easy to use without prior web development experience</li>
-          <li>Thorough documentation</li>
-          <li>Seamless shopping experience</li>
-        </ul>
-       <div className="flex flex-wrap gap-4 mt-4">
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/jsIconGreen.svg" alt="Nodejs" className="max-w-full max-h-full object-contain" />
-  </div>
-  <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/javascript-seeklogo.png" alt="Javascript" className="max-w-full max-h-full object-contain" />
-  </div>
+        <p className="text-lg text-white/90 font-bold font-mono mb-2">Focus areas:</p>
+        <div className="p-4 mb-2 bg-gray-50/70 inset-shadow-sm inset-shadow-black rounded">
+          <ul className="list-disc px-5">
+            <li className="italic font-semibold">Accessible admin panel</li>
+            <li className="italic font-semibold">Easy to use without prior web development experience</li>
+            <li className="italic font-semibold">Thorough documentation</li>
+            <li className="italic font-semibold">Seamless shopping experience</li>
+          </ul>
+        </div>
 
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/htmllogo.png" alt="Html" className="max-w-full max-h-full object-contain" />
-  </div>
-
-
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/csslogo.png" alt="CSS" className="max-w-full max-h-full object-contain" />
-  </div>
-
-
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/PHP-logo.svg" alt="PHP" className="max-w-full max-h-full object-contain" />
-  </div>
-    <div className="w-16 h-16 p-2 flex items-center justify-center bg-background rounded-2xl shadow-md shadow-black/20">
-    <img src="/logos/wordpress.png" alt="Wordpress" className="max-w-full max-h-full object-contain" />
-  </div>
-</div>  
+        {/* Logos */}
+        <div className="flex flex-wrap gap-4 mt-4">
+          {[
+            { src: "/logos/jsIconGreen.svg", alt: "Nodejs" },
+            { src: "/logos/javascript-seeklogo.png", alt: "Javascript" },
+            { src: "/logos/htmllogo.png", alt: "HTML" },
+            { src: "/logos/csslogo.png", alt: "CSS" },
+            { src: "/logos/PHP-logo.svg", alt: "PHP" },
+            { src: "/logos/wordpress.png", alt: "Wordpress" },
+          ].map((logo, idx) => (
+            <div key={idx} className="w-12 h-12 p-2 flex items-center justify-center bg-background rounded-lg shadow-md shadow-black/20">
+              <img src={logo.src} alt={logo.alt} className="max-w-full max-h-full object-contain" />
+            </div>
+          ))}
+        </div>
       </div>
 
-
-      <div className="w-full overflow-hidden shadow-2xl/40  aspect-[7/3]">
-        <img
-          src="/showcase/socialabildbyran.png"
-          alt="Campaign site"
-          className="w-full h-full rounded object-cover"
-        />
+      {/* Image Block */}
+      <div className="flex-1 shadow-2xl/40 border-2 border-gray-500 p-3 rounded bg-blue-200">
+        <img src="/showcase/socialabildbyran.png" alt="Campaign site" className="w-full h-auto object-cover rounded" />
       </div>
     </div>
-
   </div>
 </Section>
 
 
+        <Section className="bg-primary text-background py-20">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-4xl sm:text-5xl font-extrabold font-sans mb-6">
+              Got a website in mind?
+            </h2>
+            <p className="text-md sm:text-lg font-mono font-semibold mb-6">
+              Whether you need a backend API, a clean frontend, or just a fresh
+              perspective — I’d love to hear what you're working on.
+            </p>
 
-<Section className="bg-primary text-background py-20">
-  <div className="max-w-3xl mx-auto text-center">
-    <h2 className="text-4xl sm:text-5xl font-extrabold font-sans mb-6">
-      Got a website in mind?
-    </h2>
-    <p className="text-md sm:text-lg font-mono font-semibold mb-6">
-      Whether you need a backend API, a clean frontend, or just a fresh perspective — I’d love to hear what you're working on.
-    </p>
-
-    <Link
-      href="mailto:teofredev@gmail.com"
-      className="inline-block px-6 py-3 border border-background text-background font-mono font-semibold rounded hover:bg-background hover:text-primary transition"
-    >
-      Reach Out
-    </Link>
-  </div>
-</Section>
-
-
-    </main>
+            <Link
+              href="mailto:teofredev@gmail.com"
+              className="inline-block px-6 py-3 border border-background text-background font-mono font-semibold rounded hover:bg-background hover:text-primary transition"
+            >
+              Reach Out
+            </Link>
+          </div>
+        </Section>
+      </main>
     </div>
   );
 }

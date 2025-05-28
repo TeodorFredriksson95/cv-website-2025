@@ -94,7 +94,7 @@ export default function Gallery() {
       </AnimatePresence>
 
       {/* Image Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-4 group">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 group">
         {images.map((img, idx) => (
           <div
             key={idx}

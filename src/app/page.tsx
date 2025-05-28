@@ -49,13 +49,13 @@ export default function Home() {
             <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-2">
               Teodor Fredriksson
             </h1>
-            <div className="p-5 bg-gray-200 border-2 border-gray-600 rounded shadow-2xl">
+            <div className="p-5 bg-blue-200 border-2 border-gray-600 rounded shadow-2xl">
 
             <p className=" font-mono text-muted-foreground font-semibold max-w-xl">
-              The prospect of creation has always been a huge motivator for me. I enjoy the process of finding what looks good, sounds good, feels good. From games, to music, to APIs - it's all about the joy of crafting something. 
+              The prospect of creation has always been a huge motivator for me. I enjoy the process of searching for and testing what looks good, sounds good, feels good. From games, to music, to APIs - it's all about the joy of crafting something. 
             </p>
           <motion.div
-            className="flex inset-shadow-sm/50 mt-5 will-change-transform bg-gray-100/50 border-2 rounded border-gray-400 p-5 flex-row flex-wrap justify-center items-center w-full max-w-xl md:gap-20 mx-auto gap-10"
+            className="flex inset-shadow-sm inset-shadow-black mt-5 will-change-transform bg-gray-50/70  border-2 rounded border-gray-400 p-5 flex-row flex-wrap justify-center items-center w-full max-w-xl md:gap-20 mx-auto gap-10"
             initial="hidden"
             animate="visible"
             variants={{
