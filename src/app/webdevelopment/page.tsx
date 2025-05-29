@@ -324,7 +324,7 @@ export default function WebPage() {
                 <div className="grid sm:grid-cols-2 gap-4 p-3   rounded inset-shadow-sm inset-shadow-black/50 bg-blue-100">
                   <div className="col-span-2 rounded border-1 border-black/20 overflow-hidden">
                     <img
-                      src="/showcase/socialtfrikort_2.png"
+                      src="/showcase/socialtfrikort.png"
                       alt="Create Database"
                       className="w-full h-auto object-cover rounded"
                     />
@@ -334,7 +334,7 @@ export default function WebPage() {
                 <div className="grid sm:grid-cols-2 gap-4 p-3   rounded inset-shadow-sm inset-shadow-black/50 bg-blue-100">
                   <div className="col-span-2 rounded border-1 border-black/20 overflow-hidden">
                     <img
-                      src="/showcase/socialtfrikort.png"
+                      src="/showcase/socialtfrikort_2.png"
                       alt="Create Database"
                       className="w-full h-auto object-cover rounded"
                     />
@@ -409,7 +409,7 @@ export default function WebPage() {
         <div className="grid sm:grid-cols-2 gap-4 p-3 rounded inset-shadow-sm inset-shadow-black/50 bg-blue-100">
           <div className="col-span-2 rounded border-1 border-black/20 overflow-hidden">
             <img
-              src="/showcase/socialbildbyran_2.png"
+              src="/showcase/socialabildbyran.png"
               alt="Create Database"
               className="w-full h-auto object-cover rounded"
             />
@@ -419,7 +419,7 @@ export default function WebPage() {
         <div className="grid sm:grid-cols-2 gap-4 p-3 rounded inset-shadow-sm inset-shadow-black/50 bg-blue-100">
           <div className="col-span-2 rounded border-1 border-black/20 overflow-hidden">
             <img
-              src="/showcase/socialabildbyran.png"
+              src="/showcase/socialbildbyran_2.png"
               alt="Create Database"
               className="w-full h-auto object-cover rounded"
             />
