@@ -316,29 +316,29 @@ export default function GamesPage() {
                   </div>
                 </div>
               </div>
-                <div className="flex flex-wrap gap-4 border-b-5 border-accent-orange mt-4">
-                  <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+              <div className="flex flex-wrap gap-4 border-b-5 border-accent-orange mt-4">
+                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
                   <img
                     src="/logos/gmbinder.png"
                     alt="GMBinder"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                  <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
                   <img
                     src="/logos/gimp.png"
                     alt="Gimp"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                  <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
                   <img
                     src="/logos/csslogo.png"
                     alt="CSS"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                  <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
                   <img
                     src="/logos/htmllogo.png"
                     alt="CSS"
@@ -346,7 +346,7 @@ export default function GamesPage() {
                   />
                 </div>
 
-                  <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
                   <img
                     src="/logos/chatgptcut.png"
                     alt="ChatGPT"
@@ -360,7 +360,8 @@ export default function GamesPage() {
               <Gallery />
 
               <p className="text-sm  font-semibold italic text-center py-2">
-                Original <span className="text-accent-orange font-extrabold">D&D</span>{" "}
+                Original{" "}
+                <span className="text-accent-orange font-extrabold">D&D</span>{" "}
                 concept art that shaped the world of Eoxania
               </p>
             </div>
@@ -436,12 +437,12 @@ export default function GamesPage() {
               talking about the industry politics, what makes a feature feel fun
               to use and how to make them.
             </p>
-              <Link
-                href="mailto:teofredev@gmail.com"
-                className="inline-block bg-accent-orange text-secondary-cream text-lg font-bold px-12 py-4 rounded-md shadow-lg hover:bg-accent-orange/90 will-change-transform transition-transform duration-300 transform hover:scale-105"
-              >
-                Yes!
-              </Link>
+            <Link
+              href="mailto:teofredev@gmail.com"
+              className="inline-block bg-accent-orange text-secondary-cream text-lg font-bold px-12 py-4 rounded-md shadow-lg hover:bg-accent-orange/90 will-change-transform transition-transform duration-300 transform hover:scale-105"
+            >
+              Yes!
+            </Link>
           </div>
         </Section>
       </main>

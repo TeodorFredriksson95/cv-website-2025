@@ -8,6 +8,7 @@ export default function Footer() {
 
         <div className="text-center text-white/80 sm:text-left">
           <p className="mb-1 font-semibold ">Teodor Fredriksson Portfolio</p>
+        <div className="border-b-2 mb-1 border-secondary-cream/50"></div>  
           <p>Built with React, TypeScript and Tailwind CSS</p>
         </div>
 
@@ -15,7 +16,7 @@ export default function Footer() {
           <div className="flex gap-6 items-center">
             <Link
               href="mailto:teofredev@gmail.com"
-              className="hover:text-accent-orange  transition-colors flex items-center gap-1"
+              className="hover:text-accent-yellow  transition-colors flex items-center gap-1"
             >
               <Mail className="w-4 h-4" />
               <span>Email</span>
@@ -23,7 +24,7 @@ export default function Footer() {
             <Link
               href="https://github.com/teodorfredriksson95"
               target="_blank"
-              className="hover:text-accent-orange transition-colors flex items-center gap-1"
+              className="hover:text-accent-yellow  transition-colors flex items-center gap-1"
             >
               <Github className="w-4 h-4" />
               <span>GitHub</span>
@@ -31,18 +32,20 @@ export default function Footer() {
             <Link
               href="https://linkedin.com/in/teodor-fredriksson-919606b9/"
               target="_blank"
-              className="hover:text-accent-orange  transition-colors flex items-center gap-1"
+              className="hover:text-accent-yellow  transition-colors flex items-center gap-1"
             >
               <Linkedin className="w-4 h-4" />
               <span>LinkedIn</span>
             </Link>
+            
           </div>
 
-          {/* Phone Number Below */}
+          
           <Link
             href="tel:+46761611369"
-            className="hover:text-accent-orange  transition-colors flex items-center gap-1"
+              className="hover:text-accent-yellow  transition-colors flex items-center gap-1"
           >
+            
             <Phone className="w-4 h-4" />
             <span>+46 76 161 13 69</span>
           </Link>
