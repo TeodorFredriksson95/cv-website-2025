@@ -62,7 +62,7 @@ export default function HomePageCarousel() {
               key={index}
               className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
               animate={{ x: dx, y: dy, scale, opacity }}
-              transition={{ type: "spring", stiffness: 200, damping: 20 }}
+              transition={{ type: "spring", stiffness: 100, damping: 20 }}
             >
               <CarouselIcon
                 icon={item.Icon}
