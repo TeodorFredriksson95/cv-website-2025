@@ -21,6 +21,7 @@ export default function CarouselIcon({
   }, []);
 
   const getThreshold = () => {
+    if (windowWidth < 400) return 50;
     if (windowWidth < 500) return 75;
     if (windowWidth < 768) return 100;
     return 150;

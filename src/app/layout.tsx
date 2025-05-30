@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Sora, Fira_Code, DM_Serif_Display, IBM_Plex_Mono } from "next/font/google";
+import { Sora, Fira_Code, DM_Serif_Display, IBM_Plex_Mono, Lato } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "../components/navbar";
@@ -17,6 +17,12 @@ const firaCode = Fira_Code({
   display: "swap",
 });
 
+const lato = Lato({
+  variable: "--font-lato",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://unidevwebportfolio.com"), //
@@ -62,7 +68,7 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body className={`${sora.variable} ${firaCode.variable} antialiased`}>
+      <body className={`${sora.variable} ${firaCode.variable} ${lato.variable} antialiased`}>
         <Navbar/>
         <div className="min-h-screen flex flex-col">
          <main className="flex-1">

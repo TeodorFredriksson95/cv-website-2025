@@ -10,7 +10,7 @@ export default function Section({ children, className = "", narrow = false }: Se
 
   return (
     <section className={` ${className} ${paddingTop}`}>
-      <div className={`mx-auto px-4 sm:px-10 ${narrow ? "max-w-3xl" : "container"}`}>
+      <div className={`mx-auto px-4 sm:px-10 lg:px-20 ${narrow ? "max-w-3xl" : "container"}`}>
         {children}
       </div>
     </section>

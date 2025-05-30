@@ -2,21 +2,14 @@
 
 @theme inline {
   /* Base Colors */
-  --color-primary: #7700E0; /* Purple */
   --color-accent-orange: #E08900;
-  --color-accent-green: #10E05C;
-  --color-secondary-purple: #4B154F;
-  --color-secondary-yellow: #E6DA87;
+  --color-accent-yellow: #FFE548;
+  --color-secondary-green: #0F8B8D;
+  --color-secondary-brown: #564D4A;
+  --color-secondary-purple: #5B2333;
+  --color-secondary-cream: #F7F4F3;
+  --color-accent-white-link: #F0F3BD;
 
-  /* Backgrounds */
-  --color-background: #FFFFFF;
-  --color-background-green: #EDF7D2;
-  --color-background-blue: #305480;
-
-  /* Text */
-  --color-text-light: #FFFFFF;
-  --color-text-dark: #390099;
-  --color-text-pink: #9E0059;
 
   /* Neutrals (from before) */
   --color-background-gray: #dfdfdf;
@@ -32,6 +25,7 @@
   /* Fonts */
   --font-sans: var(--font-sora);
   --font-mono: var(--font-fira-code);
+  --font-lato: var(--font-lato)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,10 +49,13 @@ html[style*="overflow: hidden"] {
   padding-right: 0 !important;
 }
 
-/* body {
-  background-color: #f1efef;
-} */
-
+body {
+  background-color:#F7F4F3 !important;
+  font-family: var(--font-lato) !important;
+}
+p, h2, h1, h3, h4 {
+  font-family: var(--font-lato) !important;
+}
 .swiper-pagination-bullet-active {
   background-color: white !important;
 }

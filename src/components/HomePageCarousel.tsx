@@ -27,9 +27,9 @@ export default function HomePageCarousel() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const iconSize = windowWidth < 500 ? 60 : windowWidth < 768 ? 80 : 100;
-  const xOffset = windowWidth < 500 ? 100 : windowWidth < 768 ? 140 : 180;
-  const yOffset = windowWidth < 500 ? 40 : windowWidth < 768 ? 50 : 80;
+  const iconSize = windowWidth  < 500 ? 60 : windowWidth < 768 ? 80 : windowWidth < 950 ? 70 : 100;
+  const xOffset = windowWidth < 500 ? 100 : windowWidth < 768 ? 120 : windowWidth < 950 ? 120: 180;
+  const yOffset = windowWidth < 500 ? 60 : windowWidth < 768 ? 80 : 80;
 
   const handleSwipe = (direction: "left" | "right") => {
     setActiveIndex((prev) =>
@@ -38,66 +38,73 @@ export default function HomePageCarousel() {
   };
 
   return (
-    <div className="relative w-full flex flex-col items-center">
-      <div className="relative w-full max-w-[400px] aspect-square perspective-1000">
-        {icons.map((item, index) => {
-          const { Icon } = item;
-          const position = (index - activeIndex + count) % count;
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="relative w-full flex flex-col items-center"
+    >
+      <div className="relative w-full flex flex-col items-center">
+        <div className="relative w-full max-w-[300px] md:max-w-[300] aspect-square mb-10 md:mb-0">
+          {icons.map((item, index) => {
+            const { Icon } = item;
+            const position = (index - activeIndex + count) % count;
 
-          let dx = 0,
-            dy = 0,
-            scale = 1,
-            opacity = 1,
-            fill = "#5B2333";
+            let dx = 0,
+              dy = 0,
+              scale = 1,
+              opacity = 1,
+              fill = "#5B2333";
 
-          if (position === 0) {
-            dx = 0;
-            dy = yOffset;
-            scale = 1.3;
-            opacity = 1;
-            fill = "#0F8B8D";
-          } else if (position === 1) {
-            dx = xOffset;
-            dy = -10;
-            scale = 0.8;
-            opacity = 0.8;
-          } else if (position === 2) {
-            dx = 0;
-            dy = -yOffset;
-            scale = 0.5;
-            opacity = 0.5;
-          } else if (position === 3) {
-            dx = -xOffset;
-            dy = -10;
-            scale = 0.8;
-            opacity = 0.8;
-          }
+            if (position === 0) {
+              dx = 0;
+              dy = yOffset;
+              scale = 1.3;
+              opacity = 1;
+              fill = "#5B2333";
+            } else if (position === 1) {
+              dx = xOffset;
+              dy = -10;
+              scale = 0.8;
+              opacity = 0.8;
+            } else if (position === 2) {
+              dx = 0;
+              dy = -yOffset;
+              scale = 0.5;
+              opacity = 0.5;
+            } else if (position === 3) {
+              dx = -xOffset;
+              dy = -10;
+              scale = 0.8;
+              opacity = 0.8;
+            }
 
-          const isActive = position === 0;
-          const showLabel = position !== 2;
+            const isActive = position === 0;
+            const showLabel = position !== 2;
 
-          return (
-            <motion.div
-              key={index}
-              animate={{ x: dx, y: dy, scale, opacity }}
-              transition={{ type: "spring", stiffness: 200, damping: 20 }}
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-            >
-              <CarouselIcon
-                icon={Icon}
-                label={item.label}
-                href={item.href}
-                fill={fill}
-                size={iconSize}
-                isActive={isActive}
-                onSwipe={handleSwipe}
-                opacity={opacity}
-                showLabel={showLabel}
-              />
-            </motion.div>
-          );
-        })}
+            return (
+              <motion.div
+                key={index}
+                animate={{ x: dx, y: dy, scale, opacity }}
+                transition={{ type: "spring", stiffness: 200, damping: 20 }}
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+              >
+                <CarouselIcon
+                  icon={Icon}
+                  label={item.label}
+                  href={item.href}
+                  fill={fill}
+                  size={iconSize}
+                  isActive={isActive}
+                  onSwipe={handleSwipe}
+                  opacity={opacity}
+                  showLabel={showLabel}
+                />
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
