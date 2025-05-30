@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Sora, Fira_Code } from "next/font/google";
+import { Sora, Fira_Code, DM_Serif_Display, IBM_Plex_Mono } from "next/font/google";
 
 import "./globals.css";
 import Navbar from "../components/navbar";

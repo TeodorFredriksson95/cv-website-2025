@@ -5,11 +5,13 @@ import FeatureIcon from "@/components/FeatureIcon";
 import Section from "@/components/section";
 import Link from "next/link";
 import Gallery from "@/components/Gallery";
+import BrokenSealCard from "@/components/BrokenSealCard";
 
 export default function GamesPage() {
   return (
     <div className="grid grid-rows-[_1fr]  justify-items-center min-h-screen ">
       <main className="flex flex-col  row-start-2 w-full">
+
         <Section className="text-center   ">
           <div className="container  bg-gray-50 rounded-md border-2 border-black/50 shadow-lg/20 p-4 mx-auto ">
             <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-3">
@@ -33,27 +35,11 @@ export default function GamesPage() {
         <Section>
           <div className="rounded border-0 shadow-lg/10">
             <div className="container  rounded bg-blue-50  p-4 mx-auto px-6 flex sm:flex-col flex-col lg:flex-row items-center lg:items-start  gap-10">
-              <div className="bg-gradient-to-b shadow-[-3px_0px_10px_5px_rgba(0,0,0,0.55)]  from-[#d66f00] to-[#131313] p-4 rounded flex-col items-center w-full max-w-sm lg:flex-1">
-                <div className="relative  shadow-[-15px_10px_25px_5px_rgba(0,0,0,0.85)]   bg-background-black/60 aspect-[3.5/5] sm:aspect-[3.5/5]  border-8 border-primary w-full overflow-visible">
-                  <img
-                    src="/assets/protagonist_bs.png"
-                    alt="Main visual"
-                    className="absolute inset-0 w-full h-full md:scale-[1.2] scale-[1.1] -translate-x-[15%] -translate-y-[5%] md:-translate-y-[10%]"
-                  />
-                </div>
-                <p className="mt-4 shadow-lg/20  border-2 border-orange-300 bg-orange-400 rounded p-2 font-semibold text-[15px] italic text-center px-2">
-                  Shoutout to one of Broken Seal's artists,{" "}
-                  <Link
-                    href="https://linktr.ee/nourelagha"
-                    target="blank"
-                    className="hover:decoration-black/70 underline decoration-black decoration-2 underline-accent hover:text-black/70"
-                  >
-                    <span className="text font-bold">Nour</span>
-                  </Link>
-                  , for sharing her work on the concept art.
-                </p>
-              </div>
-
+            <Section>
+  <div className="flex flex-col items-center justify-center gap-10">
+    <BrokenSealCard />
+  </div>
+</Section>
               <div className="flex flex-col lg:flex-1 gap-2">
                 <div className="  border-1 border-black/50 p-4 rounded  bg-blue-200/80 shadow-lg/10 text-left lg:flex-1">
                   <div className="border-b-2 mb-3">

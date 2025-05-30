@@ -1,24 +1,29 @@
+'use client'
+
 import { Github, Linkedin, Mail, Phone, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import FeatureIcon from "@/components/FeatureIcon";
 import * as motion from "motion/react-client";
+import HomePageCarousel from "@/components/HomePageCarousel";
+
 
 export default function Home() {
   return (
-    <motion.div>
-      <main className="flex flex-col row-start-2 w-full">
+    <motion.div className="">
+      <main className="flex flex-col row-start-2 w-full ">
         <section className="w-full px-8 py-20 sm:px-16 text-center">
+          <HomePageCarousel />
           <div className="flex flex-col items-center mb-10">
             <Image
               src="/assets/cv_profilepic4.jpg"
               alt="Profile picture"
               width={160}
               height={160}
-              className="rounded-full border-4 border-primary shadow-lg object-cover"
+              className="rounded-full border-4 border-white shadow-lg object-cover"
             />
-            <div className="flex flex-col gap-2 mt-6 items-center text-muted-foreground">
-              <div className="flex items-center gap-4">
+            <div className="flex flex-col gap-2 mt-6 items-center text-white ">
+              <div className="flex items-center  gap-4">
                 <Link
                   href="mailto:teofredev@gmail.com"
                   className="hover:text-accent transition"
@@ -58,7 +63,7 @@ export default function Home() {
               </a>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-2">
+            <h1 className="text-4xl text-text-dark sm:text-5xl font-extrabold font-sans text-accent leading-tight mb-2">
               Teodor Fredriksson
             </h1>
             <div className="p-5 bg-blue-200/80 border-2 border-gray-600 rounded shadow-2xl">
@@ -68,44 +73,7 @@ export default function Home() {
                 good, sounds good, feels good. From games, to music, to APIs -
                 it's all about the joy of crafting something.
               </p>
-              <motion.div
-                className="flex inset-shadow-sm inset-shadow-black mt-5 will-change-transform bg-gray-50/70 [@media(max-width:449px)]:p-3 border-2 rounded border-gray-400 p-5 flex-row flex-wrap justify-center items-center w-full max-w-xl md:gap-20 mx-auto gap-10"
-                initial="hidden"
-                animate="visible"
-                variants={{
-                  hidden: {},
-                  visible: {
-                    transition: {
-                      staggerChildren: 0.2,
-                    },
-                  },
-                }}
-              >
-                <Link href="/gamedevelopment">
-                  <FeatureIcon
-                    src="/icons/gamepad2.svg"
-                    alt="Gamepad icon"
-                    label="Games"
-                    delay={0.1}
-                  />
-                </Link>
-                <Link href="/webdevelopment">
-                  <FeatureIcon
-                    src="/icons/webdev2.svg"
-                    alt="Web Icon"
-                    label="Web"
-                    delay={0.3}
-                  />
-                </Link>
-                <Link href="/mobiledevelopment">
-                  <FeatureIcon
-                    src="/icons/mobile2.svg"
-                    alt="Mobile Icon"
-                    label="Mobile"
-                    delay={0.5}
-                  />
-                </Link>
-              </motion.div>
+
             </div>
           </div>
 
