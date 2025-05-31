@@ -92,7 +92,7 @@ export default function CarouselIcon({
         />
       )}
       {showLabel && (
-        <p className="relative z-10 text-center mt-2 font-semibold text-sm sm:text-base pointer-events-none" style={{ color: fill }}>
+        <p className="relative z-10 text-center mt-2 font-semibold text-xl sm:text-2xl lg:text-2xl pointer-events-none" style={{ color: fill }}>
           {label}
         </p>
       )}

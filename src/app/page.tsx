@@ -4,13 +4,17 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import * as motion from "motion/react-client";
 import HomePageCarousel from "@/components/HomePageCarousel";
+import HomePageDesktopCarousel from "@/components/HomePageDesktopCarousel";
+import useMediaQuery from "./hooks/UseMediaQuery";
 
 export default function Home() {
+    const isDesktop = useMediaQuery("(min-width: 768px)");  
+
   return (
     <motion.div className="flex items-center justify-center">
       <main className="w-full flex flex-col-reverse md:flex-row items-center justify-center  md:gap-12">
-        <div className="w-full md:w-1/2 flex justify-center">
-          <HomePageCarousel />
+             <div className="w-full md:w-1/2 flex justify-center">
+          {isDesktop ? <HomePageDesktopCarousel /> : <HomePageCarousel />}
         </div>
 
         <div
