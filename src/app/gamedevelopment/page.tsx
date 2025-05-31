@@ -74,8 +74,8 @@ export default function GamesPage() {
                     I am currently working on:
                   </h2>
                   <div className="p-4 bg-secondary-brown inset-shadow-sm inset-shadow-black ">
-                    <ul className="list-disc text-secondary-cream/80 px-5">
-                      <li className="italic ">
+                    <ul className="list-disc text-secondary-cream px-5">
+                      <li className="italic  ">
                         Designing and implementing the quest, dialogue and
                         inventory system using C#
                       </li>
@@ -95,46 +95,46 @@ export default function GamesPage() {
                   </div>
                 </div>
 
-                <div className=" mt-4  border-2 rounded-md ">
-                  <h2 className="text-2xl bg-secondary-green rounded-t text-secondary-cream p-2   ">
-                    With this project we hope to achieve one of two things:
-                  </h2>
-                  <div className="p-4 bg-white rounded-md ">
-                    <ul className="list-disc text-secondary-purple px-5">
-                      <li className="italic font-bold">
-                        Either generate enough interest in our game to fund a
-                        studio of our own
-                      </li>
-                      <p className="font-bold italic">or</p>
-                      <li className="italic font-bold">
-                        Use this project as leverage to get hired
-                      </li>
-                    </ul>
-                  </div>
+                          <div className="bg-secondary-brown mt-4 rounded shadow-lg/20 border-2">
+                <p className="text-2xl p-2 font-bold bg-secondary-green text-secondary-cream  ">
+                  Key features:
+                </p>
+                <div className="p-4 bg-gray-50/90 inset-shadow-sm inset-shadow-black ">
+                  <ul className="list-disc px-5">
+                    <li className="italic font-semibold">Either generate enough interest in our game to fund a studio of our own
+</li>
+                    <p className="italic font-semibold">or</p>
+                    <li className="italic font-semibold">
+                      Use this project as leverage to get hired
+
+                    </li>
+                    <li className="italic font-semibold">CSS animations</li>
+                  </ul>
                 </div>
-                <div className="flex flex-wrap gap-4 border-b-5 border-accent-orange mt-4">
-                  <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+              </div>
+                <div className="flex flex-wrap gap-4  mt-4">
+                  <div className="w-14 h-14 p-2 flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                     <img
                       src="/logos/csharpIcon.png"
                       alt="Blender"
                       className="max-w-full max-h-full object-contain"
                     />
                   </div>
-                  <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                  <div className="w-14 h-14 p-2 flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                     <img
                       src="/logos/trello-icon-gradient-blue@2x.png"
                       alt="Blender"
                       className="max-w-full max-h-full object-contain"
                     />
                   </div>
-                  <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                  <div className="w-14 h-14 p-2 flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                     <img
                       src="/logos/godot-seeklogo.png"
                       alt="Blender"
                       className="max-w-full max-h-full object-contain"
                     />
                   </div>
-                  <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                  <div className="w-14 h-14 p-2 flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                     <img
                       src="/logos/GitHub_Logo.png"
                       alt="Blender"
@@ -142,6 +142,8 @@ export default function GamesPage() {
                     />
                   </div>
                 </div>
+              <div className="border-b-4 border-accent-orange mt-2"></div>
+
               </div>
             </div>
           </div>
@@ -188,9 +190,9 @@ export default function GamesPage() {
                 </div>
 
                 <p className="text-2xl p-2 font-bold bg-accent-orange  ">
-                  During the project I've used:
+                  During the project my ambition was to learn:
                 </p>
-                <div className="p-4 bg-gray-50/70 inset-shadow-sm inset-shadow-black ">
+                <div className="p-4 bg-gray-50/90 inset-shadow-sm inset-shadow-black ">
                   <ul className="list-disc px-5">
                     <li className="italic font-semibold">
                       Blueprints to modify & implement game logic
@@ -212,13 +214,12 @@ export default function GamesPage() {
                 </div>
               </div>
 
-              <div className=" border-2  bg-secondary-cream/50 p-4 rounded shadow-2xl">
-                <div className="border-b-2  mb-3">
-                  <h4 className="  text-xl sm:text-4xl font-extrabold font-sans  leading-tight">
+              <div className="rounded shadow-lg/20 border-2">
+                <h4 className="text-2xl p-2 font-bold bg-secondary-purple text-secondary-cream  ">
                     {" "}
-                    The Goal
+                    Long-term Goal
                   </h4>
-                </div>
+                                  <div className="p-4 bg-gray-50/90 inset-shadow-sm inset-shadow-black ">
                 <p className="text-md  text-background-black/90 font-semibold mb-2">
                   To create a 3D world where fantasy meets steampunk, with
                   awe-inspiring natural environments, filled with curious,
@@ -230,7 +231,8 @@ export default function GamesPage() {
                   surroundings becomes a necessity in order to survive the
                   deadly wild.{" "}
                 </p>
-                <p className="text-md  text-background-black/80 font-semibold ">
+                <div className="border-t-1 mb-4"></div>
+                <p className="text-md   text-background-black  ">
                   A place where rune inscribed steampunk objects, scattered
                   throughout the world, serve as the only reminder of a time
                   when the humans of Eoxania was at the peak of their dominance.
@@ -238,16 +240,17 @@ export default function GamesPage() {
                   these objects, and fewer still who remember who made them.
                 </p>
               </div>
+              </div>
 
-              <div className="flex flex-wrap border-b-4 border-secondary-cream gap-4 mt-4">
-                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+              <div className="flex flex-wrap  gap-4 mt-4">
+                <div className="w-14 h-14 p-2 bg-white flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                   <img
                     src="/logos/blender_icon_64x64.png"
                     alt="Blender"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                <div className="w-14 h-14 p-2 bg-white flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                   <img
                     src="/logos/UE-Icon-2023-Black.png"
                     alt="Unreal Engine 5"
@@ -255,14 +258,14 @@ export default function GamesPage() {
                   />
                 </div>
 
-                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                <div className="w-14 h-14 p-2 bg-white flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                   <img
                     src="/logos/csharpIcon.png"
                     alt="C#"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                <div className="w-14 h-14 p-2 bg-white flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                   <img
                     src="/logos/GitHub_Logo.png"
                     alt="Github"
@@ -270,6 +273,7 @@ export default function GamesPage() {
                   />
                 </div>
               </div>
+              <div className="border-b-4 border-accent-orange mt-2"></div>
             </div>
           </div>
         </Section>
@@ -294,7 +298,7 @@ export default function GamesPage() {
                     To create concept art I have used:
                   </h2>
                   <div className="p-4 bg-secondary-brown inset-shadow-sm inset-shadow-black ">
-                    <ul className="list-disc text-secondary-cream/80 px-5">
+                    <ul className="list-disc text-secondary-cream px-5">
                       <li className="italic ">
                         Gimp to crop, mask and rearrange images
                       </li>
@@ -316,29 +320,29 @@ export default function GamesPage() {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-wrap gap-4 border-b-5 border-accent-orange mt-4">
-                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+              <div className="flex flex-wrap gap-4  mt-4">
+                <div className="w-14 h-14 p-2 flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                   <img
                     src="/logos/gmbinder.png"
                     alt="GMBinder"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                <div className="w-14 h-14 p-2 flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                   <img
                     src="/logos/gimp.png"
                     alt="Gimp"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                <div className="w-14 h-14 p-2 flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                   <img
                     src="/logos/csslogo.png"
                     alt="CSS"
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
-                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                <div className="w-14 h-14 p-2 flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                   <img
                     src="/logos/htmllogo.png"
                     alt="CSS"
@@ -346,7 +350,7 @@ export default function GamesPage() {
                   />
                 </div>
 
-                <div className="w-20 h-20 p-2 flex items-center justify-center  rounded-md ">
+                <div className="w-14 h-14 p-2 flex items-center justify-center shadow-md shadow-black/20 rounded-md ">
                   <img
                     src="/logos/chatgptcut.png"
                     alt="ChatGPT"
@@ -354,6 +358,8 @@ export default function GamesPage() {
                   />
                 </div>
               </div>
+              <div className="border-b-4 border-accent-orange mt-2"></div>
+
             </div>
 
             <div className="w-full max-w-2xl  rounded-lg">
