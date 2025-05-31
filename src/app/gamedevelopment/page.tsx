@@ -438,14 +438,14 @@ export default function GamesPage() {
             <h2 className="text-4xl sm:text-5xl text-shadow-lg font-extrabold text-accent-orange  mb-6">
               Want to talk games?
             </h2>
-            <p className="text-md sm:text-lg text-shadow-lg text-secondary-cream font-semibold mb-6">
+            <p className="text-md sm:text-lg text-shadow-lg text-secondary-cream font-semibold mb-10">
               The gaming industry is a great source of discussion and I love
               talking about the industry politics, what makes a feature feel fun
               to use and how to make them.
             </p>
             <Link
               href="mailto:teofredev@gmail.com"
-              className="inline-block bg-accent-orange text-secondary-cream text-lg font-bold px-12 py-4 rounded-md shadow-lg hover:bg-accent-orange/90 will-change-transform transition-transform duration-300 transform hover:scale-105"
+              className="inline-block bg-accent-orange text-secondary-cream text-2xl font-bold px-12 py-3 rounded-md shadow-lg hover:bg-accent-orange/90 will-change-transform transition-transform duration-300 transform hover:scale-105"
             >
               Yes!
             </Link>
