@@ -139,7 +139,7 @@ export default function EducationPage() {
                       "Highly recommended to any employer"
                     </h3>
                     <h4 className="text-md text-black/80 italic px-2 font-bold  mb-2 ">
-                      Low-code thesis project
+                      - Low-code thesis project
                     </h4>
                   </div>
                   <div className="p-2 bg-gray-50/90 rounded-lg  ">
@@ -155,7 +155,7 @@ export default function EducationPage() {
                     The above quote has been translated from Swedish.
                   </p>
                   <Link
-                    className="text-md text-secondary-green font-bold hover:text-accent-orange hover:cursor-pointer underline hover:decoration-accent-orange"
+                    className="text-md text-secondary-green font-bold hover:text-accent-orange hover:cursor-pointer  hover:decoration-accent-orange"
                     href="https://www.kth.se/profile/subasic/"
                     target="_blank"
                     rel="noopener noreferrer"
