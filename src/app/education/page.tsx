@@ -155,7 +155,7 @@ export default function EducationPage() {
                     The above quote has been translated from Swedish.
                   </p>
                   <Link
-                    className="text-md text-accent font-bold hover:text-accent-orange hover:cursor-pointer underline hover:decoration-accent-orange"
+                    className="text-md text-secondary-green font-bold hover:text-accent-orange hover:cursor-pointer underline hover:decoration-accent-orange"
                     href="https://www.kth.se/profile/subasic/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -166,7 +166,7 @@ export default function EducationPage() {
                   <a
                     href="/Low_Code_applikationer_och_deras_relevans_i_nutid.docx.pdf"
                     download
-                    className="font-semibold italic mt-2 hover:text-accent-orange hover:cursor-pointer underline hover:decoration-accent-orange   "
+                    className="font-semibold text-secondary-green italic mt-2 hover:text-accent-orange hover:cursor-pointer underline hover:decoration-accent-orange   "
                   >
                     <h4 className="font-semibold italic mt-2 underline hover:cursor-pointer ">
                       Download Low-code thesis project (SE)
@@ -248,7 +248,7 @@ export default function EducationPage() {
                     The above quote has been translated from Swedish.
                   </p>
                   <Link
-                    className="text-md  hover:text-accent-orange  font-bold hover:underline decoration-accent-orange"
+                    className="text-md text-secondary-green hover:text-accent-orange  font-bold hover:underline decoration-accent-orange"
                     href="https://www.linkedin.com/in/kakashidota/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -258,7 +258,7 @@ export default function EducationPage() {
                   <a
                     href="/assets/Teodor Fredriksson Threat Analysis And Cyber Kill Chain (SE).zip"
                     download
-                    className="font-semibold italic mt-2 underline hover:decoration-accent-orange hover:cursor-pointer"
+                    className="font-semibold text-secondary-green italic mt-2 underline hover:decoration-accent-orange hover:cursor-pointer"
                   >
                     <h4 className="font-semibold italic mt-2 hover:text-accent-orange hover:cursor-pointer underline hover:decoration-accent-orange">
                       Download assignment on threat analysis and the cyber kill chain (SE)
