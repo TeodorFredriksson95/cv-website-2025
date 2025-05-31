@@ -4,9 +4,22 @@ import { motion, useAnimation, useMotionValue } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
+type CarouselIconProps = {
+  icon?: React.ElementType;
+  label: string;
+  fill?: string;
+  size?: number;
+  isActive: boolean;
+  onSwipe: (direction: "left" | "right") => void;
+  opacity?: number;
+  showLabel?: boolean;
+  href: string;
+};
+
+
 export default function CarouselIcon({
-  icon: Icon, label, fill, size, isActive, onSwipe, opacity = 1, showLabel = true, href
-}: any) {
+  icon: Icon, label, fill, size = 40, isActive, onSwipe, opacity = 1, showLabel = true, href
+}: CarouselIconProps) {
   const dragX = useMotionValue(0);
   const controls = useAnimation();
   const hasSwiped = useRef(false);
@@ -72,10 +85,12 @@ export default function CarouselIcon({
       animate={controls}
       className="relative flex flex-col items-center will-change-transform cursor-grab active:cursor-grabbing"
     >
-      <Icon
-        className="relative z-10 pointer-events-none"
-        style={{ width: size, height: size, color: fill }}
-      />
+      {Icon && (
+        <Icon
+          className="relative z-10 pointer-events-none"
+          style={{ width: size, height: size, color: fill }}
+        />
+      )}
       {showLabel && (
         <p className="relative z-10 text-center mt-2 font-semibold text-sm sm:text-base pointer-events-none" style={{ color: fill }}>
           {label}
