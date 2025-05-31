@@ -33,7 +33,6 @@ export default function Gallery() {
 
   return (
     <>
-      {/* Overlay with Swiper */}
       <AnimatePresence>
         {selectedIndex !== null && (
           <motion.div
@@ -79,7 +78,6 @@ export default function Gallery() {
                 ))}
               </Swiper>
 
-              {/* Close button */}
               <IoMdClose
                 size={36}
                 className="absolute top-6 right-6 z-99999 bg-background/90 hover:bg-background/70 p-2 rounded-full text-white cursor-pointer transition"
@@ -93,7 +91,6 @@ export default function Gallery() {
         )}
       </AnimatePresence>
 
-      {/* Image Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 group">
         {images.map((img, idx) => (
           <div

@@ -10,10 +10,8 @@ export default function BrokenSealCard() {
       whileHover={{ rotateX: 8, rotateY: -8, scale: 1.03 }}
       transition={{ type: "spring", stiffness: 200, damping: 15 }}
     >
-      {/* Glow ring */}
       <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-orange-500/30 to-purple-700/30 blur-2xl opacity-70 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
-      {/* Image */}
       <div className="relative z-10">
         <div className="relative aspect-[3.5/5] overflow-hidden rounded-lg border-4 border-orange-500 shadow-xl">
           <img
@@ -21,7 +19,6 @@ export default function BrokenSealCard() {
             alt="Broken Seal Main"
             className="w-full h-full object-cover group-hover:scale-105 group-hover:rotate-1 transition-transform duration-500 ease-out"
           />
-          {/* Light gloss */}
           <div className="absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-transparent pointer-events-none" />
         </div>
 
@@ -38,7 +35,6 @@ export default function BrokenSealCard() {
         </p>
       </div>
 
-      {/* Text */}
       <div className="mt-6 text-white/90 space-y-4 z-10">
         <h2 className="text-3xl font-extrabold tracking-tight font-serif text-orange-200">
           Broken Seal
