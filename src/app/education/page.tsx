@@ -24,7 +24,7 @@ export default function EducationPage() {
           <div className="flex flex-col lg:flex-row gap-10">
             <div className=" rounded ">
               <div className="flex-1 flex flex-col gap-6 max-w-xl mx-auto">
-                <div className="max-w-xl border-2 border-black shadow-lg/20 ">
+                <div className="max-w-xl border-2 border-black  ">
                   <h2 className="text-3xl bg-secondary-green  p-4 text-secondary-cream lg:text-2xl font-extrabold font-sans  mb-3 border-b-2">
                     .NET Full Stack | Newton School of Applied Sciences
                     <span className="font-semibold text-md italic">(2021–2023)</span>
