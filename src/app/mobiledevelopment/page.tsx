@@ -182,7 +182,7 @@ export default function AppsAndMobilePage() {
                   </p>
                 </div>
                 <div className="bg-secondary-brown mt-4 rounded shadow-lg/20 ">
-                  <p className="text-xl p-2 font-bold bg-accent-yellow   ">
+                  <p className="text-xl p-2 font-bold bg-accent-orange   ">
                     Focus areas:
                   </p>
                   <div className="p-4 bg-gray-50/90 inset-shadow-sm inset-shadow-black ">
@@ -279,7 +279,7 @@ export default function AppsAndMobilePage() {
                   </p>
                 </div>
                 <div className="bg-secondary-brown mt-4 rounded shadow-lg/20 ">
-                  <p className="text-xl p-2 font-bold bg-accent-yellow   ">
+                  <p className="text-xl p-2 font-bold bg-accent-orange   ">
                     Focus areas:
                   </p>
                   <div className="p-4 bg-gray-50/90 inset-shadow-sm inset-shadow-black ">
