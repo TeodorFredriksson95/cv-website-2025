@@ -21,8 +21,10 @@ export default function AboutPage() {
         <div className="text-center">
           <h2 className="text-2xl font-extrabold text-secondary-cream">Teodor Fredriksson</h2>
           <p className="text-sm font-semibold">Developer & Problem Solver</p>
+        <div className='border-b-3 mt-2 border-accent-orange'></div>
+
         </div>
-            <div className="flex flex-col gap-2 mt-4 items-center ">
+            <div className="flex flex-col gap-2 mt-2 items-center ">
               <div className="flex items-center gap-4 ">
                 <Link
                   href="mailto:teofredev@gmail.com"
@@ -64,8 +66,11 @@ export default function AboutPage() {
             </div>
       </aside>
 
-      <section className='p-8 md:w-2/3 mx-auto'>
-        <h1 className="text-4xl font-extrabold text-secondary-purple mb-4">About Me</h1>
+      <section className=' px-8 md:p-8 md:w-2/3 mx-auto'>
+      <div className='border-b mb-3'>
+
+        <h1 className="text-4xl font-extrabold text-secondary-purple">About Me</h1>
+      </div>
         <p className="text-lg font-mono text-muted-foreground font-semibold leading-relaxed mb-4">
           I'm a developer with a passion for code, games, and solving problems. I enjoy building web applications and systems just as much as cooking up game worlds, and I love it when tech meets aesthetics.
         </p>
