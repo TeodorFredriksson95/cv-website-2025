@@ -13,12 +13,12 @@ export default function GamesPage() {
       <main className="flex flex-col  row-start-2 w-full">
         <section className="text-center pt-0  ">
           <div className="  bg-secondary-green shadow-lg/20  p-8 md:p-15 ">
-            <h1 className="text-4xl sm:text-5xl font-semibold  text-secondary-cream leading-tight mb-3">
+            <h1 className="text-4xl sm:text-5xl font-semibold text-shadow-lg text-secondary-cream leading-tight mb-3">
               Game <br className="block sm:hidden" />
               Development
             </h1>
             <div className="flex justify-center mb-4 border-b-3 border-b-accent-orange w-2/10 mx-auto"></div>
-            <p className="text-lg w-full md:w-4/7 mx-auto text-white/80 font-semibold">
+            <p className="text-lg w-full md:w-4/7 mx-auto text-secondary-cream font-semibold">
               From 2DHD games and pixel art to 3D modelling and Blueprints - I
               love making games from scratch
             </p>
@@ -28,8 +28,8 @@ export default function GamesPage() {
         <Section>
           <div className="rounded border-0 ">
             <div className="container  rounded   mx-auto  flex sm:flex-col flex-col lg:flex-row items-center lg:items-start  gap-10">
-              <div className="bg-gradient-to-b shadow-[-3px_0px_10px_5px_rgba(0,0,0,0.55)]  from-[#d66f00] to-[#131313] p-4 rounded flex-col items-center w-full max-w-sm lg:flex-1">
-                <div className="relative  shadow-[-15px_10px_25px_5px_rgba(0,0,0,0.85)]   bg-background-black/60 aspect-[3.5/5] sm:aspect-[3.5/5]  border-8 border-black w-full overflow-visible">
+              <div className="bg-gradient-to-b shadow-[-3px_0px_10px_5px_rgba(0,0,0,0.55)]  from-[#d66f00] to-[#2f2f2f] p-4 rounded flex-col items-center w-full max-w-sm lg:flex-1">
+                <div className="relative  shadow-[-15px_10px_25px_5px_rgba(0,0,0,0.85)]   bg-background-black/50 aspect-[3.5/5] sm:aspect-[3.5/5]  border-8 border-black w-full overflow-visible">
                   <img
                     src="/assets/protagonist_bs.png"
                     alt="Main visual"

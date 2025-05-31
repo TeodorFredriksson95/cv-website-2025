@@ -22,9 +22,9 @@ export default function Home() {
   shadow-[0_10px_15px_-10px_rgba(0,0,0,0.7)] md:shadow-[-10px_0_15px_-10px_rgba(0,0,0,0.7)]"
         >
           {" "}
-          <h1 className="text-4xl font-bold  mb-4 ">Teodor Fredriksson</h1>
+          <h1 className="text-4xl font-bold text-shadow-lg mb-4 ">Teodor Fredriksson</h1>
           <div className="border-b-accent-orange border-b-4 w-1/10"></div>
-          <p className="text-lg  text-white/80 max-w-md">
+          <p className="text-lg  text-white max-w-md">
             I love making things that look good, work as expected and make people happy.
           </p>
           

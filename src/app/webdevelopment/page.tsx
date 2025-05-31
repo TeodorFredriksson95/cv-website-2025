@@ -7,12 +7,12 @@ export default function WebPage() {
       <main className="flex flex-col  row-start-2 w-full">
         <section className="text-center pt-0  ">
           <div className="  bg-secondary-green shadow-lg/20  p-8 md:p-15 ">
-            <h1 className="text-4xl sm:text-5xl font-semibold  text-secondary-cream leading-tight mb-3">
+            <h1 className="text-4xl sm:text-5xl font-semibold text-shadow-lg text-secondary-cream leading-tight mb-3">
               Web <br className="block sm:hidden" />
               Development
             </h1>
             <div className="flex justify-center mb-4 border-b-3 border-b-accent-orange w-2/10 mx-auto"></div>
-            <p className="text-lg w-full md:w-4/7 mx-auto text-white/80 font-semibold">
+            <p className="text-lg w-full md:w-4/7 mx-auto text-secondary-cream font-semibold">
               From backend APIs to frontend polish — I love building systems
               that are efficient and feel easy to use
             </p>
