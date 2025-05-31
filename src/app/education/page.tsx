@@ -138,7 +138,7 @@ export default function EducationPage() {
                     <h3 className="text-lg px-2 italic  font-bold ">
                       "Highly recommended to any employer"
                     </h3>
-                    <h4 className="text-md italic px-2 font-bold  mb-2 ">
+                    <h4 className="text-md text-black/80 italic px-2 font-bold  mb-2 ">
                       Low-code thesis project
                     </h4>
                   </div>
@@ -234,7 +234,7 @@ export default function EducationPage() {
                     <h3 className="text-lg px-2 italic  font-bold ">
 "Brilliant Work!"
                     </h3>
-                    <h4 className="text-md italic px-2 font-bold  mb-2 ">
+                    <h4 className="text-md italic text-black/80 px-2 font-bold  mb-2 ">
                       - Analysis on cyber kill chain
                     </h4>
                   </div>
