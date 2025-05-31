@@ -25,7 +25,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://unidevwebportfolio.com"), //
+  metadataBase: new URL("https://cv-website-2025-i55q.vercel.app"), //
   title: "Teodor Fredriksson | Portfolio",
   description: "Showcasing web, mobile, and game development by Teodor Fredriksson.",
   icons: {
