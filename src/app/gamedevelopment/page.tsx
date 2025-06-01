@@ -314,8 +314,7 @@ export default function GamesPage() {
                       <li className="italic ">
                         Guitar, keyboard & Audacity to create soundtracks
                       </li>
-                      <li className="italic ">ChatGPT</li>
-                      <li className="italic ">Firefly</li>
+                      <li className="italic ">ChatGPT & Firefly to generate images</li>
                     </ul>
                   </div>
                 </div>
