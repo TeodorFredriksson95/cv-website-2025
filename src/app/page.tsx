@@ -30,19 +30,19 @@ export default function Home() {
           
           <div className="flex gap-4 mt-6">
             <Link
-              href="https://github.com"
+              href="https://github.com/TeodorFredriksson95"
               className="hover:text-accent-yellow"
             >
               <Github />
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/teodor-fredriksson-919606b9/"
               className="hover:text-accent-yellow"
             >
               <Linkedin />
             </Link>
             <Link
-              href="mailto:you@example.com"
+              href="mailto:teofredev@gmail.com"
               className="hover:text-accent-yellow"
             >
               <Mail />
