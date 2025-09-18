@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <main className=" mx-auto grid grid-cols-1 lg:grid-cols-[300px_1fr_100px] gap-12 items-start">
 
-<aside className="flex flex-col items-center gap-4  bg-secondary-green text-secondary-cream p-4 shadow-lg/50 lg:shadow-lg/90  self-stretch">
+<aside className="flex flex-col items-center gap-4  bg-secondary-green text-secondary-cream full-height p-4 shadow-lg/50 lg:shadow-lg/90  self-stretch">
         <Image
           src="/assets/cv_profilepic5.jpg"
           alt="Profile picture"
