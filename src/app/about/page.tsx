@@ -77,7 +77,7 @@ I'm a developer with a wide range of interests, and my passion for coding seems 
 My two current on-going projects are related to game development and an embedded/IoT system. The IoT project is one that I hope to share with the world sooner rather than later, but realistically it might take another couple of years before it's fully finished.        </p>
 
         <p className="text-lg font-sans text-muted-foreground  leading-relaxed mb-4">
-Admittedly, most of my time is currently spent in front of the computer, even when I'm noodling on the ol' guitar. When I'm not, however, I do very much enjoy spending time in nature. I love being close to nature and animals have always been a big part of my life and one day I even hope to be able to get a dog - but that's gonna have to wait.        </p>
+Admittedly, most of my time is currently spent in front of the computer, even when I'm noodling on the ol' guitar. When I'm not, however, I do very much enjoy spending time touching grass. I love being close to nature and animals have always been a big part of my life and one day I even hope to be able to get a dog - but that's gonna have to wait.        </p>
 
                 <p className="text-lg font-sans text-muted-foreground  leading-relaxed mb-4">
 For the time being however, my one and only goal is to get a job. So, if you're reading this, and you're on the lookout for a highly motivated junior developer who loves to be of help whenever or wherever I can, then you've hopefully struck gold reading this!                </p>
