@@ -72,12 +72,18 @@ export default function AboutPage() {
         <h1 className="text-4xl font-extrabold text-secondary-purple">About Me</h1>
       </div>
         <p className="text-lg font-mono text-muted-foreground font-semibold leading-relaxed mb-4">
-          I'm a developer with a passion for code, games, and solving problems. I enjoy building web applications and systems just as much as cooking up game worlds, and I love it when tech meets aesthetics.
-        </p>
+I'm a developer with a wide range of interests, and my passion for coding seems to be applicable to every single one of them. The ability to create and optimize solutions, no matter the idea or problem, is what makes coding so incredibly rewarding to me.        </p>
         <p className="text-lg font-sans text-muted-foreground  leading-relaxed mb-4">
-          Outside the screen, I love playing guitar and staying active. I often get lost in music, ideas, and thoughts about the future. Animals have always been a big part of my life, and one of my long-term goals is to be a dog daddy.
-        </p>
+My two current on-going projects are related to game development and an embedded/IoT system. The IoT project is one that I hope to share with the world sooner rather than later, but realistically it might take another couple of years before it's fully finished.        </p>
 
+        <p className="text-lg font-sans text-muted-foreground  leading-relaxed mb-4">
+Admittedly, most of my time is currently spent in front of the computer, even when I'm noodling on the ol' guitar. When I'm not, however, I do very much enjoy spending time in nature. I love being close to nature and animals have always been a big part of my life and one day I even hope to be able to get a dog - but that's gonna have to wait.        </p>
+
+                <p className="text-lg font-sans text-muted-foreground  leading-relaxed mb-4">
+For the time being however, my one and only goal is to get a job. So, if you're reading this, and you're on the lookout for a highly motivated junior developer who loves to be of help whenever or wherever I can, then you've hopefully struck gold reading this!                </p>
+                <p className="text-lg font-sans text-muted-foreground  leading-relaxed mb-4">
+                  And I hope you reach out!
+                </p>
 
   <LogoGrid/>
       </section>
